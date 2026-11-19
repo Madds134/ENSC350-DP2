@@ -1,0 +1,157 @@
+<mxfile host="Electron" pages="2">
+  <diagram name="MAIN flowchart" id="mainflow">
+    <mxGraphModel dx="1613" dy="1242" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-5" edge="1" parent="1" source="eof" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-11" edge="1" parent="1" source="eof" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eof" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="End of File?" vertex="1">
+          <mxGeometry height="80" width="200" x="230" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-14" edge="1" parent="1" source="pre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pre" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="wait for PreStimTime  (1 ns)" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-18" edge="1" parent="1" source="cmp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-19" edge="1" parent="1" source="cmp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cmp" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="TB_S = TB_S_expected and&lt;br&gt;TB_Cout = TB_Cout_expected and&lt;br&gt;TB_Ovfl = TB_Ovfl_expected?" vertex="1">
+          <mxGeometry height="110" width="290" x="185" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-23" edge="1" parent="1" source="pass" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-22">
+          <mxGeometry relative="1" x="0.0556" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="885" />
+              <mxPoint x="285" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pass" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="Status := &quot;PASS&quot;" vertex="1">
+          <mxGeometry height="40" width="160" x="60" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-25" edge="1" parent="1" source="fail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-22">
+          <mxGeometry relative="1" x="0.0595" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="885" />
+              <mxPoint x="375" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="Status := &quot;FAIL&quot;&lt;br&gt;Failures := Failures + 1" vertex="1">
+          <mxGeometry height="40" width="190" x="430" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-26" edge="1" parent="1" source="inc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="eof">
+          <mxGeometry relative="1" x="-0.1566" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="997.5" />
+              <mxPoint x="40" y="285" />
+            </Array>
+            <mxPoint x="130" y="1152.5" as="sourcePoint" />
+            <mxPoint x="170.0000000000001" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;" value="Measurement_Index := Measurement_Index + 1" vertex="1">
+          <mxGeometry height="35" width="280" x="190" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pre">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="415" as="sourcePoint" />
+            <mxPoint x="330" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="inc">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="950" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-3" edge="1" parent="1" source="Rnrum4aNzF8jVPuimK0t-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eof">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;align=left;" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Initialize:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;- Define constants &amp;amp; variables&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;- Instantiate DUT&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;- Open .tvs file&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;- Initialize Measurement Index&amp;nbsp;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="215" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Close .tvs file&lt;div&gt;Simulation Complete&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="460" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Read TestVector &amp;amp; Parse&lt;div&gt;Set TB Stim to &#39;X&#39;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="255" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="311" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-16" edge="1" parent="1" source="Rnrum4aNzF8jVPuimK0t-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Rnrum4aNzF8jVPuimK0t-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Apply Stimulus" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-17" edge="1" parent="1" source="Rnrum4aNzF8jVPuimK0t-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="cmp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="wait 10ns PostStimtime" vertex="1">
+          <mxGeometry height="60" width="135" x="262.5" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="125" y="748" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Report Summary" vertex="1">
+          <mxGeometry height="60" width="180" x="240" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="Rnrum4aNzF8jVPuimK0t-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Next Line" vertex="1">
+          <mxGeometry height="30" width="60" x="123" y="975" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WQ8UuQG982E8xth8B0L1" name="Wave.do Script flowchart">
+    <mxGraphModel dx="774" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-11" edge="1" parent="1" source="Eifc09C8SvlpWzE_IJHB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Eifc09C8SvlpWzE_IJHB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Closes any running simulation" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-12" edge="1" parent="1" source="Eifc09C8SvlpWzE_IJHB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Eifc09C8SvlpWzE_IJHB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Redirect the transcript to .txt file" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-13" edge="1" parent="1" source="Eifc09C8SvlpWzE_IJHB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Eifc09C8SvlpWzE_IJHB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Compile Adder.vhd and testbench" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-14" edge="1" parent="1" source="Eifc09C8SvlpWzE_IJHB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Eifc09C8SvlpWzE_IJHB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Load testbench and build wave window" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Eifc09C8SvlpWzE_IJHB-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Record VCD file, run all vectors, restore transcript" vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

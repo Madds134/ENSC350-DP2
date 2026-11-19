@@ -1,0 +1,19 @@
+# Quartus build output (regenerated on every compile)
+db/
+incremental_db/
+output_files/
+*.qws
+
+# ModelSim build output
+Simulation/work/
+Simulation/transcript
+*.wlf
+*.cr.mti
+*.vcd
+
+# NOTE: unlike DP1, Simulation/ModelSim/ is tracked. DP2 spec task 3b asks for the
+# renamed timing models (.vho/.sdo) to be stored in the project, and the TS*.do scripts need them.
+
+# Editor and tool backups
+*.bak
+*.bkp

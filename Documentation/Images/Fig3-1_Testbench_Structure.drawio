@@ -1,0 +1,111 @@
+<mxfile host="Electron" pages="2">
+  <diagram name="Testbench structure" id="tbstruct">
+    <mxGraphModel dx="1171" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tb" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;fontStyle=1;fontSize=14;fontFamily=Courier New;" value="TBAdder_Ripple / TBAdder_ConditionalSum  (architecture Test)" vertex="1">
+          <mxGeometry height="420" width="790" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tvs" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFFFFF;strokeColor=#333333;fontSize=12;size=0.15;" value="&lt;b&gt;Adder00.tvs&lt;/b&gt;&lt;br&gt;one line per measurement:&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;A B Cin S Cout Ovfl&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="10" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="const" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;dashed=1;align=left;spacingLeft=8;fontFamily=Courier New;fontSize=11;" value="N = 64&lt;br&gt;TestVectorFile = &quot;Adder00.tvs&quot;&lt;br&gt;PreStimTime = 1 ns&lt;br&gt;PostStimTime = 10 ns" vertex="1">
+          <mxGeometry height="75" width="250" x="370" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="constlbl" parent="1" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#666666;align=left;" value="constants" vertex="1">
+          <mxGeometry height="20" width="80" x="630" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="main" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;align=left;spacingLeft=10;fontSize=12;verticalAlign=middle;" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;MAIN : process&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;for each line of the file:&lt;br&gt;1. drive inputs to &#39;X&#39;, wait PreStimTime&lt;br&gt;2. apply stimulus, wait PostStimTime&lt;br&gt;3. compare outputs with expected&lt;br&gt;4. report PASS / FAIL" vertex="1">
+          <mxGeometry height="150" width="260" x="370" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dut" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=2;fontSize=12;" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;DUT&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;entity work.Adder(Baseline)&lt;/font&gt;&lt;br&gt;or&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;entity work.Adder(ConditionalSum)&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;generic map (N =&amp;gt; N)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="860" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="exp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82B366;dashed=1;strokeWidth=1.5;fontSize=11;" value="&lt;font face=&quot;Courier New&quot;&gt;TB_S_expected, TB_Cout_expected,&lt;br&gt;TB_Ovfl_expected, TB_Measurement_Index&lt;/font&gt;&lt;br&gt;&lt;i&gt;expected response and index, shown in the wave window&lt;/i&gt;" vertex="1">
+          <mxGeometry height="70" width="330" x="690" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="trans" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFFFFF;strokeColor=#333333;fontSize=11;size=0.15;" value="&lt;b&gt;Transcript&lt;/b&gt;  (&lt;font face=&quot;Courier New&quot;&gt;AdderExperiment_&amp;lt;Topology&amp;gt;.txt&lt;/font&gt;)&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Meas n PASS | A=… B=… Cin=… | expected … | actual …&lt;br&gt;Simulation Completed: n measurements, f failures&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="440" x="350" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="e_read" edge="1" parent="1" source="tvs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;fontStyle=2;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="main" value="readline, hread / read">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_in" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontFamily=Courier New;fontSize=12;labelBackgroundColor=#F5F5F5;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="dut" value="TB_A, TB_B, TB_Cin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_in_lbl" parent="1" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#666666;align=center;" value="stimulus" vertex="1">
+          <mxGeometry height="18" width="80" x="705" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="e_out" edge="1" parent="1" source="dut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontFamily=Courier New;fontSize=12;labelBackgroundColor=#F5F5F5;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" target="main" value="TB_S, TB_Cout, TB_Ovfl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_out_lbl" parent="1" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#666666;align=center;" value="actual response" vertex="1">
+          <mxGeometry height="18" width="100" x="695" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="e_exp" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;dashed=1;strokeColor=#82B366;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="exp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rep" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;fontStyle=2;labelBackgroundColor=#FFFFFF;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" target="trans" value="report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="FuuK_tdu5MAs941p8azM" name="Page-2">
+    <mxGraphModel dx="1922" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SInMSpbq6DO-2pF_CMxg-2" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="700" x="140" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="X_71BgATJZ9Wgc_COGV1-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Constants:&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;N = 64&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;TestVectorFile = &quot;Adder00.tvs&quot;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;PreStimTime = 1 ns&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;PostStimTime = 10 ns&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="170" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="QDk8J7V7mJRtL9gWYnWI-1" edge="1" parent="1" source="dl_f0GEPhl1yXuqZEXIU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="JTMllwCfnX4vSmqP1D-N-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ClKxw2o97Ut1fSFY9OVx-1" edge="1" parent="1" source="dl_f0GEPhl1yXuqZEXIU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.441;entryY=0;entryDx=0;entryDy=0;" target="VIaJHArxUGYJEdXvNAEG-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SInMSpbq6DO-2pF_CMxg-1" edge="1" parent="1" source="dl_f0GEPhl1yXuqZEXIU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="iaW2mCqfRMFLUt9kY4Wi-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_f0GEPhl1yXuqZEXIU-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;MAIN : process&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;for each line of the file:&lt;/div&gt;&lt;div&gt;1. drive inputs to &#39;X&#39;, wait PreStimTime&lt;/div&gt;&lt;div&gt;2. apply stimulus, wait PostStimTime&lt;/div&gt;&lt;div&gt;3. compare outputs with expected&lt;/div&gt;&lt;div&gt;4. report PASS / FAIL&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="220" x="170" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QDk8J7V7mJRtL9gWYnWI-2" edge="1" parent="1" source="JTMllwCfnX4vSmqP1D-N-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="dl_f0GEPhl1yXuqZEXIU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JTMllwCfnX4vSmqP1D-N-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;DUT&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;entity work.Adder(Baseline)&lt;/div&gt;&lt;div&gt;or&lt;/div&gt;&lt;div&gt;entity work.Adder(ConditionalSum)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;generic map (N =&amp;gt; N)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="570" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi31UiLSpdCGuMwiueXP-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Stimulus:&lt;div&gt;TB_A, TB_B, TB_Cin&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="420" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="QDk8J7V7mJRtL9gWYnWI-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Response:&lt;div&gt;TB_S, TB_Cout, TB_Ovfl&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="180" x="390" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="VIaJHArxUGYJEdXvNAEG-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Report:&lt;/div&gt;&lt;div&gt;Transcript (AdderExperiment_&amp;lt;Topology&amp;gt;.txt)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" x="170" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="CLkPk9a5ejFgDfEZ8QG6-1" edge="1" parent="1" source="M56GDDu52apIHlaVXaFr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dl_f0GEPhl1yXuqZEXIU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M56GDDu52apIHlaVXaFr-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Adder00.tvs&lt;/div&gt;&lt;div&gt;one line per measurement:&lt;/div&gt;&lt;div&gt;A B Cin S Cout Ovfl&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="-140" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="HqcltkcuwV9JJABgvLux-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TestVector" vertex="1">
+          <mxGeometry height="30" width="60" x="70" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="iaW2mCqfRMFLUt9kY4Wi-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;TB_S_expected, TB_Cout_expected,&lt;/div&gt;&lt;div&gt;TB_Ovfl_expected, TB_Measurement_Index&lt;/div&gt;&lt;div&gt;expected response and index, shown in the wave window&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="480" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="SInMSpbq6DO-2pF_CMxg-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=17;" value="Testbench Architecture" vertex="1">
+          <mxGeometry height="30" width="230" x="150" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
