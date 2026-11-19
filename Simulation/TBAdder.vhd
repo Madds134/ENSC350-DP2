@@ -49,20 +49,35 @@ begin
         variable Measurement_Index : natural;
         variable Failures : natural;
         variable Status : string(1 to 4);
+        variable Level  : severity_level; -- Note when pass, error on FAIL
+        variable OpenStatus : file_open_status; -- result of opening the vector file
+        variable ok, LineOK : boolean;          -- 'good' flag from each read / whole line
     begin
-        file_open(VectorFile, TestVectorFile, read_mode);
-        report "TestVectors from " & TestVectorFile;
+        -- Open the vector file; stop with a clear message if it is missing
+        file_open(OpenStatus, VectorFile, TestVectorFile, read_mode);
+        assert OpenStatus = open_ok
+            report "Cannot open " & TestVectorFile & ": " & file_open_status'image(OpenStatus)
+            severity failure;
+
+        -- Header of the test conditionss
+        report "TBAdder: N=" & integer'image(N) & ", vectors from " & TestVectorFile &
+               ", PreStimTime=" & time'image(PreStimTime) &
+               ", PostStimTime=" & time'image(PostStimTime);
         Measurement_Index := 1;
         Failures :=  0;
 
         while not endFile(VectorFile) loop
             readline(VectorFile, LineBuffer);
-            hread(LineBuffer, A_var);
-            hread(LineBuffer, B_var);
-            read(LineBuffer, Cin_var);
-            hread(LineBuffer, S_var);
-            read(LineBuffer, Cout_var);
-            read(LineBuffer, Ovfl_var);
+            -- Fields in the spec's order { A B Cin S Cout Ovfl }; every read must succeed
+            hread(LineBuffer, A_var, ok);     LineOK := ok;
+            hread(LineBuffer, B_var, ok);     LineOK := LineOK and ok;
+            read (LineBuffer, Cin_var, ok);   LineOK := LineOK and ok;
+            hread(LineBuffer, S_var, ok);     LineOK := LineOK and ok;
+            read (LineBuffer, Cout_var, ok);  LineOK := LineOK and ok;
+            read (LineBuffer, Ovfl_var, ok);  LineOK := LineOK and ok;
+            assert LineOK
+                report "Malformed test vector on line " & integer'image(Measurement_Index)
+                severity failure;
             TBMeasurementIndex <= Measurement_Index;
 
             -- Pre stim
@@ -83,9 +98,11 @@ begin
             -- Report
             if TBS = TBtrueS and TBCout = TBtrueCout and TBOvfl = TBtrueOvfl then
                 Status := "PASS";
+                Level := note;
             else
                 Status := "FAIL";
                 Failures := Failures + 1;
+                Level := error;
             end if;
             report "Meas " & integer'image(Measurement_Index) & " " & Status &
                    " | A=" & to_hstring(A_var) & " B=" & to_hstring(B_var) &
@@ -93,7 +110,8 @@ begin
                    " | expected S=" & to_hstring(S_var) &
                    " Cout=" & to_string(Cout_var) & " Ovfl=" & to_string(Ovfl_var) &
                    " | actual S=" & to_hstring(TBS) &
-                   " Cout=" & to_string(TBCout) & " Ovfl=" & to_string(TBOvfl);
+                   " Cout=" & to_string(TBCout) & " Ovfl=" & to_string(TBOvfl)
+                severity Level;  
 
             Measurement_Index := Measurement_Index + 1;
         end loop;
