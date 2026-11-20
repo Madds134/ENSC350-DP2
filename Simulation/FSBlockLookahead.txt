@@ -1,16 +1,16 @@
 # === FSBlockLookahead: Adder(BlockLookahead), functional ===
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:16 on Nov 18,2026
+# Start time: 22:07:05 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
-# End time: 20:40:17 on Nov 18,2026, Elapsed time: 0:00:01
+# End time: 22:07:05 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:17 on Nov 18,2026
+# Start time: 22:07:05 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/AdderBaseline.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,10 +18,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling architecture Baseline of Adder
 # -- Loading entity Adder
-# End time: 20:40:17 on Nov 18,2026, Elapsed time: 0:00:00
+# End time: 22:07:05 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:17 on Nov 18,2026
+# Start time: 22:07:05 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/AdderFastRipple.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -29,10 +29,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling architecture FastRipple of Adder
 # -- Loading entity Adder
-# End time: 20:40:17 on Nov 18,2026, Elapsed time: 0:00:00
+# End time: 22:07:05 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:17 on Nov 18,2026
+# Start time: 22:07:05 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/ConditionalSumCarry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -40,10 +40,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ConditionalSumCarry
 # -- Compiling architecture Recursive of ConditionalSumCarry
-# End time: 20:40:18 on Nov 18,2026, Elapsed time: 0:00:01
+# End time: 22:07:05 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:18 on Nov 18,2026
+# Start time: 22:07:05 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/AdderConditionalSum.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -52,20 +52,20 @@
 # -- Compiling architecture ConditionalSum of Adder
 # -- Loading entity Adder
 # -- Loading entity ConditionalSumCarry
-# End time: 20:40:18 on Nov 18,2026, Elapsed time: 0:00:00
+# End time: 22:07:05 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:18 on Nov 18,2026
-# vcom -reportprogress 300 -2008 -work work ../SourceCode/BLAN.vhd 
+# Start time: 22:07:05 on Nov 18,2026
+# vcom -reportprogress 300 -2008 -work work ../SourceCode/LookaheadCarryNet.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity BLAN
-# -- Compiling architecture Recursive of BLAN
-# End time: 20:40:18 on Nov 18,2026, Elapsed time: 0:00:00
+# -- Compiling entity LookaheadCarryNet
+# -- Compiling architecture Recursive of LookaheadCarryNet
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:18 on Nov 18,2026
+# Start time: 22:07:06 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/AdderBlockLookahead.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -73,11 +73,33 @@
 # -- Compiling architecture BlockLookahead of Adder
 # -- Loading package NUMERIC_STD
 # -- Loading entity Adder
-# -- Loading entity BLAN
-# End time: 20:40:18 on Nov 18,2026, Elapsed time: 0:00:00
+# -- Loading entity LookaheadCarryNet
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:18 on Nov 18,2026
+# Start time: 22:07:06 on Nov 18,2026
+# vcom -reportprogress 300 -2008 -work work ../SourceCode/BLAN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BLAN
+# -- Compiling architecture BrentKung of BLAN
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:07:06 on Nov 18,2026
+# vcom -reportprogress 300 -2008 -work work ../SourceCode/AdderBrentKung.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling architecture BrentKung of Adder
+# -- Loading package NUMERIC_STD
+# -- Loading entity Adder
+# -- Loading entity BLAN
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:07:06 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work TBAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -85,10 +107,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity TBAdder
 # -- Compiling architecture Test of TBAdder
-# End time: 20:40:19 on Nov 18,2026, Elapsed time: 0:00:01
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:19 on Nov 18,2026
+# Start time: 22:07:06 on Nov 18,2026
 # vcom -reportprogress 300 -2008 -work work ../SourceCode/TBAdderConfigurations.vhd 
 # -- Loading package STANDARD
 # -- Compiling configuration FSRipple
@@ -102,10 +124,14 @@
 # -- Loading entity TBAdder
 # -- Loading architecture Test of TBAdder
 # -- Loading entity Adder
-# End time: 20:40:19 on Nov 18,2026, Elapsed time: 0:00:00
+# -- Compiling configuration FSBrentKung
+# -- Loading entity TBAdder
+# -- Loading architecture Test of TBAdder
+# -- Loading entity Adder
+# End time: 22:07:06 on Nov 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.FSBlockLookahead 
-# Start time: 20:40:19 on Nov 18,2026
+# Start time: 22:07:06 on Nov 18,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -113,7 +139,7 @@
 # Loading work.fsblocklookahead
 # Loading work.tbadder(test)
 # Loading work.adder(blocklookahead)
-# Loading work.blan(recursive)
+# Loading work.lookaheadcarrynet(recursive)
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Note: TBAdder: N=64, vectors from Adder00.tvs, PreStimTime=1000 ps, PostStimTime=10000 ps
 #    Time: 0 ps  Iteration: 0  Instance: /tbadder
@@ -143,9 +169,15 @@
 #    Time: 132 ns  Iteration: 0  Instance: /tbadder
 # ** Note: Meas 13 PASS | A=0000000080000000 B=FFFFFFFF80000000 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0
 #    Time: 143 ns  Iteration: 0  Instance: /tbadder
-# ** Error: Meas 14 FAIL | A=0000000000000001 B=0000000000000001 Cin=0 | expected S=0000000000000003 Cout=0 Ovfl=0 | actual S=0000000000000002 Cout=0 Ovfl=0
+# ** Note: Meas 14 PASS | A=0000000000000001 B=0000000000000000 Cin=1 | expected S=0000000000000002 Cout=0 Ovfl=0 | actual S=0000000000000002 Cout=0 Ovfl=0
 #    Time: 154 ns  Iteration: 0  Instance: /tbadder
-# ** Note: Simulation Completed: 14 measurements, 1 failures
-#    Time: 154 ns  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 15 PASS | A=000000000000FFFF B=0000000000000000 Cin=1 | expected S=0000000000010000 Cout=0 Ovfl=0 | actual S=0000000000010000 Cout=0 Ovfl=0
+#    Time: 165 ns  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 16 PASS | A=00000000FFFFFFFF B=0000000000000000 Cin=1 | expected S=0000000100000000 Cout=0 Ovfl=0 | actual S=0000000100000000 Cout=0 Ovfl=0
+#    Time: 176 ns  Iteration: 0  Instance: /tbadder
+# ** Error: Meas 17 FAIL | A=0000000000000001 B=0000000000000001 Cin=0 | expected S=0000000000000003 Cout=0 Ovfl=0 | actual S=0000000000000002 Cout=0 Ovfl=0
+#    Time: 187 ns  Iteration: 0  Instance: /tbadder
+# ** Note: Simulation Completed: 17 measurements, 1 failures
+#    Time: 187 ns  Iteration: 0  Instance: /tbadder
 # 0 ps
-# 161700 ps
+# 196350 ps

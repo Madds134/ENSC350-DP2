@@ -1,16 +1,24 @@
-# FSRipple.do - functional simulation of the Ripple topology (architecture Baseline)
-# Runs configuration FSRipple of TBAdder; output captured in FSRipple.txt
+# FSRipple.do
+# Functional verification of the ripple topology (architecture Baseline)
 
-catch {quit -sim}                       ;# close any simulation already loaded
+# Close any simulation that is already running
+catch {quit -sim}
 
-transcript file FSRipple.txt            ;# redirect output to this run's own transcript
+# Start capturing output, and record which configuration this run uses
+transcript file FSRipple.txt
 echo "=== FSRipple: Adder(Baseline), functional ==="
 
-do CompileAll.do                        ;# compile all sources + configurations
+# Compile every source and the configurations (CompileAll.do keeps the dependency order)
+do CompileAll.do
 
-vsim -voptargs=+acc work.FSRipple       ;# start the CONFIGURATION, not TBAdder
-do wave.do                              ;# formatted wave window
+# Load the configuration, not TBAdder, so the DUT is bound to Adder(Baseline)
+# (+acc keeps every signal visible in the wave window)
+vsim -voptargs=+acc work.FSRipple
+
+# Wave window layout, run every vector, then fit the whole run on screen
+do wave.do
 run -all
 wave zoom full
 
-transcript file transcript              ;# redirection off: back to the default transcript
+# Stop capturing: later output goes back to the default transcript
+transcript file transcript

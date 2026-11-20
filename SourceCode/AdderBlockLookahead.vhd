@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 -- BlockLookahead architecture of Adder.
--- Bit-level generate/propagate feed a recursive BLAN that returns carries
+-- Bit-level generate/propagate feed a recursive look-ahead carry network
 architecture BlockLookahead of Adder is
     signal g, p : std_logic_vector(N-1 downto 0); -- bit level generate/propagate
     signal c    : std_logic_vector(N downto 0);   -- bit level carries, c(N) is carry out, c(i) in carry into bit i
@@ -10,7 +10,7 @@ begin
     g <= A and B;
     p <= A xor B;
 
-    CarryNetwork: entity work.BLAN(Recursive)
+    CarryNetwork: entity work.LookaheadCarryNet(Recursive)
         generic map( N => N )
         port map( g => g, p => p, Cin => Cin, c => c,
                   BG => open, BP => open ); -- Top level assignment

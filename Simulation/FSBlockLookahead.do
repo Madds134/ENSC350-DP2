@@ -1,16 +1,24 @@
-# FSBlockLookahead.do - functional simulation of the BlockLookahead topology (recursive BLAN)
-# Runs configuration FSBlockLookahead of TBAdder; output captured in FSBlockLookahead.txt
+# FSBlockLookahead.do
+# Functional verification of the block look-ahead topology
 
-catch {quit -sim}                       ;# close any simulation already loaded
+# Close any simulation that is already running
+catch {quit -sim}
 
-transcript file FSBlockLookahead.txt    ;# redirect output to this run's own transcript
+# Start capturing output, and record which configuration this run uses
+transcript file FSBlockLookahead.txt
 echo "=== FSBlockLookahead: Adder(BlockLookahead), functional ==="
 
-do CompileAll.do                        ;# compile all sources + configurations
+# Compile every source and the configurations (CompileAll.do keeps the dependency order)
+do CompileAll.do
 
-vsim -voptargs=+acc work.FSBlockLookahead   ;# start the CONFIGURATION, not TBAdder
-do wave.do                              ;# formatted wave window
+# Load the configuration, not TBAdder, so the DUT is bound to Adder(BlockLookahead)
+# (+acc keeps every signal visible in the wave window)
+vsim -voptargs=+acc work.FSBlockLookahead
+
+# Wave window layout, run every vector, then fit the whole run on screen
+do wave.do
 run -all
 wave zoom full
 
-transcript file transcript              ;# redirection off: back to the default transcript
+# Stop capturing: later output goes back to the default transcript
+transcript file transcript
