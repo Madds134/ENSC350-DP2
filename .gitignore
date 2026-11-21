@@ -4,6 +4,17 @@ incremental_db/
 output_files/
 *.qws
 
+# Local timing experiments: Quartus projects, netlists, SDF, libraries and logs.
+# Only curated tables, figures and the workbook in Documentation/TimingResults are shared.
+.timing-build/
+__pycache__/
+*.pyc
+*.qdf
+*.sof
+*.pof
+*.jdi
+*.smsg
+
 # ModelSim build output
 Simulation/work/
 Simulation/transcript

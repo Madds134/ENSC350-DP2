@@ -1,0 +1,610 @@
+{
+  "report_date_utc": "2026-11-21",
+  "fits": 14,
+  "simulations": 42,
+  "passed_checks": 21588,
+  "failures": 0,
+  "all_VCD_checks_pass": true,
+  "runs": [
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "Ripple",
+      "Corner": "slow85",
+      "MeasurementSHA256": "ca3c9ae6b871c5fcae59987107434303c74b66e050b623b14c0af5e008a1f5fb",
+      "WaveformSHA256": "69841a37f7cbc00480164fa1e75a8d69299b97d015ca136522fef1e7c014a926",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "Ripple",
+      "Corner": "slow0",
+      "MeasurementSHA256": "021e4a61d0a41675c55d13c51329ab555b5c4a4b06bb7a186f1120699fcf35af",
+      "WaveformSHA256": "741c540456047d657481c9baa1893dd3e85b7e90d38ca869dc4bc7f98b88b8bd",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "Ripple",
+      "Corner": "fast0",
+      "MeasurementSHA256": "e5973d1093f52a69f36d388d94ded08b30647054dd6a9ec8971b43bc98ae0d4b",
+      "WaveformSHA256": "505e7754966a40793b1ac6aa3463170a3d445c59efae586ae134d60a07df0fc1",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "FastRipple",
+      "Corner": "slow85",
+      "MeasurementSHA256": "f9d5d241ea62d3fad80b75b06d3a184fc0a7873e61ff914d19fcfcf7d37cd42d",
+      "WaveformSHA256": "2fa34d8702d577cd64ac979a0c4ac4850e0c534178db9b2c805339879f0cf60d",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "FastRipple",
+      "Corner": "slow0",
+      "MeasurementSHA256": "ff863c615e7b231456b92d250e7940785c46f7bfb5c70bab1f492b1aa88c5fc4",
+      "WaveformSHA256": "3bd810bb6b1003fcf03f00a03778745c74589312a5f5e796a72fc79829e501f6",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "FastRipple",
+      "Corner": "fast0",
+      "MeasurementSHA256": "fd106077b5a44e8d0425d5e103c6e7dad2b9f6389cf9638a638af7f1cf314037",
+      "WaveformSHA256": "2a08f4b4c39f635bebca47a1ef767983302113bdb7306961d452a63958436577",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "ConditionalSum",
+      "Corner": "slow85",
+      "MeasurementSHA256": "55ee7fd714f10318c4365b6a2919607e074adc6e98f6fd6e3f75d34868f943c7",
+      "WaveformSHA256": "2e91028f4e17e618e1c7bcd07067f26e01b059b48147acb889bf76adab1bb981",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "ConditionalSum",
+      "Corner": "slow0",
+      "MeasurementSHA256": "6ebb84dd1c0eb5ebd4d5f7cf012524d4dae0328c8ddacf2e764469f09345e061",
+      "WaveformSHA256": "0d834e0d8ca0005b37410f642b25ff548802b42805ff738d76d9648ae08e85c9",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "ConditionalSum",
+      "Corner": "fast0",
+      "MeasurementSHA256": "21b87725dcf741af2b847aa264290056c2e1128d40351ead03ee2fa00ee932d3",
+      "WaveformSHA256": "07fc3760647b9b47d105afbfce83225bddc2466b26ef823d5d28175b15c5fb14",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BlockLookahead",
+      "Corner": "slow85",
+      "MeasurementSHA256": "261febeacf63f03b5928eb9253a5697e9334f625f23c5d3505f9cedfe8d4a8d0",
+      "WaveformSHA256": "94ed780659a7b6483ec33296eced9ca374c93e2f1b3e80b949423150a4e20f7e",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BlockLookahead",
+      "Corner": "slow0",
+      "MeasurementSHA256": "71709ae864ed1cf8faa248bde4cedf0729c1aa4c42f0afe7f7ac178c4ff7e76d",
+      "WaveformSHA256": "c0efb9071bec2ae6b7c4f65530e97fffd43d1f0d851162407bdbc09b9a5c80e6",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BlockLookahead",
+      "Corner": "fast0",
+      "MeasurementSHA256": "61172179cf77e4e14022043f74113a20e1fae8084a78ebd3f421ca883dbc27ce",
+      "WaveformSHA256": "2ac93f71e01fd1c05843de8147589293905e3dd04ceb017e173494d3b21505d5",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BrentKung",
+      "Corner": "slow85",
+      "MeasurementSHA256": "10d35ab5bb698b967d37c4e6d10c498121c7d0933a3e66edcc0944e017e6260e",
+      "WaveformSHA256": "5cb0680812db2f879c225a273307a06ab6d844a0e3cebfbb64945a02d28274df",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BrentKung",
+      "Corner": "slow0",
+      "MeasurementSHA256": "af2ab2e37676995ac32d3d0114dbf95545592c4aa1674fe496e8370c530d8a1f",
+      "WaveformSHA256": "1b163be826fda4799e2a1d9b5e53a4b0152c152b3659051afce1e34030f15307",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "BrentKung",
+      "Corner": "fast0",
+      "MeasurementSHA256": "f1a1fe597948f38a91b29f57ec4953dcd85fb0ceb218134d070733d1036d8d63",
+      "WaveformSHA256": "9d79a68b149d96834d7fc53c249478a95a2832dcbf0ebd482b15c010604c5c3a",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "KoggeStone",
+      "Corner": "slow85",
+      "MeasurementSHA256": "8a35326ac4850fd448fd3cc1ff0da8580d708fed4cd17598d9a7c5809c832893",
+      "WaveformSHA256": "246155ea11fc59e6705009932391bf57bef1c4f1dcb6fe004f7831315b204e7e",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "KoggeStone",
+      "Corner": "slow0",
+      "MeasurementSHA256": "01a11a5a7e4a4625e0a2fbc833a80f895efdd5b1caa43a5fcec2ab5bb5c5ebd1",
+      "WaveformSHA256": "13ca55c6fe24ccc06bc5efea7018e2269456d38653254026fc4190df4a6f82d6",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "KoggeStone",
+      "Corner": "fast0",
+      "MeasurementSHA256": "45b43a1a777894e80d9d40c48a519e6c1c485b88ecd31697acbefbe7e9be2f94",
+      "WaveformSHA256": "15c287f9f150c9d32c56b44a135df00555e9786eedfcca9917f6b47848b918ec",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "CarrySkip",
+      "Corner": "slow85",
+      "MeasurementSHA256": "91539f2f0886b8af7b3b7282f64364d43e853dba7e7c58d86dd22471147768e8",
+      "WaveformSHA256": "1c7bacc61509abf978a631b4ed21e05f509adb0f604326b13aa18f16b372ee6b",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "CarrySkip",
+      "Corner": "slow0",
+      "MeasurementSHA256": "a820784ba5a596af017bc2d7163d12103e2048437a9300c9db2bd4b06764e457",
+      "WaveformSHA256": "bcf7ccca214c795ec486882254d96d5fc55d58a5456c9d6b654f4d72e3437037",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP4CE30F23C6",
+      "Topology": "CarrySkip",
+      "Corner": "fast0",
+      "MeasurementSHA256": "df4b632a8ef6053bb3aaa4da19ae2df1f8392a876c1a30be0d9d5e7e0aa1e07e",
+      "WaveformSHA256": "49b4ce02ce8edfe4fa15367d4e9c84f1453a9f63cdf78ed8a68da4cb1afa2e76",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "Ripple",
+      "Corner": "slow85",
+      "MeasurementSHA256": "f0ee7282694d6b1dbd46700864bb90b5ed2361b3a52e74be3b47abb50b3e245e",
+      "WaveformSHA256": "fabcade15223bff80cedc7a8284fbc095fad76b5a7b82d66b1e9f80b52b1f5f8",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "Ripple",
+      "Corner": "slow0",
+      "MeasurementSHA256": "80f474fb0893b26183d3072ea4cc045db3e7b16ecc4655799142c301d7502525",
+      "WaveformSHA256": "fe6a9dbcbe5f349632f2e0f53dc719f53c4474b426bb185a14ab0d1f30e93065",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "Ripple",
+      "Corner": "fast0",
+      "MeasurementSHA256": "6964db85d3332824e3c41361c766b95791a32d900e588a83ed03ec7115c985e3",
+      "WaveformSHA256": "567498de1923a959d7b1393231fdd1ffb6325e76e2748712234512db83d63be6",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "FastRipple",
+      "Corner": "slow85",
+      "MeasurementSHA256": "566a8769eeb50939a194c07af26f3763fa2d507a541b9de01858cc656b55538f",
+      "WaveformSHA256": "5ad71e797a45fc530f9e7b5b75a3dcfde742c2ccf8c8038f70a8f5ca4b5d0ae5",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "FastRipple",
+      "Corner": "slow0",
+      "MeasurementSHA256": "6e7b1c4d391a20455db6c4e2aad949326f4f7409394b0ec0aa38fac7f3caa644",
+      "WaveformSHA256": "40d95c86a8a88590b1537aacdb0182f812318fb6b2390f6acafa64372620a163",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "FastRipple",
+      "Corner": "fast0",
+      "MeasurementSHA256": "3cf1e824e294fa3e3303fb4ff5164f287ddf0f88f4ee9e4e6e59ad73a070c150",
+      "WaveformSHA256": "c2d1fb3833ab4bcb56f2a1fb06f3bffd5032f269116969c6b92a0a7c64847e7f",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "ConditionalSum",
+      "Corner": "slow85",
+      "MeasurementSHA256": "5fbe2b384d677b05b0befa0db35eb827ebd4f12f0bd135005442f238024d281d",
+      "WaveformSHA256": "dba138f16b2068fc02bc9230ecc9b8705f8f2adbcca35d2638eb0582a663dd05",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "ConditionalSum",
+      "Corner": "slow0",
+      "MeasurementSHA256": "8cf2ccafb5f26ed7ca5e824d7eab9958986e4090056dbb69c915a787b82cf044",
+      "WaveformSHA256": "6eb3a785e9da564e005be75d6fe7836a3d3c055ad15aaa619d7efa22f628f4e6",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "ConditionalSum",
+      "Corner": "fast0",
+      "MeasurementSHA256": "39cf86f3162e7c4a61fa547ff4652b7e92c9fbe34973924277245f14c0bd3714",
+      "WaveformSHA256": "7d776a7cef2e500f52a6d144e8da0d04fead99b48bc535afae4afa25a7fc9a73",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BlockLookahead",
+      "Corner": "slow85",
+      "MeasurementSHA256": "03a47146843702460250f2b0486354833d935ea5192c35b12631dba7525c033a",
+      "WaveformSHA256": "8ab52f9880f245a299e6955185531ab7f95208233d6ee9072e0f055d55201709",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BlockLookahead",
+      "Corner": "slow0",
+      "MeasurementSHA256": "e25c93d500764ab5957e6c68bbe965292f4e662755c384dba1092677ab2cc978",
+      "WaveformSHA256": "ffebefcb1466e7fea847837831b77bf8ee5d5eb6a8f5c726238431127722ce2d",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BlockLookahead",
+      "Corner": "fast0",
+      "MeasurementSHA256": "ee7f5a526ece775de35314da7fc2b3a87d04e96645c04667393394cdf4f651be",
+      "WaveformSHA256": "df2e5ec9e9e7f951de2bad9a10b051de31bfcdc350cd76a9b99d1560e0223b57",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BrentKung",
+      "Corner": "slow85",
+      "MeasurementSHA256": "b5743f3fb18b916c46d5d80060ca068f80a984222f9cf988e1734723bfc4b4d5",
+      "WaveformSHA256": "834c3d5212f03ce97e752bad6a1ce155ab13616dc8ad4cf43de188e0c94fe5ee",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BrentKung",
+      "Corner": "slow0",
+      "MeasurementSHA256": "57f3781df3bc21d8769a5f24eedffc12fce755b97d33aed1084cec7cc90a3815",
+      "WaveformSHA256": "9835c392d93b275f2d534eed04958fd2fb728fd2ab260005654987dce0fcefad",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "BrentKung",
+      "Corner": "fast0",
+      "MeasurementSHA256": "b59138a267d19eb89272df799c19a62bfec6ec7eb1d75e853d42f9ab67f32766",
+      "WaveformSHA256": "4554df3d74766a81e989af9dd7d9c4e7a1923a768b77620a0009f63dd9b14e8b",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "KoggeStone",
+      "Corner": "slow85",
+      "MeasurementSHA256": "1641a8c524005e23127d887bfb9a01b77f041f15bae833e0bf870ec38255bcfd",
+      "WaveformSHA256": "46c66631c48d7dc13360880145b95ec9ba5570c2c2ba9404f393b0263a229a8e",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "KoggeStone",
+      "Corner": "slow0",
+      "MeasurementSHA256": "a04b7c2a982142dfd320edb869b30504b70a0079713e8e593cc8e1167cf06564",
+      "WaveformSHA256": "e6784b2b41497c2ca4b0e2ef39a94b2a8aff1fd8bd934bdb140ce70cdae6bf11",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "KoggeStone",
+      "Corner": "fast0",
+      "MeasurementSHA256": "fe89466c5000ec037a664146ed49ae869e925ec0fc0404f1d87e3147365f005a",
+      "WaveformSHA256": "ea0e6f534617b0fcf444033aa230ed326ce5a3fd942b6c56526006853450d988",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "CarrySkip",
+      "Corner": "slow85",
+      "MeasurementSHA256": "b3546a39d928ed2d0ab81ce1ec085d072b6a3e0f5f5c35eae8d5f6b815458975",
+      "WaveformSHA256": "add066138d9319ae2db5bd5c0f6dda5395492b4abdf945e749bc20703b456b00",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "CarrySkip",
+      "Corner": "slow0",
+      "MeasurementSHA256": "397e1624ed2d64f2e5a10b0d814fd12384f67ccf3988265943582ee7e72423fa",
+      "WaveformSHA256": "251bb1ceae4b55bfc8e96e4e2bee72515aadacc4b140ec6f7c64eb983503a89a",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    },
+    {
+      "Device": "EP2AGX45DF29C6",
+      "Topology": "CarrySkip",
+      "Corner": "fast0",
+      "MeasurementSHA256": "01874a418d53624d6425984a00ac3de2120d1a19f8291fe7aa5be6ad2e2383b1",
+      "WaveformSHA256": "4ef8e63024bbdf971b802b23cbd0b3628de83e0c9501f072ce40e73f7a9ca62a",
+      "SDF_annotated": true,
+      "VCD_crosscheck": true
+    }
+  ],
+  "manifests": [
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "Ripple",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderBaseline.vhd": "d822cb3450c38acd526eed7c9b502c1cbfdae94503d6941460e251125bce03f6"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "FastRipple",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderFastRipple.vhd": "0d1db4c2dfce310076f0c742ab1c627d3eddf744e27d322a5750ce358f0cc864"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "ConditionalSum",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "ConditionalSumCarry.vhd": "94f92e67574285e70dc44eb931d54b1c6271b0a64918ef0feefbefc7553b4357",
+        "AdderConditionalSum.vhd": "a96a1346bb614165ee419cb4723d93349f6ad301e9b516448f9c4753a339e97d"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "BlockLookahead",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "LookaheadCarryNet.vhd": "772359cdbc630cdd764049fbbe88e2b560f58b520ce4aecc01bc8c3b570e7295",
+        "AdderBlockLookahead.vhd": "6b7099ca6b48b8d17fce9d9f929579ae8f26871bbd413c4a2ecaab2a7d2d53f1"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "BrentKung",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "BLAN.vhd": "95c23084793bab0256773ec60d2014c93c6e58c131bc5173bb240f0f802e4049",
+        "AdderBrentKung.vhd": "401e137e008833cfbecd3ca7006313dfe6084ae6c8e8e2dffa7706514e493429"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "KoggeStone",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "BLAN.vhd": "95c23084793bab0256773ec60d2014c93c6e58c131bc5173bb240f0f802e4049",
+        "BLANKoggeStone.vhd": "aa8f131eaac52bc3eeea68cdc79f7e638f2cf5f25ac48c003439b99d82dca753",
+        "AdderKoggeStone.vhd": "ae1e5e3770e6f49fcf69b82111c1da39dbf533d3d98d6fccee5157ff8869dee3"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP4CE30F23C6",
+      "family": "Cyclone IV E",
+      "topology": "CarrySkip",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderCarrySkip.vhd": "2010998dd5b2c0e638f8e7fc142068fbe65db29c05bcfb3c672cde397ff451d6"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "Ripple",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderBaseline.vhd": "d822cb3450c38acd526eed7c9b502c1cbfdae94503d6941460e251125bce03f6"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "FastRipple",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderFastRipple.vhd": "0d1db4c2dfce310076f0c742ab1c627d3eddf744e27d322a5750ce358f0cc864"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "ConditionalSum",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "ConditionalSumCarry.vhd": "94f92e67574285e70dc44eb931d54b1c6271b0a64918ef0feefbefc7553b4357",
+        "AdderConditionalSum.vhd": "a96a1346bb614165ee419cb4723d93349f6ad301e9b516448f9c4753a339e97d"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "BlockLookahead",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "LookaheadCarryNet.vhd": "772359cdbc630cdd764049fbbe88e2b560f58b520ce4aecc01bc8c3b570e7295",
+        "AdderBlockLookahead.vhd": "6b7099ca6b48b8d17fce9d9f929579ae8f26871bbd413c4a2ecaab2a7d2d53f1"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "BrentKung",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "BLAN.vhd": "95c23084793bab0256773ec60d2014c93c6e58c131bc5173bb240f0f802e4049",
+        "AdderBrentKung.vhd": "401e137e008833cfbecd3ca7006313dfe6084ae6c8e8e2dffa7706514e493429"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "KoggeStone",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "BLAN.vhd": "95c23084793bab0256773ec60d2014c93c6e58c131bc5173bb240f0f802e4049",
+        "BLANKoggeStone.vhd": "aa8f131eaac52bc3eeea68cdc79f7e638f2cf5f25ac48c003439b99d82dca753",
+        "AdderKoggeStone.vhd": "ae1e5e3770e6f49fcf69b82111c1da39dbf533d3d98d6fccee5157ff8869dee3"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    },
+    {
+      "device": "EP2AGX45DF29C6",
+      "family": "Arria II GX",
+      "topology": "CarrySkip",
+      "seed": 1,
+      "hold_ns": 200,
+      "random_seed": 350,
+      "random_count": 500,
+      "timing_pair_count": 7,
+      "source_sha256": {
+        "Adder.vhd": "30267822b38e6fafe0573327d85fceaa376313d251c7353dc2b6b151af0c089b",
+        "AdderCarrySkip.vhd": "2010998dd5b2c0e638f8e7fc142068fbe65db29c05bcfb3c672cde397ff451d6"
+      },
+      "vector_sha256": "a7815b9309e64b641a07147f18597a911960a1549b0619cc8f2733a1132b4194"
+    }
+  ]
+}
