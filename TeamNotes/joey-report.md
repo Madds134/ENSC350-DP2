@@ -42,17 +42,17 @@ Each figure is in `Documentation/Images/` as an editable `.drawio` file and a PN
 Apart from items 1 and 2, no differences were found between the briefs' descriptions and the VHDL.
 
 ## Netlist checks (Task 2)
-Both candidates were recompiled locally (`quartus_sh -t SynthAll.tcl CarrySkip_CIV ConditionalSum_CIV`) and inspected in the post-fit Technology Map Viewer; the tracked files the compile rewrites were restored afterwards. No timing reports were opened.
+Both candidates were recompiled locally (`quartus_sh -t SynthAll.tcl CarrySkip_CIV ConditionalSum_CIV`) and inspected in the post-fit Technology Map Viewer; the tracked files the compile rewrites were restored afterwards. Joey's exports of both post-fit netlists are kept as working evidence (not for the report): `Documentation/Images/Evidence_CarrySkip_CIV_TechMap.pdf` and `Evidence_ConditionalSum_CIV_TechMap.pdf`. No timing reports were opened.
 - **CarrySkip_CIV:** In the post-fit Technology Map Viewer, the skip logic is still present: `cb[1]`–`cb[16]` and `rCOut[0]`–`rCOut[15]` remain as separate 4-input logic cells (the `keep` attribute held), and each `cb[k+1]` combines `rCOut[k]`, `cb[k]` and the block propagate, which Quartus splits over two helper cells (`cb~…`) because the 4 p's depend on 8 inputs. Quartus did not reduce it to a plain ripple. The extra cost (224 LE vs 177 predicted) comes from the kept nodes not being merged, the split block-propagate cells, and most in-block carries taking two cells each (e.g. `c[59]~87` / `c[59]~88`). *(Joey exported the post-fit netlist and checked the fan-in of `cb[5]` in the viewer: `rCOut[4]`, `cb[4]` and two `cb~` cells. Claude read the exported netlist and drafted these sentences.)*
 - **ConditionalSum_CIV:** In the post-fit Technology Map Viewer only the bottom level of the recursion survives: the `ConditionalSumCarry:CarryNetwork` hierarchy contains just the 2-bit groups' conditional carries (`HighHalf`/`LowHalf:carry0[1]` and `carry1[1]`, 17 pairs = 34 cells), and every mux level from N = 4 upwards is gone. The final carries are instead computed in series by top-level cells `c[2]` … `c[62]`: for example `c[40]~36` selects a 2-bit group's carry0/carry1 using `c[38]~35`, which itself takes `A[37]`, `B[37]` and the carry from below. So the carry advances about 2 bits per LUT instead of passing through log₂N mux levels, which is the collapse described in `ConditionalSumCarryKeep.vhd` (each mux rewritten as H0 + L·H1). This explains the lower cost (187 LE vs about 230 predicted), and the cells add up exactly: 91 sum/helper cells (`S~0`–`S~90`) + 61 carry-chain cells (`c[…]`, `c~59`, `c~60`) + 34 conditional-carry cells + 1 `Ovfl` = 187. (This build is current: `9bee52d` added a separate `ConditionalSumKeep` topology and left `AdderConditionalSum.vhd` / `ConditionalSumCarry.vhd` unchanged.) *(Joey exported the post-fit netlist and traced the inputs of `c[40]~36` and `c[38]~35` in the viewer. Claude read the exported netlist, counted the cells and drafted these sentences.)*
 
 ## Who did what
 - **Claude (agent, on Joey's machine):** Read the briefs, the VHDL (`BLAN.vhd`, `BLANKoggeStone.vhd`, `AdderBrentKung.vhd`, `AdderKoggeStone.vhd`, `LookaheadCarryNet.vhd`, `AdderBlockLookahead.vhd`, `AdderCarrySkip.vhd`) and the flow scripts. Drew and revised all six figures by writing a small Python script that outputs the `.drawio` XML (the merge cells and highlighted paths in D1 and D2 come from a copy of the VHDL recursion, with a check that each highlighted path follows real lo inputs), exported them with the draw.io CLI, checked each PNG visually against the code, and drafted this file. The script isn't committed, since only `Fig_*` files and this file are allowed. Also ran the CarrySkip_CIV / ConditionalSum_CIV recompile and restored the tracked files it rewrote. No timing reports were opened.
-- **Joey:** Reviewed the first version of the figures and directed the changes to it: titles added and centred, explanatory text cut down to the structure and signal names, D4 retitled "Lookahead Carry Network (N = 8)", and the DP1 Conditional Sum figure (`Fig2-3_ConditionalSum`) retitled, centred and trimmed. _Fill in what else you checked or changed by hand:_
-  - [ ] D1 checked against `BLAN.vhd` and Handout 6
-  - [ ] D2 checked against `BLANKoggeStone.vhd`
-  - [ ] D3 checked against `AdderBrentKung.vhd` / `AdderKoggeStone.vhd`
-  - [ ] D4 checked against `LookaheadCarryNet.vhd`
-  - [ ] D5 checked against `AdderCarrySkip.vhd`
-  - [ ] D6 checked against the scripts
-  - [ ] Can explain each figure in person
+- **Joey:** Reviewed the first version of the figures and directed the changes to it: titles added and centred, explanatory text cut down to the structure and signal names, D4 retitled "Lookahead Carry Network (N = 8)", and the DP1 Conditional Sum figure (`Fig2-3_ConditionalSum`) retitled, centred and trimmed. Checked every figure generated this session:
+  - [x] D1 checked against `BLAN.vhd` (not yet compared against Handout 6)
+  - [x] D2 checked against `BLANKoggeStone.vhd`
+  - [x] D3 checked against `AdderBrentKung.vhd` / `AdderKoggeStone.vhd`
+  - [x] D4 checked against `LookaheadCarryNet.vhd`
+  - [x] D5 checked against `AdderCarrySkip.vhd`
+  - [x] D6 checked against the scripts
+  - [x] Can explain each figure in person
