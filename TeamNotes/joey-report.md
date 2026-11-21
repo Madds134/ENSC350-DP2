@@ -37,7 +37,7 @@ Each figure is in `Documentation/Images/` as an editable `.drawio` file and a PN
 3. **D5:** `joey.md` says "4 ripple full adders". The code has no full-adder component: g/p are computed once, each cell is c(i+1) = g(i) + p(i)·c(i), and the sum is S = p xor c for the whole vector. The figure draws each bit as a plain cell labelled with the code's signal names. The carry into the next block is cb(k+1), the skip-OR output, as in the code (`c(Base) <= cb(k)`).
 4. **D6:** `SynthAll.tcl` also runs `CollectResults.tcl` itself at the end; the figure shows CollectResults reading the reports, which matches running it on its own.
 5. **D4:** As `joey.md` says, this is our own carry tree (the BLAN64 = 2 × BLAN32 exam structure noted in `LookaheadCarryNet.vhd`), not the textbook prefix network, so the figure follows the code.
-6. **Notation:** The merge cell is drawn as a circle containing ∘, with (G, P) = (G_hi + P_hi·G_lo, P_hi·P_lo). I haven't compared it against Handout 6 symbol by symbol yet.
+6. **Handout 6 comparison** (done by Claude from Joey's copy): D1 follows the handout's Brent-Kung network (p. 6): odd-position cells, an inner BLAN(N/2), even-position cells 2…N−2, position 0 a wire, and the BLAN(2) stopping case of p. 8. The merge cell matches p. 5 (G = G_left + P_left·G_right, P = P_left·P_right); our legend calls the inputs hi/lo where the handout says left/right. The handout's GP[i,i] / GP[i,0] appear in the figures under their VHDL names g(i), p(i) / Gpre(i), Ppre(i). D5 matches the carry-skip block of p. 7, and D4 is the radix-2 form of the multi-level look-ahead network of p. 3. Kogge-Stone (D2) isn't in the handout.
 
 Apart from items 1 and 2, no differences were found between the briefs' descriptions and the VHDL.
 
@@ -49,7 +49,7 @@ Both candidates were recompiled locally (`quartus_sh -t SynthAll.tcl CarrySkip_C
 ## Who did what
 - **Claude (agent, on Joey's machine):** Read the briefs, the VHDL (`BLAN.vhd`, `BLANKoggeStone.vhd`, `AdderBrentKung.vhd`, `AdderKoggeStone.vhd`, `LookaheadCarryNet.vhd`, `AdderBlockLookahead.vhd`, `AdderCarrySkip.vhd`) and the flow scripts. Drew and revised all six figures by writing a small Python script that outputs the `.drawio` XML (the merge cells and highlighted paths in D1 and D2 come from a copy of the VHDL recursion, with a check that each highlighted path follows real lo inputs), exported them with the draw.io CLI, checked each PNG visually against the code, and drafted this file. The script isn't committed, since only `Fig_*` files and this file are allowed. Also ran the CarrySkip_CIV / ConditionalSum_CIV recompile and restored the tracked files it rewrote. No timing reports were opened.
 - **Joey:** Reviewed the first version of the figures and directed the changes to it: titles added and centred, explanatory text cut down to the structure and signal names, D4 retitled "Lookahead Carry Network (N = 8)", and the DP1 Conditional Sum figure (`Fig2-3_ConditionalSum`) retitled, centred and trimmed. Checked every figure generated this session:
-  - [x] D1 checked against `BLAN.vhd` (not yet compared against Handout 6)
+  - [x] D1 checked against `BLAN.vhd` (the Handout 6 comparison was done by Claude, see item 6 above)
   - [x] D2 checked against `BLANKoggeStone.vhd`
   - [x] D3 checked against `AdderBrentKung.vhd` / `AdderKoggeStone.vhd`
   - [x] D4 checked against `LookaheadCarryNet.vhd`
