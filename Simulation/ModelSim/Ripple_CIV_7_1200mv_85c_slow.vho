@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "11/20/2026 22:42:49"
+-- DATE "11/20/2026 23:10:57"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -79,10 +79,10 @@ ENTITY 	Adder IS
     PORT (
 	A : IN std_logic_vector(63 DOWNTO 0);
 	B : IN std_logic_vector(63 DOWNTO 0);
-	S : OUT std_logic_vector(63 DOWNTO 0);
+	S : BUFFER std_logic_vector(63 DOWNTO 0);
 	Cin : IN std_logic;
-	Cout : OUT std_logic;
-	Ovfl : OUT std_logic
+	Cout : BUFFER std_logic;
+	Ovfl : BUFFER std_logic
 	);
 END Adder;
 
