@@ -6,9 +6,15 @@ output_files/
 
 # ModelSim build output
 Simulation/work/
+# Compiled netlist libraries, one per candidate (made by the TS scripts)
+Simulation/*_CIV/
+Simulation/*_CIVE30/
+Simulation/*_AII/
 Simulation/transcript
 *.wlf
 *.cr.mti
+# ModelSim's compiled SDF cache (made next to each .sdo by the TS runs)
+*.csd
 *.vcd
 
 # NOTE: unlike DP1, Simulation/ModelSim/ is tracked. DP2 spec task 3b asks for the

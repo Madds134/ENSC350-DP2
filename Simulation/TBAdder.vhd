@@ -3,16 +3,20 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use std.textio.all;
 
--- Single testbench for every Adder design candidate (DP2).
--- Reads Adder00.tvs for test vectors.
+-- Single testbench for every Adder design candidate (DP2), functional (FS) and timing (TS).
+-- Reads the vector file named by the TestVectorFile generic.
+-- Each measurement: 'X' on every input for PreStimTime, apply the vector, wait until the
+-- outputs are stable, then measure the S and Status (Cout, Ovfl) delays and check the result.
 entity TBAdder is
+    generic (N              : natural := 64;              -- adder width (vsim -gN=...)
+             TestVectorFile : string  := "Adder00.tvs"    -- vector file (vsim -gTestVectorFile=...)
+            );
 end entity TBAdder;
 
 architecture Test of TBAdder is
-    constant N  : natural := 64;
-    constant TestVectorFile : string := "Adder00.tvs";
-    constant PreStimTime    : time := 1 ns;
-    constant PostStimTime   : time := 10 ns;
+    constant PreStimTime    : time := 100 ns; -- 'X' on every input; longer than any delay, so every output goes X first
+    constant StableTime     : time := 20 ns;  -- outputs count as settled after this long with no event
+    constant Timeout        : time := 500 ns; -- give up waiting for the outputs to settle after this long
 
     -- Signals for the DUT ports
     signal TBA, TBB, TBS : std_logic_vector(N-1 downto 0);
@@ -25,6 +29,9 @@ architecture Test of TBAdder is
 
     -- Index in file
     signal TBMeasurementIndex : natural := 0;
+
+    -- Measured delays of the current test vector (shown in the wave window)
+    signal TBDelayS, TBDelayStatus : time := 0 ns;
 
     -- DUT as a component
     component Adder is
@@ -52,6 +59,15 @@ begin
         variable Level  : severity_level; -- Note when pass, error on FAIL
         variable OpenStatus : file_open_status; -- result of opening the vector file
         variable ok, LineOK : boolean;          -- 'good' flag from each read / whole line
+
+        -- Delay measurement variables
+        variable T0          : time; -- time the stimulus was applied
+        variable Elapsed     : time; -- time from T0 until outputs became stable
+        variable DelayS      : time; -- delay at S for this vector
+        variable DelayStatus : time; -- delay at Status (the later of Cout and Ovfl)
+        variable StatusLast  : time; -- time since the later of Cout/Ovfl last changed
+        variable WorstS, WorstStatus : time := 0 ns; -- largest delays so far
+        variable WorstSIndex, WorstStatusIndex : natural := 0; -- the vectors that caused largest delays
     begin
         -- Open the vector file; stop with a clear message if it is missing
         file_open(OpenStatus, VectorFile, TestVectorFile, read_mode);
@@ -59,10 +75,11 @@ begin
             report "Cannot open " & TestVectorFile & ": " & file_open_status'image(OpenStatus)
             severity failure;
 
-        -- Header of the test conditionss
+        -- Header of the test conditions
         report "TBAdder: N=" & integer'image(N) & ", vectors from " & TestVectorFile &
                ", PreStimTime=" & time'image(PreStimTime) &
-               ", PostStimTime=" & time'image(PostStimTime);
+               ", StableTime=" & time'image(StableTime) &
+               ", Timeout=" & time'image(Timeout);
         Measurement_Index := 1;
         Failures :=  0;
 
@@ -93,7 +110,37 @@ begin
             TBtrueS <= S_var;
             TBtrueCout <= Cout_var;
             TBtrueOvfl <= Ovfl_var;
-            wait for PostStimTime;
+            T0 := now;
+
+            -- Wait until no output has changed for StableTime, or give up at Timeout
+            loop
+                wait on TBS, TBCout, TBOvfl for StableTime;
+                exit when TBS'last_event >= StableTime and TBCout'last_event >= StableTime
+                          and TBOvfl'last_event >= StableTime;
+                exit when now - T0 >= Timeout;
+            end loop;
+            Elapsed := now - T0;
+            assert Elapsed < Timeout
+                report "Meas " & integer'image(Measurement_Index) & ": outputs did not settle within Timeout"
+                severity error;
+            
+            -- Delay = time from T0 to the last event on that output (0 if it had no event since T0)
+            if TBS'last_event < Elapsed then DelayS := Elapsed - TBS'last_event;
+            else DelayS := 0 ns; end if;
+            if TBCout'last_event < TBOvfl'last_event then StatusLast := TBCout'last_event;
+            else StatusLast := TBOvfl'last_event; end if;
+            if StatusLast < Elapsed then DelayStatus := Elapsed - StatusLast;
+            else DelayStatus := 0 ns; end if;
+            TBDelayS <= DelayS;
+            TBDelayStatus <= DelayStatus;
+
+            -- Keep the worst delays and the vectors that caused them
+            if DelayS > WorstS then
+                WorstS := DelayS;  WorstSIndex := Measurement_Index;
+            end if;
+            if DelayStatus > WorstStatus then
+                WorstStatus := DelayStatus;  WorstStatusIndex := Measurement_Index;
+            end if;
 
             -- Report
             if TBS = TBtrueS and TBCout = TBtrueCout and TBOvfl = TBtrueOvfl then
@@ -110,14 +157,18 @@ begin
                    " | expected S=" & to_hstring(S_var) &
                    " Cout=" & to_string(Cout_var) & " Ovfl=" & to_string(Ovfl_var) &
                    " | actual S=" & to_hstring(TBS) &
-                   " Cout=" & to_string(TBCout) & " Ovfl=" & to_string(TBOvfl)
-                severity Level;  
+                   " Cout=" & to_string(TBCout) & " Ovfl=" & to_string(TBOvfl) &
+                   " | delay S=" & time'image(DelayS) & " Status=" & time'image(DelayStatus)
+                severity Level;
 
             Measurement_Index := Measurement_Index + 1;
         end loop;
 
+        -- Worst-case delays with the vectors that caused them (CollectTiming.tcl reads this line)
         report "Simulation Completed: " & integer'image(Measurement_Index - 1) &
-               " measurements, " & integer'image(Failures) & " failures";
+               " measurements, " & integer'image(Failures) & " failures" &
+               " | worst S delay=" & time'image(WorstS) & " (meas " & integer'image(WorstSIndex) & ")" &
+               " | worst Status delay=" & time'image(WorstStatus) & " (meas " & integer'image(WorstStatusIndex) & ")";
         file_close(VectorFile);
         wait;
     end process MAIN;
