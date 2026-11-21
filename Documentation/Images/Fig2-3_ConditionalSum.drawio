@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TopLevel-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" value="Conditional Sum Adder - Top Level" vertex="1">
-          <mxGeometry height="30" width="1144" x="20" y="10" as="geometry" />
+          <mxGeometry height="30" width="1024" x="20" y="10" as="geometry" />
         </mxCell>
         <mxCell id="TopLevel-3" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="A" vertex="1">
           <mxGeometry height="20" width="36" x="20" y="100" as="geometry" />
@@ -98,7 +98,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TopLevel-24" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="Cout = c(N)" vertex="1">
-          <mxGeometry height="20" width="220" x="944" y="120" as="geometry" />
+          <mxGeometry height="20" width="100" x="944" y="120" as="geometry" />
         </mxCell>
         <mxCell id="TopLevel-25" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="c(N downto 1)" vertex="1">
           <mxGeometry height="20" width="130" x="645" y="110" as="geometry" />
@@ -130,7 +130,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TopLevel-32" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="S" vertex="1">
-          <mxGeometry height="20" width="220" x="944" y="260" as="geometry" />
+          <mxGeometry height="20" width="100" x="944" y="260" as="geometry" />
         </mxCell>
         <mxCell id="TopLevel-33" parent="1" style="shape=mxgraph.electrical.logic_gates.logic_gate;operation=xor;numInputs=2;html=1;fillColor=#FFFFFF;strokeColor=#000000;" value="" vertex="1">
           <mxGeometry height="60" width="90" x="800" y="330" as="geometry" />
@@ -160,7 +160,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TopLevel-39" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="Ovfl" vertex="1">
-          <mxGeometry height="20" width="220" x="944" y="350" as="geometry" />
+          <mxGeometry height="20" width="100" x="944" y="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
