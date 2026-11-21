@@ -32,6 +32,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== Ripple_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -40.727
+TNS   : -1548.420
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -36.818
+TNS   : -1404.740
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -20.147
+TNS   : -768.471
+
+------------------------------------------------------------
+
 ==================== Ripple_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:11:08 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -65,6 +84,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== Ripple_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -34.074
+TNS   : -1351.573
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -30.438
+TNS   : -1206.890
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -19.094
+TNS   : -763.116
+
+------------------------------------------------------------
 
 ==================== Ripple_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:11:46 2026
@@ -112,6 +150,25 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== Ripple_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -29.810
+TNS   : -1310.525
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -29.881
+TNS   : -1306.468
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -12.370
+TNS   : -555.332
+
+------------------------------------------------------------
+
 ==================== FastRipple_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:12:28 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -146,6 +203,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== FastRipple_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -11.025
+TNS   : -608.838
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -9.873
+TNS   : -544.673
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -5.653
+TNS   : -315.689
+
+------------------------------------------------------------
+
 ==================== FastRipple_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:13:19 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -179,6 +255,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== FastRipple_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -9.910
+TNS   : -540.615
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -8.711
+TNS   : -477.570
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -5.771
+TNS   : -317.850
+
+------------------------------------------------------------
 
 ==================== FastRipple_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:13:59 2026
@@ -226,6 +321,25 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== FastRipple_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -8.794
+TNS   : -522.368
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -8.532
+TNS   : -506.813
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.001
+TNS   : -240.940
+
+------------------------------------------------------------
+
 ==================== ConditionalSum_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:14:44 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -260,6 +374,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== ConditionalSum_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -25.563
+TNS   : -1116.828
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -23.320
+TNS   : -1016.250
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -12.724
+TNS   : -559.469
+
+------------------------------------------------------------
+
 ==================== ConditionalSum_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:15:32 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -293,6 +426,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSum_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -21.892
+TNS   : -960.911
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -19.512
+TNS   : -856.707
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -12.331
+TNS   : -543.596
+
+------------------------------------------------------------
 
 ==================== ConditionalSum_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:16:10 2026
@@ -340,6 +492,196 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== ConditionalSum_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -11.505
+TNS   : -638.404
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -11.331
+TNS   : -624.954
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -5.029
+TNS   : -283.428
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_CIV : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:10:40 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIV
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 513
+    Total combinational functions : 513
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSumKeep_CIV : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:11:08 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIV
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 513 / 114,480 ( < 1 % )
+    Total combinational functions : 513 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 195 / 529 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSumKeep_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -12.596
+TNS   : -730.975
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -11.293
+TNS   : -659.024
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.551
+TNS   : -376.072
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_CIVE30 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:11:30 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIVE30
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 513
+    Total combinational functions : 513
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSumKeep_CIVE30 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:11:48 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIVE30
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 513 / 28,848 ( 2 % )
+    Total combinational functions : 513 / 28,848 ( 2 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 195 / 329 ( 59 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSumKeep_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -10.649
+TNS   : -622.795
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -9.448
+TNS   : -552.992
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.239
+TNS   : -361.851
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_AII : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:12:06 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_AII
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 450
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== ConditionalSumKeep_AII : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:12:27 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_AII
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : 1 %
+    Combinational ALUTs : 450 / 36,100 ( 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 195 / 404 ( 48 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== ConditionalSumKeep_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -10.508
+TNS   : -621.722
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -10.358
+TNS   : -611.548
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.737
+TNS   : -282.222
+
+------------------------------------------------------------
+
 ==================== BlockLookahead_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:16:53 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -374,6 +716,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== BlockLookahead_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -13.268
+TNS   : -722.355
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -12.095
+TNS   : -658.667
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.747
+TNS   : -369.085
+
+------------------------------------------------------------
+
 ==================== BlockLookahead_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:17:40 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -407,6 +768,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== BlockLookahead_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -11.840
+TNS   : -652.112
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -10.502
+TNS   : -577.662
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.866
+TNS   : -380.150
+
+------------------------------------------------------------
 
 ==================== BlockLookahead_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:18:15 2026
@@ -454,6 +834,25 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== BlockLookahead_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -10.261
+TNS   : -582.669
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -10.126
+TNS   : -569.536
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.672
+TNS   : -265.595
+
+------------------------------------------------------------
+
 ==================== BrentKung_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:19:02 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -488,6 +887,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== BrentKung_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -12.645
+TNS   : -712.744
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -11.465
+TNS   : -645.557
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.504
+TNS   : -366.269
+
+------------------------------------------------------------
+
 ==================== BrentKung_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:19:47 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -521,6 +939,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== BrentKung_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -10.584
+TNS   : -616.621
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -9.351
+TNS   : -546.303
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.183
+TNS   : -359.874
+
+------------------------------------------------------------
 
 ==================== BrentKung_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:20:22 2026
@@ -568,6 +1005,25 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== BrentKung_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -9.943
+TNS   : -606.949
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -9.777
+TNS   : -593.852
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.508
+TNS   : -277.607
+
+------------------------------------------------------------
+
 ==================== KoggeStone_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:21:05 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -602,6 +1058,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== KoggeStone_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -12.424
+TNS   : -712.422
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -11.410
+TNS   : -645.504
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.468
+TNS   : -368.334
+
+------------------------------------------------------------
+
 ==================== KoggeStone_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:21:47 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -635,6 +1110,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== KoggeStone_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -9.460
+TNS   : -576.443
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -8.420
+TNS   : -512.456
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -5.500
+TNS   : -335.986
+
+------------------------------------------------------------
 
 ==================== KoggeStone_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:22:26 2026
@@ -682,6 +1176,25 @@ Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
 
+==================== KoggeStone_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -10.270
+TNS   : -618.364
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -10.027
+TNS   : -606.346
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.832
+TNS   : -285.940
+
+------------------------------------------------------------
+
 ==================== CarrySkip_CIV : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:23:09 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -716,6 +1229,25 @@ Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 
+==================== CarrySkip_CIV : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -43.032
+TNS   : -1651.442
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -39.637
+TNS   : -1516.221
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -21.338
+TNS   : -823.598
+
+------------------------------------------------------------
+
 ==================== CarrySkip_CIVE30 : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:23:55 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
@@ -749,6 +1281,25 @@ Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+
+==================== CarrySkip_CIVE30 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -36.017
+TNS   : -1438.232
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -32.153
+TNS   : -1284.770
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -20.107
+TNS   : -809.149
+
+------------------------------------------------------------
 
 ==================== CarrySkip_AII : map summary ====================
 Analysis & Synthesis Status : Successful - Fri Nov 20 23:24:29 2026
@@ -795,4 +1346,23 @@ Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
 Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
+
+==================== CarrySkip_AII : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -32.064
+TNS   : -1309.947
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -32.521
+TNS   : -1319.750
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -13.092
+TNS   : -547.711
+
+------------------------------------------------------------
 

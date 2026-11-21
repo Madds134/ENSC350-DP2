@@ -19,16 +19,23 @@
 #
 # Quartus Prime
 # Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-# Date created = 23:25:04  November 20, 2026
+# Date created = 11:12:37  November 21, 2026
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "20.1"
-DATE = "23:25:04  November 20, 2026"
+DATE = "11:12:37  November 21, 2026"
 
 # Revisions
 
 PROJECT_REVISION = "Ripple_CIV"
+PROJECT_REVISION = "ConditionalSumKeep_AII"
+PROJECT_REVISION = "ConditionalSumKeep_CIVE30"
+PROJECT_REVISION = "ConditionalSumKeep_CIV"
+PROJECT_REVISION = "ConditionalSum_AII"
+PROJECT_REVISION = "ConditionalSum_CIV"
+PROJECT_REVISION = "Ripple_AII"
+PROJECT_REVISION = "Ripple_CIVE30"
 PROJECT_REVISION = "CarrySkip_AII"
 PROJECT_REVISION = "CarrySkip_CIVE30"
 PROJECT_REVISION = "CarrySkip_CIV"
@@ -41,11 +48,7 @@ PROJECT_REVISION = "BrentKung_CIV"
 PROJECT_REVISION = "BlockLookahead_AII"
 PROJECT_REVISION = "BlockLookahead_CIVE30"
 PROJECT_REVISION = "BlockLookahead_CIV"
-PROJECT_REVISION = "ConditionalSum_AII"
 PROJECT_REVISION = "ConditionalSum_CIVE30"
-PROJECT_REVISION = "ConditionalSum_CIV"
 PROJECT_REVISION = "FastRipple_AII"
 PROJECT_REVISION = "FastRipple_CIVE30"
 PROJECT_REVISION = "FastRipple_CIV"
-PROJECT_REVISION = "Ripple_AII"
-PROJECT_REVISION = "Ripple_CIVE30"

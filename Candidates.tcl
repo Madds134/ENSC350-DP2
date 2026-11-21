@@ -17,6 +17,7 @@ set Topologies {
     {Ripple         {AdderBaseline.vhd}}
     {FastRipple     {AdderFastRipple.vhd}}
     {ConditionalSum {ConditionalSumCarry.vhd AdderConditionalSum.vhd}}
+    {ConditionalSumKeep {ConditionalSumCarry.vhd ConditionalSumCarryKeep.vhd AdderConditionalSumKeep.vhd}}
     {BlockLookahead {LookaheadCarryNet.vhd AdderBlockLookahead.vhd}}
     {BrentKung      {BLAN.vhd AdderBrentKung.vhd}}
     {KoggeStone     {BLAN.vhd BLANKoggeStone.vhd AdderKoggeStone.vhd}}

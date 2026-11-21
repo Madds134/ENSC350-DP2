@@ -1,0 +1,72 @@
+# === TSCarrySkip_CIV: CarrySkip_CIV.vho + CarrySkip_CIV_vhd.sdo, timing ===
+# vsim -t 1ps -voptargs="+acc" -sdfmax "/TBAdder/DUT=ModelSim/CarrySkip_CIV_vhd.sdo" work.TSCarrySkip_CIV 
+# Start time: 10:49:36 on Nov 21,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.tscarryskip_civ
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading work.tbadder(test)
+# Loading carryskip_civ.adder(structure)
+# ** Warning: (vsim-8713) Suspect default binding for component instance 'DUT'.
+# Entity has no generics at all; the component has generic:
+#           N
+#    Time: 0 ps  Iteration: 0  Instance: /TBAdder/DUT File: TBAdder.vhd Line: 49
+# Loading carryskip_civ.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from ModelSim/CarrySkip_CIV_vhd.sdo
+# Loading timing data from ModelSim/CarrySkip_CIV_vhd.sdo
+# ** Warning: Design size of 35093 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder File: TBAdder.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Note: TBAdder: N=64, vectors from Adder00.tvs, PreStimTime=100000 ps, StableTime=20000 ps, Timeout=500000 ps
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 1 PASS | A=0000000000000000 B=0000000000000000 Cin=0 | expected S=0000000000000000 Cout=0 Ovfl=0 | actual S=0000000000000000 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 129635 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 2 PASS | A=FFFFFFFFFFFFFFFF B=0000000000000000 Cin=0 | expected S=FFFFFFFFFFFFFFFF Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFFF Cout=0 Ovfl=0 | delay S=44094 ps Status=44850 ps
+#    Time: 294485 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 3 PASS | A=FFFFFFFFFFFFFFFF B=0000000000000000 Cin=1 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=21194 ps Status=21162 ps
+#    Time: 435679 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 4 PASS | A=7FFFFFFFFFFFFFFF B=0000000000000000 Cin=1 | expected S=8000000000000000 Cout=0 Ovfl=1 | actual S=8000000000000000 Cout=0 Ovfl=1 | delay S=21255 ps Status=21208 ps
+#    Time: 576934 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 5 PASS | A=8000000000000000 B=8000000000000000 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=1 | actual S=0000000000000000 Cout=1 Ovfl=1 | delay S=9635 ps Status=6160 ps
+#    Time: 706569 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 6 PASS | A=0000000000000001 B=FFFFFFFFFFFFFFFF Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=22015 ps Status=21983 ps
+#    Time: 848584 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 7 PASS | A=FFFFFFFFFFFFFFFF B=FFFFFFFFFFFFFFFF Cin=0 | expected S=FFFFFFFFFFFFFFFE Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFFE Cout=1 Ovfl=0 | delay S=9446 ps Status=6105 ps
+#    Time: 978030 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 8 PASS | A=0000000000000001 B=0000000000000003 Cin=0 | expected S=0000000000000004 Cout=0 Ovfl=0 | actual S=0000000000000004 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 1107665 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 9 PASS | A=0000000000000002 B=000000000000000E Cin=0 | expected S=0000000000000010 Cout=0 Ovfl=0 | actual S=0000000000000010 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 1237300 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 10 PASS | A=0000000000000008 B=00000000000000F8 Cin=0 | expected S=0000000000000100 Cout=0 Ovfl=0 | actual S=0000000000000100 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 1366935 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 11 PASS | A=0000000000000080 B=000000000000FF80 Cin=0 | expected S=0000000000010000 Cout=0 Ovfl=0 | actual S=0000000000010000 Cout=0 Ovfl=0 | delay S=10763 ps Status=6236 ps
+#    Time: 1497698 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 12 PASS | A=0000000000008000 B=00000000FFFF8000 Cin=0 | expected S=0000000100000000 Cout=0 Ovfl=0 | actual S=0000000100000000 Cout=0 Ovfl=0 | delay S=12330 ps Status=6236 ps
+#    Time: 1630028 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 13 PASS | A=0000000080000000 B=FFFFFFFF80000000 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=15853 ps Status=15821 ps
+#    Time: 1765881 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 14 PASS | A=0000000000000001 B=0000000000000000 Cin=1 | expected S=0000000000000002 Cout=0 Ovfl=0 | actual S=0000000000000002 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 1895516 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 15 PASS | A=000000000000FFFF B=0000000000000000 Cin=1 | expected S=0000000000010000 Cout=0 Ovfl=0 | actual S=0000000000010000 Cout=0 Ovfl=0 | delay S=11285 ps Status=6236 ps
+#    Time: 2026801 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 16 PASS | A=00000000FFFFFFFF B=0000000000000000 Cin=1 | expected S=0000000100000000 Cout=0 Ovfl=0 | actual S=0000000100000000 Cout=0 Ovfl=0 | delay S=14779 ps Status=6236 ps
+#    Time: 2161580 ps  Iteration: 0  Instance: /tbadder
+# ** Error: Meas 17 FAIL | A=0000000000000001 B=0000000000000001 Cin=0 | expected S=0000000000000003 Cout=0 Ovfl=0 | actual S=0000000000000002 Cout=0 Ovfl=0 | delay S=9635 ps Status=6236 ps
+#    Time: 2291215 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Simulation Completed: 17 measurements, 1 failures | worst S delay=44094 ps (meas 2) | worst Status delay=44850 ps (meas 2)
+#    Time: 2291215 ps  Iteration: 0  Instance: /tbadder
+# 0 ps
+# 2405776 ps
