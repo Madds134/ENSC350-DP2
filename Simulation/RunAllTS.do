@@ -10,6 +10,9 @@ do TSFastRipple_AII.do
 do TSConditionalSum_CIV.do
 do TSConditionalSum_CIVE30.do
 do TSConditionalSum_AII.do
+do TSConditionalSumKeep_CIV.do
+do TSConditionalSumKeep_CIVE30.do
+do TSConditionalSumKeep_AII.do
 do TSBlockLookahead_CIV.do
 do TSBlockLookahead_CIVE30.do
 do TSBlockLookahead_AII.do

@@ -60,3 +60,12 @@ configuration FSConditionalSum of TBAdder is
         end for;
     end for;
 end configuration FSConditionalSum;
+
+-- Functional of ConditionalSumKeep topology (carry network kept with 'keep')
+configuration FSConditionalSumKeep of TBAdder is
+    for Test
+        for DUT : Adder
+            use entity work.Adder(ConditionalSumKeep);
+        end for;
+    end for;
+end configuration FSConditionalSumKeep;

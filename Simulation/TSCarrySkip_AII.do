@@ -1,6 +1,6 @@
 # TSCarrySkip_AII.do
 # Timing verification of CarrySkip on EP2AGX45DF29C6: post-fit netlist with SDF delays
-# (CarrySkip_AII_vhd.sdo is Quartus's default, the slowest corner: slow 85C on Cyclone IV, slow 0C on Arria II)
+# (CarrySkip_AII_vhd.sdo is Quartus's default corner for the family: slow 85C on Cyclone IV, slow 0C on Arria II)
 
 # Close any simulation that is already running
 catch {quit -sim}

@@ -1,6 +1,6 @@
 # TSConditionalSum_CIVE30.do
 # Timing verification of ConditionalSum on EP4CE30F23C6: post-fit netlist with SDF delays
-# (ConditionalSum_CIVE30_vhd.sdo is Quartus's default, the slowest corner: slow 85C on Cyclone IV, slow 0C on Arria II)
+# (ConditionalSum_CIVE30_vhd.sdo is Quartus's default corner for the family: slow 85C on Cyclone IV, slow 0C on Arria II)
 
 # Close any simulation that is already running
 catch {quit -sim}

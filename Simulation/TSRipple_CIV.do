@@ -1,6 +1,6 @@
 # TSRipple_CIV.do
 # Timing verification of Ripple on EP4CE115F29C7: post-fit netlist with SDF delays
-# (Ripple_CIV_vhd.sdo is Quartus's default, the slowest corner: slow 85C on Cyclone IV, slow 0C on Arria II)
+# (Ripple_CIV_vhd.sdo is Quartus's default corner for the family: slow 85C on Cyclone IV, slow 0C on Arria II)
 
 # Close any simulation that is already running
 catch {quit -sim}

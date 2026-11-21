@@ -44,7 +44,7 @@ end configuration TS$Rev;
     WriteFile [file join $Here TS$Rev.do] \
 "# TS$Rev.do
 # Timing verification of $Topo on $Device: post-fit netlist with SDF delays
-# (${Rev}_vhd.sdo is Quartus's default, the slowest corner: slow 85C on Cyclone IV, slow 0C on Arria II)
+# (${Rev}_vhd.sdo is Quartus's default corner for the family: slow 85C on Cyclone IV, slow 0C on Arria II)
 
 # Close any simulation that is already running
 catch {quit -sim}

@@ -1,6 +1,6 @@
 # === TSRipple_AII: Ripple_AII.vho + Ripple_AII_vhd.sdo, timing ===
 # vsim -t 1ps -voptargs="+acc" -sdfmax "/TBAdder/DUT=ModelSim/Ripple_AII_vhd.sdo" work.TSRipple_AII 
-# Start time: 00:19:59 on Nov 21,2026
+# Start time: 10:47:36 on Nov 21,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -10,8 +10,6 @@
 # Loading arriaii.arriaii_atom_pack(body)
 # Loading arriaii.arriaii_components
 # Loading work.tsripple_aii
-# SDF 2020.1 Compiler 2020.02 Feb 28 2020
-# 
 # Loading work.tbadder(test)
 # Loading ripple_aii.adder(structure)
 # ** Warning: (vsim-8713) Suspect default binding for component instance 'DUT'.

@@ -1,0 +1,126 @@
+----------------
+; Command Info ;
+----------------
+Report Timing: Found 1 setup paths (1 violated).  Worst case slack is -11.331 
+
+Tcl Command:
+    report_timing -setup -file Documentation/OutputFiles/CriticalPath_ConditionalSum_AII.txt -npaths 1 -detail full_path
+
+Options:
+    -setup 
+    -npaths 1 
+    -detail full_path 
+    -file {Documentation/OutputFiles/CriticalPath_ConditionalSum_AII.txt} 
+
+Delay Model:
+    Slow 900mV 0C Model
+
++-----------------------------------------------------------------------------------------------------+
+; Summary of Paths                                                                                    ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -11.331 ; A[5]      ; S[63]   ; n/a          ; n/a         ; 1.000        ; 0.000      ; 12.331     ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+Path #1: Setup slack is -11.331 (VIOLATED)
+===============================================================================
++------------------------------------------+
+; Path Summary                             ;
++---------------------+--------------------+
+; Property            ; Value              ;
++---------------------+--------------------+
+; From Node           ; A[5]               ;
+; To Node             ; S[63]              ;
+; Launch Clock        ; n/a                ;
+; Latch Clock         ; n/a                ;
+; Max Delay Exception ; 1.000              ;
+; Data Arrival Time   ; 12.331             ;
+; Data Required Time  ; 1.000              ;
+; Slack               ; -11.331 (VIOLATED) ;
++---------------------+--------------------+
+
++-------------------------------------------------------------------------------------------------+
+; Statistics                                                                                      ;
++-------------------------------------+--------+-------+-------------+------------+-------+-------+
+; Property                            ; Value  ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++-------------------------------------+--------+-------+-------------+------------+-------+-------+
+; Setup Relationship (from Max Delay) ; 1.000  ;       ;             ;            ;       ;       ;
+; Clock Skew                          ; 0.000  ;       ;             ;            ;       ;       ;
+; Data Delay                          ; 12.331 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels              ;        ; 15    ;             ;            ;       ;       ;
+; Physical Delays                     ;        ;       ;             ;            ;       ;       ;
+;  Arrival Path                       ;        ;       ;             ;            ;       ;       ;
+;   Clock                             ;        ;       ;             ;            ;       ;       ;
+;    Clock Network (Lumped)           ;        ; 1     ; 0.000       ;            ; 0.000 ; 0.000 ;
+;   Data                              ;        ;       ;             ;            ;       ;       ;
+;    IC                               ;        ; 16    ; 5.824       ; 47         ; 0.000 ; 1.888 ;
+;    Cell                             ;        ; 17    ; 6.507       ; 53         ; 0.000 ; 2.377 ;
+;  Required Path                      ;        ;       ;             ;            ;       ;       ;
+;   Clock                             ;        ;       ;             ;            ;       ;       ;
+;    Clock Network (Lumped)           ;        ; 1     ; 0.000       ;            ; 0.000 ; 0.000 ;
++-------------------------------------+--------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                                                                             ;
++----------+---------+----+------+--------+----------------------+--------------------------------------------------------------------------------------------------------------+
+; Total    ; Incr    ; RF ; Type ; Fanout ; Location             ; Element                                                                                                      ;
++----------+---------+----+------+--------+----------------------+--------------------------------------------------------------------------------------------------------------+
+; 0.000    ; 0.000   ;    ;      ;        ;                      ; launch edge time                                                                                             ;
+; 0.000    ; 0.000   ;    ;      ;        ;                      ; clock path                                                                                                   ;
+;   0.000  ;   0.000 ; R  ;      ;        ;                      ; clock network delay                                                                                          ;
+; 0.000    ; 0.000   ; F  ; iExt ; 1      ; PIN_AC4              ; A[5]                                                                                                         ;
+; 12.331   ; 12.331  ;    ;      ;        ;                      ; data path                                                                                                    ;
+;   0.000  ;   0.000 ; FF ; IC   ; 1      ; IOIBUF_X59_Y7_N94    ; A[5]~input|i                                                                                                 ;
+;   0.615  ;   0.615 ; FF ; CELL ; 3      ; IOIBUF_X59_Y7_N94    ; A[5]~input|o                                                                                                 ;
+;   2.503  ;   1.888 ; FF ; IC   ; 1      ; LABCELL_X55_Y10_N4   ; CarryNetwork|\Recur:LowHalf|\Recur:LowHalf|\Recur:LowHalf|\Recur:HighHalf|\Recur:LowHalf|carry1[1]~0|dataa   ;
+;   3.014  ;   0.511 ; FR ; CELL ; 2      ; LABCELL_X55_Y10_N4   ; CarryNetwork|\Recur:LowHalf|\Recur:LowHalf|\Recur:LowHalf|\Recur:HighHalf|\Recur:LowHalf|carry1[1]~0|combout ;
+;   3.280  ;   0.266 ; RR ; IC   ; 1      ; MLABCELL_X54_Y10_N8  ; c[6]~2|datad                                                                                                 ;
+;   3.740  ;   0.460 ; RF ; CELL ; 1      ; MLABCELL_X54_Y10_N8  ; c[6]~2|combout                                                                                               ;
+;   3.916  ;   0.176 ; FF ; IC   ; 1      ; MLABCELL_X54_Y10_N38 ; c[10]~6|datae                                                                                                ;
+;   4.214  ;   0.298 ; FR ; CELL ; 6      ; MLABCELL_X54_Y10_N38 ; c[10]~6|combout                                                                                              ;
+;   4.389  ;   0.175 ; RR ; IC   ; 1      ; MLABCELL_X54_Y10_N12 ; c[16]~10|dataf                                                                                               ;
+;   4.505  ;   0.116 ; RF ; CELL ; 2      ; MLABCELL_X54_Y10_N12 ; c[16]~10|combout                                                                                             ;
+;   4.676  ;   0.171 ; FF ; IC   ; 1      ; MLABCELL_X54_Y10_N16 ; c[20]~13|datae                                                                                               ;
+;   4.955  ;   0.279 ; FR ; CELL ; 7      ; MLABCELL_X54_Y10_N16 ; c[20]~13|combout                                                                                             ;
+;   5.138  ;   0.183 ; RR ; IC   ; 1      ; MLABCELL_X54_Y10_N0  ; c[26]~17|dataf                                                                                               ;
+;   5.254  ;   0.116 ; RF ; CELL ; 2      ; MLABCELL_X54_Y10_N0  ; c[26]~17|combout                                                                                             ;
+;   5.459  ;   0.205 ; FF ; IC   ; 1      ; MLABCELL_X54_Y10_N34 ; c[30]~20DUPLICATE|datae                                                                                      ;
+;   5.757  ;   0.298 ; FR ; CELL ; 4      ; MLABCELL_X54_Y10_N34 ; c[30]~20DUPLICATE|combout                                                                                    ;
+;   6.043  ;   0.286 ; RR ; IC   ; 1      ; LABCELL_X53_Y10_N18  ; c[36]~24|dataf                                                                                               ;
+;   6.153  ;   0.110 ; RF ; CELL ; 2      ; LABCELL_X53_Y10_N18  ; c[36]~24|combout                                                                                             ;
+;   6.328  ;   0.175 ; FF ; IC   ; 1      ; LABCELL_X53_Y10_N6   ; c[40]~27|datae                                                                                               ;
+;   6.626  ;   0.298 ; FR ; CELL ; 7      ; LABCELL_X53_Y10_N6   ; c[40]~27|combout                                                                                             ;
+;   6.820  ;   0.194 ; RR ; IC   ; 1      ; LABCELL_X53_Y10_N30  ; c[46]~31DUPLICATE|dataf                                                                                      ;
+;   6.930  ;   0.110 ; RF ; CELL ; 2      ; LABCELL_X53_Y10_N30  ; c[46]~31DUPLICATE|combout                                                                                    ;
+;   7.102  ;   0.172 ; FF ; IC   ; 1      ; LABCELL_X53_Y10_N24  ; c[50]~34|datae                                                                                               ;
+;   7.381  ;   0.279 ; FR ; CELL ; 10     ; LABCELL_X53_Y10_N24  ; c[50]~34|combout                                                                                             ;
+;   7.560  ;   0.179 ; RR ; IC   ; 1      ; LABCELL_X53_Y10_N22  ; c[56]~36DUPLICATE|dataf                                                                                      ;
+;   7.670  ;   0.110 ; RF ; CELL ; 2      ; LABCELL_X53_Y10_N22  ; c[56]~36DUPLICATE|combout                                                                                    ;
+;   7.848  ;   0.178 ; FF ; IC   ; 1      ; LABCELL_X53_Y10_N36  ; c[60]~39|datae                                                                                               ;
+;   8.127  ;   0.279 ; FR ; CELL ; 6      ; LABCELL_X53_Y10_N36  ; c[60]~39|combout                                                                                             ;
+;   9.142  ;   1.015 ; RR ; IC   ; 1      ; LABCELL_X53_Y2_N32   ; S~61|datae                                                                                                   ;
+;   9.393  ;   0.251 ; RF ; CELL ; 1      ; LABCELL_X53_Y2_N32   ; S~61|combout                                                                                                 ;
+;   9.954  ;   0.561 ; FF ; IC   ; 1      ; IOOBUF_X54_Y0_N36    ; S[63]~output|i                                                                                               ;
+;   12.331 ;   2.377 ; FF ; CELL ; 1      ; IOOBUF_X54_Y0_N36    ; S[63]~output|o                                                                                               ;
+;   12.331 ;   0.000 ; FF ; CELL ; 0      ; PIN_AC6              ; S[63]                                                                                                        ;
++----------+---------+----+------+--------+----------------------+--------------------------------------------------------------------------------------------------------------+
+
++-------------------------------------------------------------------------+
+; Data Required Path                                                      ;
++---------+---------+----+------+--------+----------+---------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location ; Element             ;
++---------+---------+----+------+--------+----------+---------------------+
+; 1.000   ; 1.000   ;    ;      ;        ;          ; latch edge time     ;
+; 1.000   ; 0.000   ;    ;      ;        ;          ; clock path          ;
+;   1.000 ;   0.000 ; R  ;      ;        ;          ; clock network delay ;
+; 1.000   ; 0.000   ; F  ; oExt ; 0      ; PIN_AC6  ; S[63]               ;
++---------+---------+----+------+--------+----------+---------------------+
+
+----------------------------
+; Extra Fitter Information ;
+----------------------------
+HTML report is unavailable in plain text report export.
+
+

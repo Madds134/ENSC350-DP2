@@ -8,6 +8,8 @@ vcom -2008 -work work ../SourceCode/AdderBaseline.vhd
 vcom -2008 -work work ../SourceCode/AdderFastRipple.vhd
 vcom -2008 -work work ../SourceCode/ConditionalSumCarry.vhd
 vcom -2008 -work work ../SourceCode/AdderConditionalSum.vhd
+vcom -2008 -work work ../SourceCode/ConditionalSumCarryKeep.vhd
+vcom -2008 -work work ../SourceCode/AdderConditionalSumKeep.vhd
 vcom -2008 -work work ../SourceCode/LookaheadCarryNet.vhd
 vcom -2008 -work work ../SourceCode/AdderBlockLookahead.vhd
 vcom -2008 -work work ../SourceCode/BLAN.vhd

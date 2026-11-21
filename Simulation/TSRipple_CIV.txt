@@ -1,6 +1,6 @@
 # === TSRipple_CIV: Ripple_CIV.vho + Ripple_CIV_vhd.sdo, timing ===
 # vsim -t 1ps -voptargs="+acc" -sdfmax "/TBAdder/DUT=ModelSim/Ripple_CIV_vhd.sdo" work.TSRipple_CIV 
-# Start time: 00:17:36 on Nov 21,2026
+# Start time: 10:47:24 on Nov 21,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -10,8 +10,6 @@
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
 # Loading work.tsripple_civ
-# SDF 2020.1 Compiler 2020.02 Feb 28 2020
-# 
 # Loading work.tbadder(test)
 # Loading ripple_civ.adder(structure)
 # ** Warning: (vsim-8713) Suspect default binding for component instance 'DUT'.

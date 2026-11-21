@@ -9,12 +9,14 @@ file mkdir $OutDir
 # Convert a VHDL time image such as "41727 ps" or "41.727 ns" to ns
 proc ToNs {Value Unit} {
     switch -- $Unit {
-        fs { return [expr {$Value / 1.0e6}] }
-        ps { return [expr {$Value / 1.0e3}] }
-        ns { return [expr {$Value * 1.0}] }
-        us { return [expr {$Value * 1.0e3}] }
+        fs { set Ns [expr {$Value / 1.0e6}] }
+        ps { set Ns [expr {$Value / 1.0e3}] }
+        ns { set Ns [expr {$Value * 1.0}] }
+        us { set Ns [expr {$Value * 1.0e3}] }
         default { return "" }
     }
+    # 3 decimals = 1 ps, the simulation's time resolution
+    return [format %.3f $Ns]
 }
 
 set Csv [open [file join $OutDir TimingResults.csv] w]
