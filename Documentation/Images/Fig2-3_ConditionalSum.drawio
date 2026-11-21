@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TopLevel-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" value="Conditional Sum Adder (AdderConditionalSum.vhd)" vertex="1">
+        <mxCell id="TopLevel-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" value="Conditional Sum Adder - Top Level" vertex="1">
           <mxGeometry height="30" width="880" x="60" y="10" as="geometry" />
         </mxCell>
         <mxCell id="TopLevel-3" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="A" vertex="1">
@@ -170,7 +170,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CarryNetwork-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" value="&amp;nbsp;(ConditionalSumCarry.vhd), N &amp;gt; 1" vertex="1">
+        <mxCell id="CarryNetwork-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" value="Conditional Sum Adder - Carry Network" vertex="1">
           <mxGeometry height="30" width="780" x="40" y="5" as="geometry" />
         </mxCell>
         <mxCell id="CarryNetwork-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;" value="HighHalf&lt;br&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;ConditionalSumCarry (N/2)&lt;/font&gt;" vertex="1">
