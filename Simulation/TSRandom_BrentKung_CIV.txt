@@ -1,0 +1,1033 @@
+# === TSRandom_BrentKung_CIV: BrentKung_CIV.vho + BrentKung_CIV_vhd.sdo, timing ===
+# vsim -t 1ps -voptargs="+acc" -sdfmax "/TBAdder/DUT=ModelSim/BrentKung_CIV_vhd.sdo" work.TSBrentKung_CIV -gTestVectorFile=AdderRandom.tvs 
+# Start time: 17:39:34 on Nov 21,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.tsbrentkung_civ
+# Loading work.tbadder(test)
+# Loading brentkung_civ.adder(structure)
+# ** Warning: (vsim-8713) Suspect default binding for component instance 'DUT'.
+# Entity has no generics at all; the component has generic:
+#           N
+#    Time: 0 ps  Iteration: 0  Instance: /TBAdder/DUT File: TBAdder.vhd Line: 49
+# Loading brentkung_civ.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from ModelSim/BrentKung_CIV_vhd.sdo
+# Loading timing data from ModelSim/BrentKung_CIV_vhd.sdo
+# ** Warning: Design size of 44645 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder File: TBAdder.vhd
+# ** Note: TBAdder: N=64, vectors from AdderRandom.tvs, PreStimTime=100000 ps, StableTime=20000 ps, Timeout=500000 ps
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 1 PASS | A=8000000000000002 B=7FFFFFFFFFFFFFFC Cin=0 | expected S=FFFFFFFFFFFFFFFE Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFFE Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 133181 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 2 PASS | A=095E15C3E7B4857C B=733FD5EA632D3F6D Cin=1 | expected S=7C9DEBAE4AE1C4EA Cout=0 Ovfl=0 | actual S=7C9DEBAE4AE1C4EA Cout=0 Ovfl=0 | delay S=11054 ps Status=9488 ps
+#    Time: 264235 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 3 PASS | A=11DB903AD3B53D88 B=18188824D1EE09D0 Cin=0 | expected S=29F4185FA5A34758 Cout=0 Ovfl=0 | actual S=29F4185FA5A34758 Cout=0 Ovfl=0 | delay S=11316 ps Status=8630 ps
+#    Time: 395551 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 4 PASS | A=0000000000000007 B=8000000000000005 Cin=1 | expected S=800000000000000D Cout=0 Ovfl=0 | actual S=800000000000000D Cout=0 Ovfl=0 | delay S=11054 ps Status=8647 ps
+#    Time: 526605 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 5 PASS | A=10B1466E5EE1E8FC B=E46C368FB031B4D2 Cin=1 | expected S=F51D7CFE0F139DCF Cout=0 Ovfl=0 | actual S=F51D7CFE0F139DCF Cout=0 Ovfl=0 | delay S=11421 ps Status=9534 ps
+#    Time: 658026 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 6 PASS | A=C3609F46DE343DF5 B=DAD2B618CF9C150D Cin=1 | expected S=9E33555FADD05303 Cout=1 Ovfl=0 | actual S=9E33555FADD05303 Cout=1 Ovfl=0 | delay S=11323 ps Status=8385 ps
+#    Time: 789349 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 7 PASS | A=B00F4396F51A3DA6 B=8843A8CF8E20069B Cin=0 | expected S=3852EC66833A4441 Cout=1 Ovfl=1 | actual S=3852EC66833A4441 Cout=1 Ovfl=1 | delay S=11066 ps Status=8689 ps
+#    Time: 920415 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 8 PASS | A=553E4CCB2DB7F3D3 B=AAC1B334D2480C2D Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 1053579 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 9 PASS | A=0ACDE9B7FFF71AFB B=F53216480008E819 Cin=1 | expected S=0000000000000315 Cout=1 Ovfl=0 | actual S=0000000000000315 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 1186903 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 10 PASS | A=1DC040A2C9536AA9 B=E23FBF5D36AC955C Cin=1 | expected S=0000000000000006 Cout=1 Ovfl=0 | actual S=0000000000000006 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 1320067 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 11 PASS | A=EB5CA4B8E6930EFE B=14A35B47196CF103 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 1453391 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 12 PASS | A=198F0161A381B958 B=E670FE9E5C7E98C0 Cin=0 | expected S=0000000000005218 Cout=1 Ovfl=0 | actual S=0000000000005218 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 1586555 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 13 PASS | A=3B6CCEFDBE82FF93 B=C4933102417D007E Cin=1 | expected S=0000000000000012 Cout=1 Ovfl=0 | actual S=0000000000000012 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 1719879 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 14 PASS | A=30926987E3F5B02C B=A68BADB6DC7BEE5D Cin=1 | expected S=D71E173EC0719E8A Cout=0 Ovfl=0 | actual S=D71E173EC0719E8A Cout=0 Ovfl=0 | delay S=10937 ps Status=8647 ps
+#    Time: 1850816 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 15 PASS | A=7C8ACF06C093307D B=837530F93F6CCF87 Cin=0 | expected S=0000000000000004 Cout=1 Ovfl=0 | actual S=0000000000000004 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 1983980 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 16 PASS | A=7FFFFFFFFFFFFFF6 B=FFFFFFFFFFFFFFE6 Cin=0 | expected S=7FFFFFFFFFFFFFDC Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFDC Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 2115112 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 17 PASS | A=377038C86CF39BD3 B=1406C737930C66DC Cin=0 | expected S=4B770000000002AF Cout=0 Ovfl=0 | actual S=4B770000000002AF Cout=0 Ovfl=0 | delay S=13164 ps Status=8630 ps
+#    Time: 2248276 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 18 PASS | A=8DF1F2ACC8ADD057 B=B5B07EE3375B2895 Cin=0 | expected S=43A271900008F8EC Cout=1 Ovfl=1 | actual S=43A271900008F8EC Cout=1 Ovfl=1 | delay S=11879 ps Status=8689 ps
+#    Time: 2380155 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 19 PASS | A=A25A0C12DB2A28ED B=5DA5F3ED24D5D714 Cin=1 | expected S=0000000000000002 Cout=1 Ovfl=0 | actual S=0000000000000002 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 2513479 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 20 PASS | A=F07774CBFEFFFD2A B=5BE0103416E970AD Cin=0 | expected S=4C57850015E96DD7 Cout=1 Ovfl=0 | actual S=4C57850015E96DD7 Cout=1 Ovfl=0 | delay S=12367 ps Status=8267 ps
+#    Time: 2645846 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 21 PASS | A=6B5DCB30B63BECEC B=94A234CF49C41771 Cin=1 | expected S=000000000000045E Cout=1 Ovfl=0 | actual S=000000000000045E Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 2779170 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 22 PASS | A=4E0548F0AFDCC30B B=50D0871BDD65E247 Cin=1 | expected S=9ED5D00C8D42A553 Cout=0 Ovfl=1 | actual S=9ED5D00C8D42A553 Cout=0 Ovfl=1 | delay S=11101 ps Status=8745 ps
+#    Time: 2910271 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 23 PASS | A=8000000000000006 B=0000000000000000 Cin=1 | expected S=8000000000000007 Cout=0 Ovfl=0 | actual S=8000000000000007 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 3041325 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 24 PASS | A=1559E54DC59B127A B=A96B4AB23A65EB02 Cin=0 | expected S=BEC530000000FD7C Cout=0 Ovfl=0 | actual S=BEC530000000FD7C Cout=0 Ovfl=0 | delay S=12757 ps Status=8647 ps
+#    Time: 3174082 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 25 PASS | A=8000000000000000 B=FFFFFFFFFFFFFFF2 Cin=0 | expected S=7FFFFFFFFFFFFFF2 Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFF2 Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 3307263 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 26 PASS | A=2E43BCDED43C3CD7 B=D1BC43212BC3C32A Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 3440587 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 27 PASS | A=7A4D2AF949BBBEA2 B=9E59C0054584FE98 Cin=1 | expected S=18A6EAFE8F40BD3B Cout=1 Ovfl=0 | actual S=18A6EAFE8F40BD3B Cout=1 Ovfl=0 | delay S=11097 ps Status=8696 ps
+#    Time: 3571684 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 28 PASS | A=E3459CE12EE16FE9 B=81209CC19A4AD1B3 Cin=1 | expected S=646639A2C92C419D Cout=1 Ovfl=1 | actual S=646639A2C92C419D Cout=1 Ovfl=1 | delay S=11054 ps Status=9547 ps
+#    Time: 3702738 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 29 PASS | A=33E1BFCB6C78A078 B=CC1E403493875F91 Cin=0 | expected S=0000000000000009 Cout=1 Ovfl=0 | actual S=0000000000000009 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 3835821 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 30 PASS | A=21AB442240E9C807 B=DE54BBDDBF1637FB Cin=1 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 3968904 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 31 PASS | A=8000000000000006 B=0000000000000006 Cin=1 | expected S=800000000000000D Cout=0 Ovfl=0 | actual S=800000000000000D Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 4099958 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 32 PASS | A=FDAFA883E0C6B8A0 B=A197E30C2171FE3A Cin=0 | expected S=9F478B900238B6DA Cout=1 Ovfl=0 | actual S=9F478B900238B6DA Cout=1 Ovfl=0 | delay S=11382 ps Status=8334 ps
+#    Time: 4231340 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 33 PASS | A=5C4DA662DA018DE5 B=D15AAEDC73A27B5D Cin=0 | expected S=2DA8553F4DA40942 Cout=1 Ovfl=0 | actual S=2DA8553F4DA40942 Cout=1 Ovfl=0 | delay S=10937 ps Status=8674 ps
+#    Time: 4362277 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 34 PASS | A=800000000000000D B=0000000000000005 Cin=0 | expected S=8000000000000012 Cout=0 Ovfl=0 | actual S=8000000000000012 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 4493331 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 35 PASS | A=4058D3894ADE0878 B=CD6030557D7AC691 Cin=0 | expected S=0DB903DEC858CF09 Cout=1 Ovfl=0 | actual S=0DB903DEC858CF09 Cout=1 Ovfl=0 | delay S=11220 ps Status=8674 ps
+#    Time: 4624551 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 36 PASS | A=CC02BB74E6078DAE B=26FD448B19FB835D Cin=1 | expected S=F30000000003110C Cout=0 Ovfl=0 | actual S=F30000000003110C Cout=0 Ovfl=0 | delay S=13324 ps Status=9639 ps
+#    Time: 4757875 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 37 PASS | A=7E431FC023C0410A B=894EBDFB3331BA7E Cin=1 | expected S=0791DDBB56F1FB89 Cout=1 Ovfl=0 | actual S=0791DDBB56F1FB89 Cout=1 Ovfl=0 | delay S=11043 ps Status=9850 ps
+#    Time: 4888918 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 38 PASS | A=FE3E54934F1067F3 B=E713B9748A3AF95E Cin=1 | expected S=E5520E07D94B6152 Cout=1 Ovfl=0 | actual S=E5520E07D94B6152 Cout=1 Ovfl=0 | delay S=11101 ps Status=8334 ps
+#    Time: 5020019 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 39 PASS | A=A4C8D1CA1F98FCFB B=5B372E35E0670307 Cin=1 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 5153102 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 40 PASS | A=67F8A511453EDF87 B=C96A8B03E5AEF5DC Cin=1 | expected S=316330152AEDD564 Cout=1 Ovfl=0 | actual S=316330152AEDD564 Cout=1 Ovfl=0 | delay S=11097 ps Status=8674 ps
+#    Time: 5284199 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 41 PASS | A=2CF34795A07C274F B=D30CB86A5F83D8B1 Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 5417523 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 42 PASS | A=C9DA268CCE1D0196 B=3625D97331E2FE6D Cin=1 | expected S=0000000000000004 Cout=1 Ovfl=0 | actual S=0000000000000004 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 5550606 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 43 PASS | A=220D4365439431F7 B=776AFD5CB3E2502D Cin=1 | expected S=997840C1F7768225 Cout=0 Ovfl=1 | actual S=997840C1F7768225 Cout=0 Ovfl=1 | delay S=11091 ps Status=8745 ps
+#    Time: 5681697 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 44 PASS | A=7FFFFFFFFFFFFFFD B=0000000000000012 Cin=0 | expected S=800000000000000F Cout=0 Ovfl=1 | actual S=800000000000000F Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 5815021 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 45 PASS | A=E13C4A35E6C798B5 B=05890220FDF57589 Cin=1 | expected S=E6C54C56E4BD0E3F Cout=0 Ovfl=0 | actual S=E6C54C56E4BD0E3F Cout=0 Ovfl=0 | delay S=11097 ps Status=9534 ps
+#    Time: 5946118 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 46 PASS | A=0D208CA73CA4B0EE B=AE3A7358C35B7C70 Cin=0 | expected S=BB5B000000002D5E Cout=0 Ovfl=0 | actual S=BB5B000000002D5E Cout=0 Ovfl=0 | delay S=13086 ps Status=8647 ps
+#    Time: 6079204 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 47 PASS | A=024F9D355D92979C B=FDB062CAA26D6868 Cin=1 | expected S=0000000000000005 Cout=1 Ovfl=0 | actual S=0000000000000005 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 6212528 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 48 PASS | A=E129D1549BAD0F1E B=D4934F695FB8A2FA Cin=1 | expected S=B5BD20BDFB65B219 Cout=1 Ovfl=0 | actual S=B5BD20BDFB65B219 Cout=1 Ovfl=0 | delay S=11124 ps Status=8385 ps
+#    Time: 6343652 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 49 PASS | A=06095B25B61B772B B=F9F6A4DA49E489F9 Cin=0 | expected S=0000000000000124 Cout=1 Ovfl=0 | actual S=0000000000000124 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 6476735 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 50 PASS | A=76AC3214D6D4DF1F B=6E78B15776634965 Cin=0 | expected S=E524E36C4D382884 Cout=0 Ovfl=1 | actual S=E524E36C4D382884 Cout=0 Ovfl=1 | delay S=11217 ps Status=8745 ps
+#    Time: 6607952 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 51 PASS | A=FFFFFFFFFFFFFFFA B=FFFFFFFFFFFFFFFE Cin=0 | expected S=FFFFFFFFFFFFFFF8 Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFF8 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 6739084 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 52 PASS | A=D98910C5532CF6DE B=6829FB7FB6BD508C Cin=0 | expected S=41B30C4509EA476A Cout=1 Ovfl=0 | actual S=41B30C4509EA476A Cout=1 Ovfl=0 | delay S=10906 ps Status=8330 ps
+#    Time: 6869990 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 53 PASS | A=2B47FECBD11D2FC5 B=D4B801342EE2DA32 Cin=1 | expected S=00000000000009F8 Cout=1 Ovfl=0 | actual S=00000000000009F8 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 7003073 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 54 PASS | A=E68278144E570B10 B=BED6F2014ADEA7C9 Cin=0 | expected S=A5596A159935B2D9 Cout=1 Ovfl=0 | actual S=A5596A159935B2D9 Cout=1 Ovfl=0 | delay S=11097 ps Status=8267 ps
+#    Time: 7134170 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 55 PASS | A=A733D01F57BC6ED3 B=58CC2FE0A84391D1 Cin=0 | expected S=00000000000000A4 Cout=1 Ovfl=0 | actual S=00000000000000A4 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 7267494 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 56 PASS | A=0AC3269EDDB71F02 B=F53CD9612248E4A2 Cin=0 | expected S=00000000000003A4 Cout=1 Ovfl=0 | actual S=00000000000003A4 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 7400818 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 57 PASS | A=7DBC376ABC7C2F8A B=D197236AAF8409B9 Cin=0 | expected S=4F535AD56C003943 Cout=1 Ovfl=0 | actual S=4F535AD56C003943 Cout=1 Ovfl=0 | delay S=11085 ps Status=8674 ps
+#    Time: 7531903 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 58 PASS | A=E7E3EB0861C3B1FC B=181C14F79E3C4EB0 Cin=0 | expected S=00000000000000AC Cout=1 Ovfl=0 | actual S=00000000000000AC Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 7665067 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 59 PASS | A=9988517D98AE2690 B=B3409F9A7B6E698E Cin=0 | expected S=4CC8F118141C901E Cout=1 Ovfl=1 | actual S=4CC8F118141C901E Cout=1 Ovfl=1 | delay S=11132 ps Status=8689 ps
+#    Time: 7796199 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 60 PASS | A=820DB4B6E1836F9B B=7DF24B491E7CC6D2 Cin=1 | expected S=000000000000366E Cout=1 Ovfl=0 | actual S=000000000000366E Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 7929523 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 61 PASS | A=AEEAF7B3386F8C08 B=2B5ABA464D65ADDF Cin=1 | expected S=DA45B1F985D539E8 Cout=0 Ovfl=0 | actual S=DA45B1F985D539E8 Cout=0 Ovfl=0 | delay S=11158 ps Status=8630 ps
+#    Time: 8060681 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 62 PASS | A=9EF1D049B6D80FEB B=610E2FB64927F0C9 Cin=0 | expected S=00000000000000B4 Cout=1 Ovfl=0 | actual S=00000000000000B4 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 8193764 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 63 PASS | A=2E0F598C042ADDC1 B=D1F0A673FBD52E5D Cin=0 | expected S=0000000000000C1E Cout=1 Ovfl=0 | actual S=0000000000000C1E Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 8326847 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 64 PASS | A=42D7A1C8A2FC4D06 B=3313A7758F9B42AA Cin=0 | expected S=75EB493E32978FB0 Cout=0 Ovfl=0 | actual S=75EB493E32978FB0 Cout=0 Ovfl=0 | delay S=11789 ps Status=9488 ps
+#    Time: 8458636 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 65 PASS | A=72F9C1934BE780E7 B=4D932C2EDA8C8ECC Cin=0 | expected S=C08CEDC226740FB3 Cout=0 Ovfl=1 | actual S=C08CEDC226740FB3 Cout=0 Ovfl=1 | delay S=11221 ps Status=8745 ps
+#    Time: 8589857 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 66 PASS | A=437FD91F8CF3672D B=BC8026E0730C98D3 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 8723181 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 67 PASS | A=FFFFFFFFFFFFFFF6 B=0000000000000013 Cin=0 | expected S=0000000000000009 Cout=1 Ovfl=0 | actual S=0000000000000009 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 8856505 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 68 PASS | A=6C193856BFC8FE8B B=CF888677628AAAC1 Cin=0 | expected S=3BA1BECE2253A94C Cout=1 Ovfl=0 | actual S=3BA1BECE2253A94C Cout=1 Ovfl=0 | delay S=11338 ps Status=8674 ps
+#    Time: 8987843 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 69 PASS | A=1B492A9BA629858C B=51C48A908E4CA5E5 Cin=0 | expected S=6D0DB52C34762B71 Cout=0 Ovfl=0 | actual S=6D0DB52C34762B71 Cout=0 Ovfl=0 | delay S=11236 ps Status=9488 ps
+#    Time: 9119079 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 70 PASS | A=800000000000000F B=7FFFFFFFFFFFFFF2 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 9252243 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 71 PASS | A=B3A4F3078DA566D6 B=E88FB65C10D56308 Cin=0 | expected S=9C34A9639E7AC9DE Cout=1 Ovfl=0 | actual S=9C34A9639E7AC9DE Cout=1 Ovfl=0 | delay S=10906 ps Status=8334 ps
+#    Time: 9383149 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 72 PASS | A=A16FB1D4FE3596B6 B=5E904E2B01CA6950 Cin=0 | expected S=0000000000000006 Cout=1 Ovfl=0 | actual S=0000000000000006 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 9516473 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 73 PASS | A=FFFFFFFFFFFFFFF4 B=7FFFFFFFFFFFFFF1 Cin=1 | expected S=7FFFFFFFFFFFFFE6 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFE6 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 9647605 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 74 PASS | A=34CCDF457D0D6B39 B=524D138605A779F7 Cin=1 | expected S=8719F2CB82B4E531 Cout=0 Ovfl=1 | actual S=8719F2CB82B4E531 Cout=0 Ovfl=1 | delay S=11054 ps Status=8745 ps
+#    Time: 9778659 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 75 PASS | A=C87B58BD43609EF2 B=7DEB50571000B854 Cin=1 | expected S=4666A91453615747 Cout=1 Ovfl=0 | actual S=4666A91453615747 Cout=1 Ovfl=0 | delay S=11132 ps Status=8385 ps
+#    Time: 9909791 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 76 PASS | A=A88DC866E961C7A6 B=57723799169E3867 Cin=0 | expected S=000000000000000D Cout=1 Ovfl=0 | actual S=000000000000000D Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 10042955 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 77 PASS | A=2B8D68AFDB69ACBA B=D472975024965BF7 Cin=1 | expected S=00000000000008B2 Cout=1 Ovfl=0 | actual S=00000000000008B2 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 10176038 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 78 PASS | A=8553D16343B828EE B=E2748194839C8A14 Cin=1 | expected S=67C852F7C754B303 Cout=1 Ovfl=1 | actual S=67C852F7C754B303 Cout=1 Ovfl=1 | delay S=10937 ps Status=9565 ps
+#    Time: 10306975 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 79 PASS | A=79CD783AB4787B4E B=FDCEF3192144B62A Cin=0 | expected S=779C6B53D5BD3178 Cout=1 Ovfl=0 | actual S=779C6B53D5BD3178 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 10438107 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 80 PASS | A=4418622ACFB635EC B=BBE79DD53049DF1D Cin=1 | expected S=000000000000150A Cout=1 Ovfl=0 | actual S=000000000000150A Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 10571271 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 81 PASS | A=F7FC1DB6467594B8 B=CF835649349272F1 Cin=0 | expected S=C77F73FF7B0807A9 Cout=1 Ovfl=0 | actual S=C77F73FF7B0807A9 Cout=1 Ovfl=0 | delay S=11825 ps Status=8330 ps
+#    Time: 10703096 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 82 PASS | A=E250A9E9CD0AAEEA B=863010165938CC34 Cin=1 | expected S=6880BA0026437B1F Cout=1 Ovfl=1 | actual S=6880BA0026437B1F Cout=1 Ovfl=1 | delay S=12630 ps Status=9565 ps
+#    Time: 10835726 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 83 PASS | A=EAC227CC0FCB6D74 B=ED8A22971B24FEED Cin=1 | expected S=D84C4A632AF06C62 Cout=1 Ovfl=0 | actual S=D84C4A632AF06C62 Cout=1 Ovfl=0 | delay S=10906 ps Status=8334 ps
+#    Time: 10966632 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 84 PASS | A=D8643A329E81C329 B=B2AE862CA42E3DAB Cin=1 | expected S=8B12C05F42B000D5 Cout=1 Ovfl=0 | actual S=8B12C05F42B000D5 Cout=1 Ovfl=0 | delay S=11097 ps Status=8267 ps
+#    Time: 11097729 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 85 PASS | A=2F47F5C7BED98543 B=806A140C09FA13BB Cin=0 | expected S=AFB209D3C8D398FE Cout=0 Ovfl=0 | actual S=AFB209D3C8D398FE Cout=0 Ovfl=0 | delay S=11124 ps Status=8647 ps
+#    Time: 11228853 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 86 PASS | A=6B571D369CFCF5B9 B=94A8E2C963030CA9 Cin=0 | expected S=0000000000000262 Cout=1 Ovfl=0 | actual S=0000000000000262 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 11362177 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 87 PASS | A=EBD7E54BDBCF925D B=8A89CEB6C36FE0A7 Cin=0 | expected S=7661B4029F3F7304 Cout=1 Ovfl=1 | actual S=7661B4029F3F7304 Cout=1 Ovfl=1 | delay S=10906 ps Status=9946 ps
+#    Time: 11493083 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 88 PASS | A=870726BBBF854271 B=874C9E785CB3887D Cin=0 | expected S=0E53C5341C38CAEE Cout=1 Ovfl=1 | actual S=0E53C5341C38CAEE Cout=1 Ovfl=1 | delay S=11324 ps Status=8689 ps
+#    Time: 11624407 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 89 PASS | A=EAB5D454DF360426 B=5590038437E8704D Cin=1 | expected S=4045D7D9171E7474 Cout=1 Ovfl=0 | actual S=4045D7D9171E7474 Cout=1 Ovfl=0 | delay S=11140 ps Status=8385 ps
+#    Time: 11755547 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 90 PASS | A=F5F9084D5E9670FC B=9DC7133E9DDB5E84 Cin=0 | expected S=93C01B8BFC71CF80 Cout=1 Ovfl=0 | actual S=93C01B8BFC71CF80 Cout=1 Ovfl=0 | delay S=11091 ps Status=8267 ps
+#    Time: 11886638 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 91 PASS | A=01BA8A5620ABB2AF B=96CDB4B11F59B32E Cin=0 | expected S=98883F07400565DD Cout=0 Ovfl=0 | actual S=98883F07400565DD Cout=0 Ovfl=0 | delay S=11101 ps Status=8647 ps
+#    Time: 12017739 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 92 PASS | A=D7F03ACFC657E97A B=280FC53039A81AB2 Cin=1 | expected S=000000000000042D Cout=1 Ovfl=0 | actual S=000000000000042D Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 12150903 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 93 PASS | A=CC17518DFE8301BF B=A9B3529F9F82CC05 Cin=0 | expected S=75CAA42D9E05CDC4 Cout=1 Ovfl=1 | actual S=75CAA42D9E05CDC4 Cout=1 Ovfl=1 | delay S=11178 ps Status=9946 ps
+#    Time: 12282081 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 94 PASS | A=D505AD03162046AB B=E9CCB5284A01703E Cin=0 | expected S=BED2622B6021B6E9 Cout=1 Ovfl=0 | actual S=BED2622B6021B6E9 Cout=1 Ovfl=0 | delay S=11054 ps Status=8330 ps
+#    Time: 12413135 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 95 PASS | A=0000000000000008 B=7FFFFFFFFFFFFFF7 Cin=1 | expected S=8000000000000000 Cout=0 Ovfl=1 | actual S=8000000000000000 Cout=0 Ovfl=1 | delay S=13107 ps Status=11949 ps
+#    Time: 12546242 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 96 PASS | A=8000000000000007 B=FFFFFFFFFFFFFFF9 Cin=0 | expected S=8000000000000000 Cout=1 Ovfl=0 | actual S=8000000000000000 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 12679406 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 97 PASS | A=C2DBC713804A607D B=55D00F925C69B10C Cin=1 | expected S=18ABD6A5DCB4118A Cout=1 Ovfl=0 | actual S=18ABD6A5DCB4118A Cout=1 Ovfl=0 | delay S=11104 ps Status=8385 ps
+#    Time: 12810510 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 98 PASS | A=60F5AC6383B42A0D B=47030E9C7C4BD64A Cin=0 | expected S=A7F8BB0000000057 Cout=0 Ovfl=1 | actual S=A7F8BB0000000057 Cout=0 Ovfl=1 | delay S=12393 ps Status=8745 ps
+#    Time: 12942903 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 99 PASS | A=800000000000000B B=7FFFFFFFFFFFFFF8 Cin=0 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 13076067 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 100 PASS | A=CC1D387FD637EEC7 B=33E2C78029C81139 Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 13209391 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 101 PASS | A=A952DE1B1DCDE8FC B=55ED5E1B7EC8D2A7 Cin=0 | expected S=FF403C369C96BBA3 Cout=0 Ovfl=0 | actual S=FF403C369C96BBA3 Cout=0 Ovfl=0 | delay S=11132 ps Status=10018 ps
+#    Time: 13340523 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 102 PASS | A=8000000000000007 B=8000000000000000 Cin=1 | expected S=0000000000000008 Cout=1 Ovfl=1 | actual S=0000000000000008 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 13471577 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 103 PASS | A=D4E2DA4238A4AFED B=BB22FE9BB743986B Cin=0 | expected S=9005D8DDEFE84858 Cout=1 Ovfl=0 | actual S=9005D8DDEFE84858 Cout=1 Ovfl=0 | delay S=11339 ps Status=8267 ps
+#    Time: 13602916 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 104 PASS | A=C7FEA89D66273DAB B=9FCFCD0138CF0624 Cin=0 | expected S=67CE759E9EF643CF Cout=1 Ovfl=1 | actual S=67CE759E9EF643CF Cout=1 Ovfl=1 | delay S=11161 ps Status=9475 ps
+#    Time: 13734077 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 105 PASS | A=FFFFFFFFFFFFFFF5 B=FFFFFFFFFFFFFFF4 Cin=1 | expected S=FFFFFFFFFFFFFFEA Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFEA Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 13865209 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 106 PASS | A=FC29556598EC9360 B=CB7A96F706157C6E Cin=1 | expected S=C7A3EC5C9F020FCF Cout=1 Ovfl=0 | actual S=C7A3EC5C9F020FCF Cout=1 Ovfl=0 | delay S=11134 ps Status=8330 ps
+#    Time: 13996343 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 107 PASS | A=83F17682A8B2FD42 B=7C0E897D574D9223 Cin=1 | expected S=0000000000008F66 Cout=1 Ovfl=0 | actual S=0000000000008F66 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 14129507 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 108 PASS | A=EE034C21286BEB21 B=ADD1B6C2BE7425B3 Cin=0 | expected S=9BD502E3E6E010D4 Cout=1 Ovfl=0 | actual S=9BD502E3E6E010D4 Cout=1 Ovfl=0 | delay S=11054 ps Status=8334 ps
+#    Time: 14260561 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 109 PASS | A=06429F3EF8106946 B=9900E38891F9F862 Cin=0 | expected S=9F4382C78A0A61A8 Cout=0 Ovfl=0 | actual S=9F4382C78A0A61A8 Cout=0 Ovfl=0 | delay S=11066 ps Status=8647 ps
+#    Time: 14391627 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 110 PASS | A=8000000000000006 B=FFFFFFFFFFFFFFF4 Cin=1 | expected S=7FFFFFFFFFFFFFFB Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFFB Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 14524808 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 111 PASS | A=FF9888A76241DF27 B=006777589DBE238A Cin=0 | expected S=00000000000002B1 Cout=1 Ovfl=0 | actual S=00000000000002B1 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 14657972 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 112 PASS | A=C1E2CF9569B4574B B=92CCC4A7CE4938A8 Cin=1 | expected S=54AF943D37FD8FF4 Cout=1 Ovfl=1 | actual S=54AF943D37FD8FF4 Cout=1 Ovfl=1 | delay S=11815 ps Status=9475 ps
+#    Time: 14789787 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 113 PASS | A=0518DC364C41C77E B=FAE723C9B3BE3899 Cin=0 | expected S=0000000000000017 Cout=1 Ovfl=0 | actual S=0000000000000017 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 14923111 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 114 PASS | A=2304B26046D3BBD7 B=4F726C1EE4D67E49 Cin=1 | expected S=72771E7F2BAA3A21 Cout=0 Ovfl=0 | actual S=72771E7F2BAA3A21 Cout=0 Ovfl=0 | delay S=11098 ps Status=9506 ps
+#    Time: 15054209 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 115 PASS | A=E39CCF9C2506D477 B=5C4D87D4205477FA Cin=0 | expected S=3FEA5770455B4C71 Cout=1 Ovfl=0 | actual S=3FEA5770455B4C71 Cout=1 Ovfl=0 | delay S=11132 ps Status=8385 ps
+#    Time: 15185341 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 116 PASS | A=F5E611359A9631A4 B=E3C98C5C14740D56 Cin=1 | expected S=D9AF9D91AF0A3EFB Cout=1 Ovfl=0 | actual S=D9AF9D91AF0A3EFB Cout=1 Ovfl=0 | delay S=11214 ps Status=8334 ps
+#    Time: 15316555 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 117 PASS | A=B63489A507AA238E B=49CB765AF855DF47 Cin=0 | expected S=00000000000002D5 Cout=1 Ovfl=0 | actual S=00000000000002D5 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 15449638 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 118 PASS | A=7FFFFFFFFFFFFFFC B=FFFFFFFFFFFFFFE7 Cin=0 | expected S=7FFFFFFFFFFFFFE3 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFE3 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 15580770 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 119 PASS | A=5D7D80F9ACA43EC0 B=62A448B4CAAF6520 Cin=1 | expected S=C021C9AE7753A3E1 Cout=0 Ovfl=1 | actual S=C021C9AE7753A3E1 Cout=0 Ovfl=1 | delay S=11101 ps Status=8745 ps
+#    Time: 15711871 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 120 PASS | A=081D4EFDFA250DDB B=129894C1AB184B1C Cin=0 | expected S=1AB5E3BFA53D58F7 Cout=0 Ovfl=0 | actual S=1AB5E3BFA53D58F7 Cout=0 Ovfl=0 | delay S=11097 ps Status=8630 ps
+#    Time: 15842968 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 121 PASS | A=E79A2A2D2F3BDC46 B=2504BA1CB6DC14B8 Cin=1 | expected S=0C9EE449E617F0FF Cout=1 Ovfl=0 | actual S=0C9EE449E617F0FF Cout=1 Ovfl=0 | delay S=11287 ps Status=8402 ps
+#    Time: 15974255 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 122 PASS | A=DDD78A530EC78AA2 B=07C8CFDCE0BB8CBE Cin=1 | expected S=E5A05A2FEF831761 Cout=0 Ovfl=0 | actual S=E5A05A2FEF831761 Cout=0 Ovfl=0 | delay S=11086 ps Status=9416 ps
+#    Time: 16105341 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 123 PASS | A=108ADD3FDF9F9A44 B=5E4D1C1D05A4E5EB Cin=0 | expected S=6ED7F95CE544802F Cout=0 Ovfl=0 | actual S=6ED7F95CE544802F Cout=0 Ovfl=0 | delay S=12115 ps Status=9536 ps
+#    Time: 16237456 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 124 PASS | A=4C51F7CB4762BF72 B=DA52971671224205 Cin=0 | expected S=26A48EE1B8850177 Cout=1 Ovfl=0 | actual S=26A48EE1B8850177 Cout=1 Ovfl=0 | delay S=10935 ps Status=8674 ps
+#    Time: 16368391 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 125 PASS | A=0AF4A3609ED329E4 B=609D3FAA7B94E6CD Cin=1 | expected S=6B91E30B1A6810B2 Cout=0 Ovfl=0 | actual S=6B91E30B1A6810B2 Cout=0 Ovfl=0 | delay S=11054 ps Status=9416 ps
+#    Time: 16499445 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 126 PASS | A=800000000000000D B=7FFFFFFFFFFFFFF6 Cin=0 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 16632609 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 127 PASS | A=678A2EC046833FB8 B=9875D13FB97CC04A Cin=1 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 16765773 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 128 PASS | A=2A2C46B4ECB8B28E B=7C75424B1360BD04 Cin=1 | expected S=A6A1890000196F93 Cout=0 Ovfl=1 | actual S=A6A1890000196F93 Cout=0 Ovfl=1 | delay S=12527 ps Status=8745 ps
+#    Time: 16898300 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 129 PASS | A=783946F7EFBE69F5 B=87C6B9081041960B Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 17031624 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 130 PASS | A=649E62793874C154 B=9B619D86C78B577A Cin=1 | expected S=00000000000018CF Cout=1 Ovfl=0 | actual S=00000000000018CF Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 17164948 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 131 PASS | A=7FFFFFFFFFFFFFF8 B=7FFFFFFFFFFFFFFD Cin=1 | expected S=FFFFFFFFFFFFFFF6 Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFF6 Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 17296080 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 132 PASS | A=F99BED3221631D6F B=066412CDDE9CEF02 Cin=1 | expected S=0000000000000C72 Cout=1 Ovfl=0 | actual S=0000000000000C72 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 17429404 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 133 PASS | A=FFFFFFFFFFFFFFF3 B=0000000000000005 Cin=0 | expected S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | delay S=13241 ps Status=12960 ps
+#    Time: 17562645 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 134 PASS | A=FFFFFFFFFFFFFFF6 B=FFFFFFFFFFFFFFFC Cin=0 | expected S=FFFFFFFFFFFFFFF2 Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFF2 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 17693777 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 135 PASS | A=D724515BF5C977FD B=28DBAEA40A36A406 Cin=1 | expected S=0000000000001C04 Cout=1 Ovfl=0 | actual S=0000000000001C04 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 17827101 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 136 PASS | A=E417656843E0582A B=B13ECB5312808CC1 Cin=0 | expected S=955630BB5660E4EB Cout=1 Ovfl=0 | actual S=955630BB5660E4EB Cout=1 Ovfl=0 | delay S=10937 ps Status=8267 ps
+#    Time: 17958038 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 137 PASS | A=F3A10544D97DE44B B=0C5EFABB26825EC8 Cin=0 | expected S=0000000000004313 Cout=1 Ovfl=0 | actual S=0000000000004313 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 18091121 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 138 PASS | A=D95D962DF0661203 B=A73B9FAEAF941FA5 Cin=0 | expected S=809935DC9FFA31A8 Cout=1 Ovfl=0 | actual S=809935DC9FFA31A8 Cout=1 Ovfl=0 | delay S=11109 ps Status=9860 ps
+#    Time: 18222230 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 139 PASS | A=9DB97B6A209B3C86 B=57F704ACDF64C37B Cin=0 | expected S=F5B0801700000001 Cout=0 Ovfl=0 | actual S=F5B0801700000001 Cout=0 Ovfl=0 | delay S=12161 ps Status=9416 ps
+#    Time: 18354391 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 140 PASS | A=7FFFFFFFFFFFFFF3 B=0000000000000020 Cin=1 | expected S=8000000000000014 Cout=0 Ovfl=1 | actual S=8000000000000014 Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 18487715 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 141 PASS | A=DE8F0D814F81393B B=9B7C57BEC4239200 Cin=1 | expected S=7A0B654013A4CB3C Cout=1 Ovfl=1 | actual S=7A0B654013A4CB3C Cout=1 Ovfl=1 | delay S=11134 ps Status=9594 ps
+#    Time: 18618849 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 142 PASS | A=25DC946B5E71BC93 B=8658C2788E8E525B Cin=0 | expected S=AC3556E3ED000EEE Cout=0 Ovfl=0 | actual S=AC3556E3ED000EEE Cout=0 Ovfl=0 | delay S=11115 ps Status=8647 ps
+#    Time: 18749964 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 143 PASS | A=F0436869F5946C66 B=3D512D45782012A0 Cin=0 | expected S=2D9495AF6DB47F06 Cout=1 Ovfl=0 | actual S=2D9495AF6DB47F06 Cout=1 Ovfl=0 | delay S=11161 ps Status=8402 ps
+#    Time: 18881125 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 144 PASS | A=8000000000000000 B=7FFFFFFFFFFFFFF0 Cin=1 | expected S=FFFFFFFFFFFFFFF1 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFF1 Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 19014306 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 145 PASS | A=86A2ED092AADCED4 B=5107F9F00DFD96CA Cin=1 | expected S=D7AAE6F938AB659F Cout=0 Ovfl=0 | actual S=D7AAE6F938AB659F Cout=0 Ovfl=0 | delay S=10937 ps Status=9536 ps
+#    Time: 19145243 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 146 PASS | A=D8FBF3CA0A2A5AA9 B=769CCDF2426AC8D4 Cin=1 | expected S=4F98C1BC4C95237E Cout=1 Ovfl=0 | actual S=4F98C1BC4C95237E Cout=1 Ovfl=0 | delay S=10937 ps Status=8267 ps
+#    Time: 19276180 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 147 PASS | A=6EE68A5988FD82EA B=911975A677027F3D Cin=1 | expected S=0000000000000228 Cout=1 Ovfl=0 | actual S=0000000000000228 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 19409504 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 148 PASS | A=609ADF66834FC4F8 B=D06520997CB03B0D Cin=1 | expected S=3100000000000006 Cout=1 Ovfl=0 | actual S=3100000000000006 Cout=1 Ovfl=0 | delay S=13083 ps Status=8674 ps
+#    Time: 19542587 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 149 PASS | A=F85114282433BBFA B=2F1F6453F12D46CE Cin=0 | expected S=2770787C156102C8 Cout=1 Ovfl=0 | actual S=2770787C156102C8 Cout=1 Ovfl=0 | delay S=11101 ps Status=8402 ps
+#    Time: 19673688 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 150 PASS | A=0A46283540F9AC8B B=F5B9D7CABF065375 Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 19807012 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 151 PASS | A=0DA2D34B2A68E6B0 B=51CAB6BBAD9AA4FA Cin=1 | expected S=5F6D8A06D8038BAB Cout=0 Ovfl=0 | actual S=5F6D8A06D8038BAB Cout=0 Ovfl=0 | delay S=10906 ps Status=9416 ps
+#    Time: 19937918 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 152 PASS | A=B36007108BF539DB B=E0EFF8EF740AC626 Cin=1 | expected S=9450000000000002 Cout=1 Ovfl=0 | actual S=9450000000000002 Cout=1 Ovfl=0 | delay S=13324 ps Status=8334 ps
+#    Time: 20071242 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 153 PASS | A=FDE3CBCBF76F4DC9 B=C703BA5985BB1A62 Cin=0 | expected S=C4E786257D2A682B Cout=1 Ovfl=0 | actual S=C4E786257D2A682B Cout=1 Ovfl=0 | delay S=10913 ps Status=8330 ps
+#    Time: 20202155 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 154 PASS | A=4DED9E64830BC5EB B=2C6E9DB1F92AA626 Cin=0 | expected S=7A5C3C167C366C11 Cout=0 Ovfl=0 | actual S=7A5C3C167C366C11 Cout=0 Ovfl=0 | delay S=10937 ps Status=9887 ps
+#    Time: 20333092 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 155 PASS | A=7DA8EA8DD597D9CC B=B22306AE128F33A3 Cin=0 | expected S=2FCBF13BE8270D6F Cout=1 Ovfl=0 | actual S=2FCBF13BE8270D6F Cout=1 Ovfl=0 | delay S=11391 ps Status=8696 ps
+#    Time: 20464483 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 156 PASS | A=0E269EC73DE03485 B=A8BEF24A66EDC95A Cin=0 | expected S=B6E59111A4CDFDDF Cout=0 Ovfl=0 | actual S=B6E59111A4CDFDDF Cout=0 Ovfl=0 | delay S=11085 ps Status=8647 ps
+#    Time: 20595568 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 157 PASS | A=5B718595842C1EEF B=F69D881EC947D88C Cin=1 | expected S=520F0DB44D73F77C Cout=1 Ovfl=0 | actual S=520F0DB44D73F77C Cout=1 Ovfl=0 | delay S=11316 ps Status=8674 ps
+#    Time: 20726884 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 158 PASS | A=329693C95BDE667D B=CD696C36A421998B Cin=0 | expected S=0000000000000008 Cout=1 Ovfl=0 | actual S=0000000000000008 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 20859967 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 159 PASS | A=FFFFFFFFFFFFFFF5 B=FFFFFFFFFFFFFFF4 Cin=0 | expected S=FFFFFFFFFFFFFFE9 Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFE9 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 20991099 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 160 PASS | A=B8752F4B0FEB07E9 B=6BDF9C64F0181987 Cin=0 | expected S=2454CBB000032170 Cout=1 Ovfl=0 | actual S=2454CBB000032170 Cout=1 Ovfl=0 | delay S=11879 ps Status=8334 ps
+#    Time: 21122978 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 161 PASS | A=311DF118E2806F4F B=CEE20EE71D7F90B2 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 21256302 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 162 PASS | A=DC48D3A64347F37F B=23B72C59BCB80CE6 Cin=0 | expected S=0000000000000065 Cout=1 Ovfl=0 | actual S=0000000000000065 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 21389466 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 163 PASS | A=99EA3D4F9362A808 B=F89CFBF4E1674B09 Cin=1 | expected S=9287394474C9F312 Cout=1 Ovfl=0 | actual S=9287394474C9F312 Cout=1 Ovfl=0 | delay S=10993 ps Status=8385 ps
+#    Time: 21520459 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 164 PASS | A=CBE24582D8D2A7E4 B=74B4D2E09CCE3401 Cin=1 | expected S=4097186375A0DBE6 Cout=1 Ovfl=0 | actual S=4097186375A0DBE6 Cout=1 Ovfl=0 | delay S=11054 ps Status=8385 ps
+#    Time: 21651513 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 165 PASS | A=7FFFFFFFFFFFFFF2 B=0000000000000007 Cin=1 | expected S=7FFFFFFFFFFFFFFA Cout=0 Ovfl=0 | actual S=7FFFFFFFFFFFFFFA Cout=0 Ovfl=0 | delay S=13241 ps Status=12960 ps
+#    Time: 21784754 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 166 PASS | A=C076F233F49F0493 B=AECA63718FB8D353 Cin=0 | expected S=6F4155A58457D7E6 Cout=1 Ovfl=1 | actual S=6F4155A58457D7E6 Cout=1 Ovfl=1 | delay S=11101 ps Status=9781 ps
+#    Time: 21915855 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 167 PASS | A=0000000000000005 B=FFFFFFFFFFFFFFF6 Cin=1 | expected S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 22049036 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 168 PASS | A=EA52B2CBC73C5B4B B=15AD4D3438C3A4B7 Cin=0 | expected S=0000000000000002 Cout=1 Ovfl=0 | actual S=0000000000000002 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 22182119 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 169 PASS | A=FFFFFFFFFFFFFFF5 B=7FFFFFFFFFFFFFF7 Cin=0 | expected S=7FFFFFFFFFFFFFEC Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFEC Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 22313251 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 170 PASS | A=7393C4ED64A3DB68 B=FF6AB347B04D8BCF Cin=1 | expected S=72FE783514F16738 Cout=1 Ovfl=0 | actual S=72FE783514F16738 Cout=1 Ovfl=0 | delay S=11085 ps Status=8674 ps
+#    Time: 22444336 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 171 PASS | A=7FFFFFFFFFFFFFF4 B=FFFFFFFFFFFFFFEC Cin=1 | expected S=7FFFFFFFFFFFFFE1 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFE1 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 22575468 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 172 PASS | A=2C232E506D07839A B=F94355C79CB4F879 Cin=1 | expected S=2566841809BC7C14 Cout=1 Ovfl=0 | actual S=2566841809BC7C14 Cout=1 Ovfl=0 | delay S=11097 ps Status=8696 ps
+#    Time: 22706565 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 173 PASS | A=A3413D956D1BFE29 B=3E141C58430BFF15 Cin=0 | expected S=E15559EDB027FD3E Cout=0 Ovfl=0 | actual S=E15559EDB027FD3E Cout=0 Ovfl=0 | delay S=11323 ps Status=8630 ps
+#    Time: 22837888 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 174 PASS | A=D9F96D41B31A698F B=260692BE4CE5B731 Cin=0 | expected S=00000000000020C0 Cout=1 Ovfl=0 | actual S=00000000000020C0 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 22970971 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 175 PASS | A=B9BE2E319DB35A6E B=A67260BDCF4D697B Cin=1 | expected S=60308EEF6D00C3EA Cout=1 Ovfl=1 | actual S=60308EEF6D00C3EA Cout=1 Ovfl=1 | delay S=11101 ps Status=8689 ps
+#    Time: 23102072 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 176 PASS | A=7FFFFFFFFFFFFFFA B=0000000000000007 Cin=0 | expected S=8000000000000001 Cout=0 Ovfl=1 | actual S=8000000000000001 Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 23235396 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 177 PASS | A=4C3C37642212BBC0 B=BC2DE923237B8AEE Cin=0 | expected S=086A2087458E46AE Cout=1 Ovfl=0 | actual S=086A2087458E46AE Cout=1 Ovfl=0 | delay S=11054 ps Status=9774 ps
+#    Time: 23366450 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 178 PASS | A=7775C196F213E454 B=3A7DDB34B7A72DB7 Cin=0 | expected S=B1F39CCBA9BB120B Cout=0 Ovfl=1 | actual S=B1F39CCBA9BB120B Cout=0 Ovfl=1 | delay S=11101 ps Status=8745 ps
+#    Time: 23497551 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 179 PASS | A=9A51641F7D975BD1 B=5D94130C1B4EEB57 Cin=1 | expected S=F7E5772B98E64729 Cout=0 Ovfl=0 | actual S=F7E5772B98E64729 Cout=0 Ovfl=0 | delay S=11267 ps Status=9438 ps
+#    Time: 23628818 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 180 PASS | A=CAA544DEB4FF171B B=355ABB214B00E8E5 Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 23762142 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 181 PASS | A=3E9E36F8DF0674ED B=85FEFA06A0AD4E08 Cin=1 | expected S=C49D30FF7FB3C2F6 Cout=0 Ovfl=0 | actual S=C49D30FF7FB3C2F6 Cout=0 Ovfl=0 | delay S=11304 ps Status=8647 ps
+#    Time: 23893446 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 182 PASS | A=7FFFFFFFFFFFFFEF B=0000000000000006 Cin=0 | expected S=7FFFFFFFFFFFFFF5 Cout=0 Ovfl=0 | actual S=7FFFFFFFFFFFFFF5 Cout=0 Ovfl=0 | delay S=13241 ps Status=12960 ps
+#    Time: 24026687 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 183 PASS | A=7FFFFFFFFFFFFFEF B=0000000000000000 Cin=1 | expected S=7FFFFFFFFFFFFFF0 Cout=0 Ovfl=0 | actual S=7FFFFFFFFFFFFFF0 Cout=0 Ovfl=0 | delay S=13286 ps Status=12960 ps
+#    Time: 24159973 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 184 PASS | A=1A5D03005B4F5EB0 B=D49F475AA4B0F42C Cin=1 | expected S=EEFC4A5B000052DD Cout=0 Ovfl=0 | actual S=EEFC4A5B000052DD Cout=0 Ovfl=0 | delay S=11611 ps Status=9536 ps
+#    Time: 24291584 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 185 PASS | A=352E93E04BCBA537 B=CAD16C1FB434D48D Cin=1 | expected S=00000000000079C5 Cout=1 Ovfl=0 | actual S=00000000000079C5 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 24424667 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 186 PASS | A=8000000000000002 B=8000000000000006 Cin=0 | expected S=0000000000000008 Cout=1 Ovfl=1 | actual S=0000000000000008 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 24555721 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 187 PASS | A=E1A2FB0A8C60D375 B=1E5D04F5739F2D2E Cin=0 | expected S=00000000000000A3 Cout=1 Ovfl=0 | actual S=00000000000000A3 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 24688885 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 188 PASS | A=9BC4FAD96D711519 B=643B0526928EEAEA Cin=0 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 24822209 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 189 PASS | A=8000000000000000 B=FFFFFFFFFFFFFFE7 Cin=0 | expected S=7FFFFFFFFFFFFFE7 Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFE7 Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 24955390 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 190 PASS | A=8B124D7F19CCCC5C B=74EDB280E6333C72 Cin=1 | expected S=00000000000008CF Cout=1 Ovfl=0 | actual S=00000000000008CF Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 25088714 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 191 PASS | A=E187C19C5430B0A6 B=1E783E63ABCF4F5B Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 25222038 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 192 PASS | A=E79B878DFF21AE77 B=3A09B1B68E3AA440 Cin=0 | expected S=21A539448D5C52B7 Cout=1 Ovfl=0 | actual S=21A539448D5C52B7 Cout=1 Ovfl=0 | delay S=10906 ps Status=8402 ps
+#    Time: 25352944 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 193 PASS | A=64520B07D409F2EE B=54BD902351A8549B Cin=1 | expected S=B90F9B2B25B2478A Cout=0 Ovfl=1 | actual S=B90F9B2B25B2478A Cout=0 Ovfl=1 | delay S=11214 ps Status=8745 ps
+#    Time: 25484158 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 194 PASS | A=E95011001A411595 B=B2A2AC4F1980E46A Cin=1 | expected S=9BF2BD4F33C1FA00 Cout=1 Ovfl=0 | actual S=9BF2BD4F33C1FA00 Cout=1 Ovfl=0 | delay S=10880 ps Status=8267 ps
+#    Time: 25615038 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 195 PASS | A=7D55F29AE710A730 B=D8472044120E58D4 Cin=1 | expected S=559D12DEF91F0005 Cout=1 Ovfl=0 | actual S=559D12DEF91F0005 Cout=1 Ovfl=0 | delay S=11946 ps Status=8674 ps
+#    Time: 25746984 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 196 PASS | A=263BF877A211774C B=3E7188C0ADEE9A0A Cin=0 | expected S=64AD813850001156 Cout=0 Ovfl=0 | actual S=64AD813850001156 Cout=0 Ovfl=0 | delay S=11643 ps Status=8630 ps
+#    Time: 25878627 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 197 PASS | A=A4E394A0EC1BE80B B=5B1C6B5F13E41B2A Cin=0 | expected S=0000000000000335 Cout=1 Ovfl=0 | actual S=0000000000000335 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 26011710 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 198 PASS | A=8000000000000008 B=000000000000000E Cin=0 | expected S=8000000000000016 Cout=0 Ovfl=0 | actual S=8000000000000016 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 26142764 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 199 PASS | A=F729065138181462 B=9371C2753D55DBD5 Cin=0 | expected S=8A9AC8C6756DF037 Cout=1 Ovfl=0 | actual S=8A9AC8C6756DF037 Cout=1 Ovfl=0 | delay S=11218 ps Status=8267 ps
+#    Time: 26273982 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 200 PASS | A=D353D9C425AB095F B=37570FD9AA5F4612 Cin=0 | expected S=0AAAE99DD00A4F71 Cout=1 Ovfl=0 | actual S=0AAAE99DD00A4F71 Cout=1 Ovfl=0 | delay S=11386 ps Status=8402 ps
+#    Time: 26405368 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 201 PASS | A=D8E4FD417E72D058 B=94C64E2CB9AF00F4 Cin=0 | expected S=6DAB4B6E3821D14C Cout=1 Ovfl=1 | actual S=6DAB4B6E3821D14C Cout=1 Ovfl=1 | delay S=11443 ps Status=9475 ps
+#    Time: 26536811 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 202 PASS | A=CAD0C51ADA825814 B=3747BC8904D053CE Cin=1 | expected S=021881A3DF52ABE3 Cout=1 Ovfl=0 | actual S=021881A3DF52ABE3 Cout=1 Ovfl=0 | delay S=11066 ps Status=9665 ps
+#    Time: 26667877 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 203 PASS | A=C2074D01F875A34D B=4A75C7D33089C07A Cin=0 | expected S=0C7D14D528FF63C7 Cout=1 Ovfl=0 | actual S=0C7D14D528FF63C7 Cout=1 Ovfl=0 | delay S=10986 ps Status=8330 ps
+#    Time: 26798863 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 204 PASS | A=1023809660CED0C7 B=EB017349E9C992F1 Cin=0 | expected S=FB24F3E04A9863B8 Cout=0 Ovfl=0 | actual S=FB24F3E04A9863B8 Cout=0 Ovfl=0 | delay S=11382 ps Status=9826 ps
+#    Time: 26930245 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 205 PASS | A=7325F0104193AFF8 B=8CDA0FEFBE6C500A Cin=0 | expected S=0000000000000002 Cout=1 Ovfl=0 | actual S=0000000000000002 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 27063569 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 206 PASS | A=C2FC477F3B78D669 B=3D03B880C4874E34 Cin=1 | expected S=000000000000249E Cout=1 Ovfl=0 | actual S=000000000000249E Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 27196893 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 207 PASS | A=EFA25181622E0156 B=305DE4FDF4B28E80 Cin=1 | expected S=2000367F56E08FD7 Cout=1 Ovfl=0 | actual S=2000367F56E08FD7 Cout=1 Ovfl=0 | delay S=11428 ps Status=8402 ps
+#    Time: 27328321 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 208 PASS | A=D5AB717B3D3106D1 B=2A548E84C2CEF92F Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 27461645 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 209 PASS | A=26166DB4771A4B7B B=87287B3CAE2BC1C4 Cin=0 | expected S=AD3EE8F125460D3F Cout=0 Ovfl=0 | actual S=AD3EE8F125460D3F Cout=0 Ovfl=0 | delay S=11132 ps Status=8647 ps
+#    Time: 27592777 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 210 PASS | A=F31739FE1F85EA31 B=0B23D1D66549A1A3 Cin=0 | expected S=FE3B0BD484CF8BD4 Cout=0 Ovfl=0 | actual S=FE3B0BD484CF8BD4 Cout=0 Ovfl=0 | delay S=11132 ps Status=9506 ps
+#    Time: 27723909 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 211 PASS | A=87C1E1ACD1320ED6 B=45EDBA11EAE23A5B Cin=0 | expected S=CDAF9BBEBC144931 Cout=0 Ovfl=0 | actual S=CDAF9BBEBC144931 Cout=0 Ovfl=0 | delay S=11443 ps Status=9416 ps
+#    Time: 27855352 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 212 PASS | A=01076C53AB7A04F4 B=C845F7494672DA72 Cin=0 | expected S=C94D639CF1ECDF66 Cout=0 Ovfl=0 | actual S=C94D639CF1ECDF66 Cout=0 Ovfl=0 | delay S=11183 ps Status=9506 ps
+#    Time: 27986535 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 213 PASS | A=05B35C15789A391E B=FA4CA3EA8765C6E3 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 28119859 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 214 PASS | A=D9168E45A67B15CE B=1A658B8BA986EF3B Cin=0 | expected S=F37C19D150020509 Cout=0 Ovfl=0 | actual S=F37C19D150020509 Cout=0 Ovfl=0 | delay S=11085 ps Status=9465 ps
+#    Time: 28250944 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 215 PASS | A=D0531AA27D5660D4 B=9489190F8BA6CEFA Cin=0 | expected S=64DC33B208FD2FCE Cout=1 Ovfl=1 | actual S=64DC33B208FD2FCE Cout=1 Ovfl=1 | delay S=11205 ps Status=9593 ps
+#    Time: 28382149 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 216 PASS | A=4537E78A7F87EC87 B=BAC8187580781739 Cin=1 | expected S=00000000000003C1 Cout=1 Ovfl=0 | actual S=00000000000003C1 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 28515313 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 217 PASS | A=BEA5A5B055D7F87A B=AB32F679FC996ACC Cin=1 | expected S=69D89C2A52716347 Cout=1 Ovfl=1 | actual S=69D89C2A52716347 Cout=1 Ovfl=1 | delay S=11101 ps Status=8689 ps
+#    Time: 28646414 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 218 PASS | A=0783FDD161432E9B B=F87C022E9EBCD165 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 28779738 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 219 PASS | A=2C4939987CEBD302 B=D3B6C66783146ED5 Cin=0 | expected S=00000000000041D7 Cout=1 Ovfl=0 | actual S=00000000000041D7 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 28913062 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 220 PASS | A=F7348A63AF037FE0 B=5D1CF797F905CE41 Cin=1 | expected S=545181FBA8094E22 Cout=1 Ovfl=0 | actual S=545181FBA8094E22 Cout=1 Ovfl=0 | delay S=11064 ps Status=8267 ps
+#    Time: 29044126 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 221 PASS | A=0000000000000008 B=7FFFFFFFFFFFFFFD Cin=0 | expected S=8000000000000005 Cout=0 Ovfl=1 | actual S=8000000000000005 Cout=0 Ovfl=1 | delay S=13164 ps Status=12485 ps
+#    Time: 29177290 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 222 PASS | A=8000000000000008 B=7FFFFFFFFFFFFFFB Cin=1 | expected S=0000000000000004 Cout=1 Ovfl=0 | actual S=0000000000000004 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 29310454 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 223 PASS | A=1BBDAEE3D451BC5C B=E442511C2BAE4BEA Cin=1 | expected S=0000000000000847 Cout=1 Ovfl=0 | actual S=0000000000000847 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 29443618 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 224 PASS | A=8000000000000003 B=7FFFFFFFFFFFFFF8 Cin=1 | expected S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 29576799 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 225 PASS | A=1FCF5317D81D9F0B B=F8B729204E3F9F9E Cin=1 | expected S=18867C38265D3EAA Cout=1 Ovfl=0 | actual S=18867C38265D3EAA Cout=1 Ovfl=0 | delay S=11097 ps Status=8696 ps
+#    Time: 29707896 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 226 PASS | A=B8866A14BC2CF4ED B=8B1302E9A62F1F58 Cin=0 | expected S=43996CFE625C1445 Cout=1 Ovfl=1 | actual S=43996CFE625C1445 Cout=1 Ovfl=1 | delay S=11476 ps Status=8689 ps
+#    Time: 29839372 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 227 PASS | A=8000000000000003 B=0000000000000016 Cin=1 | expected S=800000000000001A Cout=0 Ovfl=0 | actual S=800000000000001A Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 29970426 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 228 PASS | A=54415A875B289C82 B=ABBEA578A4D763CE Cin=1 | expected S=0000000000000051 Cout=1 Ovfl=0 | actual S=0000000000000051 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 30103509 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 229 PASS | A=0E242364AFB6D376 B=F1DBDC9B50492C8E Cin=1 | expected S=0000000000000005 Cout=1 Ovfl=0 | actual S=0000000000000005 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 30236673 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 230 PASS | A=7E52487A2CEF5C26 B=7DFFA436A441114A Cin=0 | expected S=FC51ECB0D1306D70 Cout=0 Ovfl=1 | actual S=FC51ECB0D1306D70 Cout=0 Ovfl=1 | delay S=11169 ps Status=8745 ps
+#    Time: 30367842 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 231 PASS | A=44E0C77CFE0833A9 B=C5603A87F0D248A4 Cin=0 | expected S=0A410204EEDA7C4D Cout=1 Ovfl=0 | actual S=0A410204EEDA7C4D Cout=1 Ovfl=0 | delay S=11066 ps Status=8674 ps
+#    Time: 30498908 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 232 PASS | A=BCA4ECF5980CFEAC B=4A39A30A67F53FF2 Cin=0 | expected S=06DE900000023E9E Cout=1 Ovfl=0 | actual S=06DE900000023E9E Cout=1 Ovfl=0 | delay S=12917 ps Status=9850 ps
+#    Time: 30631825 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 233 PASS | A=E6B438F142C71BB5 B=87ACAEB0D7BF9641 Cin=0 | expected S=6E60E7A21A86B1F6 Cout=1 Ovfl=1 | actual S=6E60E7A21A86B1F6 Cout=1 Ovfl=1 | delay S=11101 ps Status=9765 ps
+#    Time: 30762926 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 234 PASS | A=0000000000000009 B=FFFFFFFFFFFFFFFB Cin=1 | expected S=0000000000000005 Cout=1 Ovfl=0 | actual S=0000000000000005 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 30896090 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 235 PASS | A=8C127A512A991386 B=E0ED85AED56772C5 Cin=1 | expected S=6D0000000000864C Cout=1 Ovfl=1 | actual S=6D0000000000864C Cout=1 Ovfl=1 | delay S=13324 ps Status=9781 ps
+#    Time: 31029414 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 236 PASS | A=605102A0B6DA4B62 B=48629199406F159A Cin=1 | expected S=A8B39439F74960FD Cout=0 Ovfl=1 | actual S=A8B39439F74960FD Cout=0 Ovfl=1 | delay S=11134 ps Status=8745 ps
+#    Time: 31160548 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 237 PASS | A=C06125A4CF706AF8 B=3F9EDA5B308FFA5F Cin=0 | expected S=0000000000006557 Cout=1 Ovfl=0 | actual S=0000000000006557 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 31293712 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 238 PASS | A=C54C5CEC99023F53 B=3AB3A31366FDC0B5 Cin=0 | expected S=0000000000000008 Cout=1 Ovfl=0 | actual S=0000000000000008 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 31426876 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 239 PASS | A=06CFE3987BB9D8D8 B=5C05EAE3B29910C6 Cin=1 | expected S=62D5CE7C2E52E99F Cout=0 Ovfl=0 | actual S=62D5CE7C2E52E99F Cout=0 Ovfl=0 | delay S=11097 ps Status=9536 ps
+#    Time: 31557973 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 240 PASS | A=9460B7661E3F9698 B=308BC951CFEC90F3 Cin=1 | expected S=C4EC80B7EE2C278C Cout=0 Ovfl=0 | actual S=C4EC80B7EE2C278C Cout=0 Ovfl=0 | delay S=10937 ps Status=8630 ps
+#    Time: 31688910 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 241 PASS | A=F621D43CE2B9A563 B=09DE2BC31D465D18 Cin=0 | expected S=000000000000027B Cout=1 Ovfl=0 | actual S=000000000000027B Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 31822234 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 242 PASS | A=B433F0272E9F999E B=B696C03B57BF0D9C Cin=1 | expected S=6ACAB062865EA73B Cout=1 Ovfl=1 | actual S=6ACAB062865EA73B Cout=1 Ovfl=1 | delay S=10913 ps Status=8689 ps
+#    Time: 31953147 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 243 PASS | A=FFFFFFFFFFFFFFF4 B=FFFFFFFFFFFFFFF0 Cin=0 | expected S=FFFFFFFFFFFFFFE4 Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFE4 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 32084279 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 244 PASS | A=8000000000000003 B=8000000000000006 Cin=1 | expected S=000000000000000A Cout=1 Ovfl=1 | actual S=000000000000000A Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 32215333 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 245 PASS | A=7979110770ACD38F B=A881F476D0603434 Cin=0 | expected S=21FB057E410D07C3 Cout=1 Ovfl=0 | actual S=21FB057E410D07C3 Cout=1 Ovfl=0 | delay S=11527 ps Status=8696 ps
+#    Time: 32346860 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 246 PASS | A=3B32485B3A427401 B=7592A6474207F75F Cin=0 | expected S=B0C4EEA27C4A6B60 Cout=0 Ovfl=1 | actual S=B0C4EEA27C4A6B60 Cout=0 Ovfl=1 | delay S=11066 ps Status=8745 ps
+#    Time: 32477926 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 247 PASS | A=C8F4C2BF5415B414 B=370B3D40ABEA5C7E Cin=1 | expected S=0000000000001093 Cout=1 Ovfl=0 | actual S=0000000000001093 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 32611250 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 248 PASS | A=8000000000000005 B=000000000000000C Cin=0 | expected S=8000000000000011 Cout=0 Ovfl=0 | actual S=8000000000000011 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 32742304 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 249 PASS | A=7FFFFFFFFFFFFFF8 B=FFFFFFFFFFFFFFF2 Cin=1 | expected S=7FFFFFFFFFFFFFEB Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFEB Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 32873436 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 250 PASS | A=51D18C1447483F71 B=AE2E73EBB8B7DBF9 Cin=1 | expected S=0000000000001B6B Cout=1 Ovfl=0 | actual S=0000000000001B6B Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 33006760 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 251 PASS | A=800000000000000E B=0000000000000013 Cin=0 | expected S=8000000000000021 Cout=0 Ovfl=0 | actual S=8000000000000021 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 33137814 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 252 PASS | A=FFFFFFFFFFFFFFF8 B=FFFFFFFFFFFFFFEE Cin=0 | expected S=FFFFFFFFFFFFFFE6 Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFE6 Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 33268946 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 253 PASS | A=7FFFFFFFFFFFFFFB B=7FFFFFFFFFFFFFF1 Cin=0 | expected S=FFFFFFFFFFFFFFEC Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFEC Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 33400078 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 254 PASS | A=64146D0A1473DDF4 B=54A892F5EB8EFFC3 Cin=1 | expected S=B8BD00000002DDB8 Cout=0 Ovfl=1 | actual S=B8BD00000002DDB8 Cout=0 Ovfl=1 | delay S=13164 ps Status=8745 ps
+#    Time: 33533242 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 255 PASS | A=AC196FF739B379D1 B=53E69008C64C86B9 Cin=0 | expected S=000000000000008A Cout=1 Ovfl=0 | actual S=000000000000008A Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 33666566 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 256 PASS | A=AB253F1EB2F05640 B=A8E8F612A6A3C1E8 Cin=0 | expected S=540E353159941828 Cout=1 Ovfl=1 | actual S=540E353159941828 Cout=1 Ovfl=1 | delay S=11221 ps Status=8689 ps
+#    Time: 33797787 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 257 PASS | A=6D3669EEE497BE72 B=92C996111B6873E4 Cin=0 | expected S=0000000000003256 Cout=1 Ovfl=0 | actual S=0000000000003256 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 33930951 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 258 PASS | A=5FC8C3E1EB67C4BD B=88144DF25F62505B Cin=1 | expected S=E7DD11D44ACA1519 Cout=0 Ovfl=0 | actual S=E7DD11D44ACA1519 Cout=0 Ovfl=0 | delay S=10937 ps Status=9535 ps
+#    Time: 34061888 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 259 PASS | A=A92F6364E52DD249 B=A1F9BC1E5050896F Cin=0 | expected S=4B291F83357E5BB8 Cout=1 Ovfl=1 | actual S=4B291F83357E5BB8 Cout=1 Ovfl=1 | delay S=11853 ps Status=8689 ps
+#    Time: 34193741 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 260 PASS | A=8000000000000007 B=FFFFFFFFFFFFFFF7 Cin=0 | expected S=7FFFFFFFFFFFFFFE Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFFE Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 34326922 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 261 PASS | A=8000000000000006 B=8000000000000002 Cin=1 | expected S=0000000000000009 Cout=1 Ovfl=1 | actual S=0000000000000009 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 34457976 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 262 PASS | A=328786EC92B56EAD B=0A6BD43BE13B66F2 Cin=1 | expected S=3CF35B2873F0D5A0 Cout=0 Ovfl=0 | actual S=3CF35B2873F0D5A0 Cout=0 Ovfl=0 | delay S=10909 ps Status=8630 ps
+#    Time: 34588885 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 263 PASS | A=3F9913A811D829F8 B=C066EC57EE27D66A Cin=0 | expected S=0000000000000062 Cout=1 Ovfl=0 | actual S=0000000000000062 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 34721968 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 264 PASS | A=E8DDD634AB6440AB B=E14302CB54A1447F Cin=0 | expected S=CA20D9000005852A Cout=1 Ovfl=0 | actual S=CA20D9000005852A Cout=1 Ovfl=0 | delay S=12527 ps Status=8334 ps
+#    Time: 34854495 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 265 PASS | A=4CEBB194C2C13C1D B=5146855F4C424C86 Cin=1 | expected S=9E3236F40F0388A4 Cout=0 Ovfl=1 | actual S=9E3236F40F0388A4 Cout=0 Ovfl=1 | delay S=11216 ps Status=8745 ps
+#    Time: 34985711 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 266 PASS | A=4D6BE1ECA6521B77 B=CBD091EB6703CF51 Cin=0 | expected S=193C73D80D55EAC8 Cout=1 Ovfl=0 | actual S=193C73D80D55EAC8 Cout=1 Ovfl=0 | delay S=11085 ps Status=8674 ps
+#    Time: 35116796 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 267 PASS | A=103EBE620356C8F2 B=5864CB08FE0F8759 Cin=0 | expected S=68A3896B0166504B Cout=0 Ovfl=0 | actual S=68A3896B0166504B Cout=0 Ovfl=0 | delay S=11387 ps Status=9506 ps
+#    Time: 35248183 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 268 PASS | A=F35B17269C6F1520 B=B5C8C84D438B9A6B Cin=0 | expected S=A923DF73DFFAAF8B Cout=1 Ovfl=0 | actual S=A923DF73DFFAAF8B Cout=1 Ovfl=0 | delay S=11305 ps Status=8267 ps
+#    Time: 35379488 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 269 PASS | A=0000000000000000 B=0000000000000020 Cin=1 | expected S=0000000000000021 Cout=0 Ovfl=0 | actual S=0000000000000021 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 35510542 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 270 PASS | A=FFFFFFFFFFFFFFFC B=800000000000000B Cin=1 | expected S=8000000000000008 Cout=1 Ovfl=0 | actual S=8000000000000008 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 35643866 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 271 PASS | A=1A90E0B9C016DB7E B=F513621EA1120B82 Cin=0 | expected S=0FA442D86128E700 Cout=1 Ovfl=0 | actual S=0FA442D86128E700 Cout=1 Ovfl=0 | delay S=11132 ps Status=8696 ps
+#    Time: 35774998 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 272 PASS | A=12EDF73C41B3313A B=4BB3FACAE3B7163B Cin=0 | expected S=5EA1F207256A4775 Cout=0 Ovfl=0 | actual S=5EA1F207256A4775 Cout=0 Ovfl=0 | delay S=11221 ps Status=9416 ps
+#    Time: 35906219 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 273 PASS | A=FF1C3FAE10C225CE B=00E3C051EF3DDB39 Cin=0 | expected S=0000000000000107 Cout=1 Ovfl=0 | actual S=0000000000000107 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 36039383 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 274 PASS | A=B57803AE518B9BFC B=0B17A0099C0792D6 Cin=1 | expected S=C08FA3B7ED932ED3 Cout=0 Ovfl=0 | actual S=C08FA3B7ED932ED3 Cout=0 Ovfl=0 | delay S=11711 ps Status=8630 ps
+#    Time: 36171094 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 275 PASS | A=2DE68BAEEB613DFE B=DBA97451149EC23B Cin=0 | expected S=0990000000000039 Cout=1 Ovfl=0 | actual S=0990000000000039 Cout=1 Ovfl=0 | delay S=13164 ps Status=9708 ps
+#    Time: 36304258 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 276 PASS | A=0000000000000008 B=000000000000000B Cin=0 | expected S=0000000000000013 Cout=0 Ovfl=0 | actual S=0000000000000013 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 36435312 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 277 PASS | A=D0D6CDF4A6B727DC B=33B97669911BEA4E Cin=0 | expected S=0490445E37D3122A Cout=1 Ovfl=0 | actual S=0490445E37D3122A Cout=1 Ovfl=0 | delay S=11097 ps Status=8402 ps
+#    Time: 36566409 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 278 PASS | A=8000000000000000 B=0000000000000015 Cin=0 | expected S=8000000000000015 Cout=0 Ovfl=0 | actual S=8000000000000015 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 36697463 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 279 PASS | A=E2E90D218DDFD25B B=070695B4271F6478 Cin=1 | expected S=E9EFA2D5B4FF36D4 Cout=0 Ovfl=0 | actual S=E9EFA2D5B4FF36D4 Cout=0 Ovfl=0 | delay S=11214 ps Status=9534 ps
+#    Time: 36828677 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 280 PASS | A=9B91FF6D49094B20 B=25134F392C323C9E Cin=1 | expected S=C0A54EA6753B87BF Cout=0 Ovfl=0 | actual S=C0A54EA6753B87BF Cout=0 Ovfl=0 | delay S=10943 ps Status=8630 ps
+#    Time: 36959620 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 281 PASS | A=BE2184623242574F B=41DE7BBBC62E8554 Cin=0 | expected S=0000001DF870DCA3 Cout=1 Ovfl=0 | actual S=0000001DF870DCA3 Cout=1 Ovfl=0 | delay S=11917 ps Status=11999 ps
+#    Time: 37091619 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 282 PASS | A=F8F8415BE62503FD B=1AD5871F660A7B7A Cin=1 | expected S=13CDC87B4C2F7F78 Cout=1 Ovfl=0 | actual S=13CDC87B4C2F7F78 Cout=1 Ovfl=0 | delay S=11680 ps Status=8402 ps
+#    Time: 37223299 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 283 PASS | A=989237091DB50E3A B=676DC8F6E24AFDA8 Cin=1 | expected S=0000000000000BE3 Cout=1 Ovfl=0 | actual S=0000000000000BE3 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 37356463 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 284 PASS | A=596A82ECCD81E488 B=A6957D13327E7D52 Cin=0 | expected S=00000000000061DA Cout=1 Ovfl=0 | actual S=00000000000061DA Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 37489627 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 285 PASS | A=E09C1A2F90924767 B=44CEBF3927F26C74 Cin=0 | expected S=256AD968B884B3DB Cout=1 Ovfl=0 | actual S=256AD968B884B3DB Cout=1 Ovfl=0 | delay S=10906 ps Status=8330 ps
+#    Time: 37620533 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 286 PASS | A=618975522847E632 B=9E768AADD7B8B5E5 Cin=1 | expected S=0000000000009C18 Cout=1 Ovfl=0 | actual S=0000000000009C18 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 37753857 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 287 PASS | A=D88556F983DDF645 B=27745A5A6525C671 Cin=1 | expected S=FFF9B153E903BCB7 Cout=0 Ovfl=0 | actual S=FFF9B153E903BCB7 Cout=0 Ovfl=0 | delay S=11710 ps Status=11732 ps
+#    Time: 37885589 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 288 PASS | A=57AD7A6D4D2EE1DC B=36B145AAA1094E95 Cin=1 | expected S=8E5EC017EE383072 Cout=0 Ovfl=1 | actual S=8E5EC017EE383072 Cout=0 Ovfl=1 | delay S=11085 ps Status=8745 ps
+#    Time: 38016674 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 289 PASS | A=5825A6321C5199CD B=6B18AFE9F2F1AFD9 Cin=0 | expected S=C33E561C0F4349A6 Cout=0 Ovfl=1 | actual S=C33E561C0F4349A6 Cout=0 Ovfl=1 | delay S=11097 ps Status=8745 ps
+#    Time: 38147771 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 290 PASS | A=3A1E77763792B4B8 B=06DE7B2AE527384B Cin=1 | expected S=40FCF2A11CB9ED04 Cout=0 Ovfl=0 | actual S=40FCF2A11CB9ED04 Cout=0 Ovfl=0 | delay S=11103 ps Status=8630 ps
+#    Time: 38278874 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 291 PASS | A=BF053D91479A284A B=40FAC26EB865D7BD Cin=0 | expected S=0000000000000007 Cout=1 Ovfl=0 | actual S=0000000000000007 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 38412198 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 292 PASS | A=0000000000000004 B=FFFFFFFFFFFFFFE4 Cin=0 | expected S=FFFFFFFFFFFFFFE8 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFE8 Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 38545379 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 293 PASS | A=FFFFFFFFFFFFFFF4 B=000000000000001C Cin=0 | expected S=0000000000000010 Cout=1 Ovfl=0 | actual S=0000000000000010 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 38678703 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 294 PASS | A=5F5F550E05C347B1 B=60933647B0AFF1EA Cin=0 | expected S=BFF28B55B673399B Cout=0 Ovfl=1 | actual S=BFF28B55B673399B Cout=0 Ovfl=1 | delay S=11280 ps Status=8745 ps
+#    Time: 38809983 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 295 PASS | A=D1E17C14D579E2C3 B=0FFD178249146BCA Cin=1 | expected S=E1DE93971E8E4E8E Cout=0 Ovfl=0 | actual S=E1DE93971E8E4E8E Cout=0 Ovfl=0 | delay S=11217 ps Status=9416 ps
+#    Time: 38941200 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 296 PASS | A=5777D4DD8A2679C0 B=A8882B2275D9A44B Cin=1 | expected S=0000000000001E0C Cout=1 Ovfl=0 | actual S=0000000000001E0C Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 39074524 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 297 PASS | A=4A35225A0E09EC5C B=84520A4A624B5603 Cin=1 | expected S=CE872CA470554260 Cout=0 Ovfl=0 | actual S=CE872CA470554260 Cout=0 Ovfl=0 | delay S=11502 ps Status=9506 ps
+#    Time: 39206026 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 298 PASS | A=7FFFFFFFFFFFFFFF B=FFFFFFFFFFFFFFF2 Cin=1 | expected S=7FFFFFFFFFFFFFF2 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFF2 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 39337158 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 299 PASS | A=AB4E54D8CF432CB9 B=FB976A130EB49F2B Cin=1 | expected S=A6E5BEEBDDF7CBE5 Cout=1 Ovfl=0 | actual S=A6E5BEEBDDF7CBE5 Cout=1 Ovfl=0 | delay S=11561 ps Status=8385 ps
+#    Time: 39468719 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 300 PASS | A=EB3866DA134411B6 B=14C79925ECBBEE5C Cin=0 | expected S=0000000000000012 Cout=1 Ovfl=0 | actual S=0000000000000012 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 39602043 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 301 PASS | A=682BC7E479660F8A B=8A25331F4B00F210 Cin=1 | expected S=F250FB03C467019B Cout=0 Ovfl=0 | actual S=F250FB03C467019B Cout=0 Ovfl=0 | delay S=10928 ps Status=9887 ps
+#    Time: 39732971 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 302 PASS | A=F9A835252EA8D2D9 B=55152F1C48572D6F Cin=1 | expected S=4EBD644177000049 Cout=1 Ovfl=0 | actual S=4EBD644177000049 Cout=1 Ovfl=0 | delay S=12147 ps Status=8267 ps
+#    Time: 39865118 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 303 PASS | A=4D6E944E6AF1B46C B=DFA10D7B66B5685F Cin=1 | expected S=2D0FA1C9D1A71CCC Cout=1 Ovfl=0 | actual S=2D0FA1C9D1A71CCC Cout=1 Ovfl=0 | delay S=11214 ps Status=8674 ps
+#    Time: 39996332 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 304 PASS | A=FFFFFFFFFFFFFFFD B=7FFFFFFFFFFFFFF0 Cin=1 | expected S=7FFFFFFFFFFFFFEE Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFEE Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 40127464 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 305 PASS | A=8000000000000000 B=FFFFFFFFFFFFFFF6 Cin=1 | expected S=7FFFFFFFFFFFFFF7 Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFF7 Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 40260645 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 306 PASS | A=0000000000000002 B=FFFFFFFFFFFFFFF3 Cin=0 | expected S=FFFFFFFFFFFFFFF5 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFF5 Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 40393826 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 307 PASS | A=1103A4852E20FA92 B=2040793DDC07F9D8 Cin=0 | expected S=31441DC30A28F46A Cout=0 Ovfl=0 | actual S=31441DC30A28F46A Cout=0 Ovfl=0 | delay S=11126 ps Status=8630 ps
+#    Time: 40524952 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 308 PASS | A=14EB375FDB30F1CA B=EB14C8A024CF1580 Cin=0 | expected S=000000000000074A Cout=1 Ovfl=0 | actual S=000000000000074A Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 40658276 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 309 PASS | A=D82C00DCA7A012FD B=5C8BD7CED57EA12D Cin=1 | expected S=34B7D8AB7D1EB42B Cout=1 Ovfl=0 | actual S=34B7D8AB7D1EB42B Cout=1 Ovfl=0 | delay S=11214 ps Status=8385 ps
+#    Time: 40789490 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 310 PASS | A=D7239E7037B23118 B=28DC618FC84DDFC2 Cin=0 | expected S=00000000000010DA Cout=1 Ovfl=0 | actual S=00000000000010DA Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 40922814 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 311 PASS | A=8000000000000002 B=0000000000000006 Cin=1 | expected S=8000000000000009 Cout=0 Ovfl=0 | actual S=8000000000000009 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 41053868 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 312 PASS | A=8000000000000007 B=000000000000001D Cin=1 | expected S=8000000000000025 Cout=0 Ovfl=0 | actual S=8000000000000025 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 41184922 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 313 PASS | A=77051C42A157608D B=88FAE3BD5EA89F7C Cin=0 | expected S=0000000000000009 Cout=1 Ovfl=0 | actual S=0000000000000009 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 41318086 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 314 PASS | A=15DDD9A915A6710A B=693D4C4A80A7BB42 Cin=0 | expected S=7F1B25F3964E2C4C Cout=0 Ovfl=0 | actual S=7F1B25F3964E2C4C Cout=0 Ovfl=0 | delay S=11085 ps Status=10018 ps
+#    Time: 41449171 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 315 PASS | A=4064309B88D91E0C B=D4C771F11CAF2A07 Cin=0 | expected S=152BA28CA5884813 Cout=1 Ovfl=0 | actual S=152BA28CA5884813 Cout=1 Ovfl=0 | delay S=11101 ps Status=8674 ps
+#    Time: 41580272 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 316 PASS | A=6011B277964D911F B=02193CCA0DB0ECD2 Cin=1 | expected S=622AEF41A3FE7DF2 Cout=0 Ovfl=0 | actual S=622AEF41A3FE7DF2 Cout=0 Ovfl=0 | delay S=11066 ps Status=9488 ps
+#    Time: 41711338 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 317 PASS | A=951BB43C667518BA B=DFAF50D1A79F1AB5 Cin=1 | expected S=74CB050E0E143370 Cout=1 Ovfl=1 | actual S=74CB050E0E143370 Cout=1 Ovfl=1 | delay S=11101 ps Status=9595 ps
+#    Time: 41842439 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 318 PASS | A=7FFFFFFFFFFFFFF5 B=8000000000000003 Cin=0 | expected S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | delay S=13241 ps Status=12960 ps
+#    Time: 41975680 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 319 PASS | A=7FFFFFFFFFFFFFF8 B=7FFFFFFFFFFFFFF5 Cin=0 | expected S=FFFFFFFFFFFFFFED Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFED Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 42106812 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 320 PASS | A=B339D66C0B75D4DC B=699CA74D9B712267 Cin=0 | expected S=1CD67DB9A6E6F743 Cout=1 Ovfl=0 | actual S=1CD67DB9A6E6F743 Cout=1 Ovfl=0 | delay S=11085 ps Status=8334 ps
+#    Time: 42237897 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 321 PASS | A=800000000000000A B=8000000000000005 Cin=1 | expected S=0000000000000010 Cout=1 Ovfl=1 | actual S=0000000000000010 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 42368951 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 322 PASS | A=27B5919C5091A24F B=D84A6E63AF6E5DB2 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 42502275 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 323 PASS | A=B4D80D9B6CD841DC B=4B27F2649327BEAC Cin=0 | expected S=0000000000000088 Cout=1 Ovfl=0 | actual S=0000000000000088 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 42635599 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 324 PASS | A=7FFFFFFFFFFFFFF4 B=7FFFFFFFFFFFFFF9 Cin=1 | expected S=FFFFFFFFFFFFFFEE Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFEE Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 42766731 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 325 PASS | A=776E6301FE8E2E33 B=B8EAC6A25F60851A Cin=0 | expected S=305929A45DEEB34D Cout=1 Ovfl=0 | actual S=305929A45DEEB34D Cout=1 Ovfl=0 | delay S=11158 ps Status=8696 ps
+#    Time: 42897889 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 326 PASS | A=7FFFFFFFFFFFFFFC B=FFFFFFFFFFFFFFF4 Cin=1 | expected S=7FFFFFFFFFFFFFF1 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFF1 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 43029021 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 327 PASS | A=6A192E628B647432 B=95E6D19D749B8BCE Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=13086 ps Status=12426 ps
+#    Time: 43162107 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 328 PASS | A=8898FBA2E726AA3C B=1B6E99674BA12374 Cin=0 | expected S=A407950A32C7CDB0 Cout=0 Ovfl=0 | actual S=A407950A32C7CDB0 Cout=0 Ovfl=0 | delay S=11645 ps Status=8630 ps
+#    Time: 43293752 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 329 PASS | A=38E4671856EC026B B=C71B98E7A913FD9F Cin=0 | expected S=000000000000000A Cout=1 Ovfl=0 | actual S=000000000000000A Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 43427076 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 330 PASS | A=EBBB5E2BB83DB26C B=1444A1D447C2C039 Cin=1 | expected S=00000000000072A6 Cout=1 Ovfl=0 | actual S=00000000000072A6 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 43560159 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 331 PASS | A=C674D04E5A4BEDDB B=FFB16E3B144557CD Cin=0 | expected S=C6263E896E9145A8 Cout=1 Ovfl=0 | actual S=C6263E896E9145A8 Cout=1 Ovfl=0 | delay S=10906 ps Status=8385 ps
+#    Time: 43691065 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 332 PASS | A=8000000000000001 B=800000000000000E Cin=0 | expected S=000000000000000F Cout=1 Ovfl=1 | actual S=000000000000000F Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 43822119 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 333 PASS | A=1F828A42A3202295 B=E07D75BD5CDFEA91 Cin=0 | expected S=0000000000000D26 Cout=1 Ovfl=0 | actual S=0000000000000D26 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 43955283 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 334 PASS | A=381C96099F11C526 B=16B4B729E9C0152F Cin=0 | expected S=4ED14D3388D1DA55 Cout=0 Ovfl=0 | actual S=4ED14D3388D1DA55 Cout=0 Ovfl=0 | delay S=11085 ps Status=8630 ps
+#    Time: 44086368 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 335 PASS | A=D5B25A21ECA20117 B=187BBFF4DD728FD1 Cin=0 | expected S=EE2E1A16CA1490E8 Cout=0 Ovfl=0 | actual S=EE2E1A16CA1490E8 Cout=0 Ovfl=0 | delay S=10937 ps Status=9536 ps
+#    Time: 44217305 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 336 PASS | A=868A1629A6EF48C1 B=DDAB56D6BDA0E31C Cin=0 | expected S=64356D0064902BDD Cout=1 Ovfl=1 | actual S=64356D0064902BDD Cout=1 Ovfl=1 | delay S=12367 ps Status=9475 ps
+#    Time: 44349672 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 337 PASS | A=CB7A75E24ACCDC9F B=694F94F978FC5833 Cin=1 | expected S=34CA0ADBC3C934D3 Cout=1 Ovfl=0 | actual S=34CA0ADBC3C934D3 Cout=1 Ovfl=0 | delay S=10937 ps Status=8330 ps
+#    Time: 44480609 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 338 PASS | A=C5E77D893CD46914 B=FDE12DD40866068D Cin=1 | expected S=C3C8AB5D453A6FA2 Cout=1 Ovfl=0 | actual S=C3C8AB5D453A6FA2 Cout=1 Ovfl=0 | delay S=11386 ps Status=8385 ps
+#    Time: 44611995 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 339 PASS | A=3243725DE6151134 B=F495CCAD6F58CD4F Cin=1 | expected S=26D93F0B556DDE84 Cout=1 Ovfl=0 | actual S=26D93F0B556DDE84 Cout=1 Ovfl=0 | delay S=11189 ps Status=8696 ps
+#    Time: 44743184 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 340 PASS | A=7CFC8C72AAFFEED8 B=D4021D0D1989CE3F Cin=0 | expected S=50FEA97FC489BD17 Cout=1 Ovfl=0 | actual S=50FEA97FC489BD17 Cout=1 Ovfl=0 | delay S=11679 ps Status=8674 ps
+#    Time: 44874863 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 341 PASS | A=201C09A1F2CDDC21 B=E8EF0A8214C85F33 Cin=0 | expected S=090B142407963B54 Cout=1 Ovfl=0 | actual S=090B142407963B54 Cout=1 Ovfl=0 | delay S=11134 ps Status=8696 ps
+#    Time: 45005997 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 342 PASS | A=8000000000000001 B=800000000000000E Cin=0 | expected S=000000000000000F Cout=1 Ovfl=1 | actual S=000000000000000F Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 45137051 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 343 PASS | A=6A0E520EC22F06E5 B=D7513DDD97D5AEA9 Cin=0 | expected S=415F8FEC5A04B58E Cout=1 Ovfl=0 | actual S=415F8FEC5A04B58E Cout=1 Ovfl=0 | delay S=11502 ps Status=8674 ps
+#    Time: 45268553 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 344 PASS | A=60B50532F1CF2126 B=9F4AFACD0E30DEE2 Cin=0 | expected S=0000000000000008 Cout=1 Ovfl=0 | actual S=0000000000000008 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 45401877 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 345 PASS | A=61D69BEB647DF704 B=8E84113FBBF5249C Cin=0 | expected S=F05AAD2B20731BA0 Cout=0 Ovfl=0 | actual S=F05AAD2B20731BA0 Cout=0 Ovfl=0 | delay S=10993 ps Status=9706 ps
+#    Time: 45532870 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 346 PASS | A=2BD497EAC1FEFD08 B=7EFE27CA1A157A01 Cin=1 | expected S=AAD2BFB4DC14770A Cout=0 Ovfl=1 | actual S=AAD2BFB4DC14770A Cout=0 Ovfl=1 | delay S=11085 ps Status=8745 ps
+#    Time: 45663955 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 347 PASS | A=7FFFFFFFFFFFFFF8 B=7FFFFFFFFFFFFFF3 Cin=1 | expected S=FFFFFFFFFFFFFFEC Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFEC Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 45795087 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 348 PASS | A=6631340C4D0BCBDA B=69105184C74777A2 Cin=0 | expected S=CF4185911453437C Cout=0 Ovfl=1 | actual S=CF4185911453437C Cout=0 Ovfl=1 | delay S=11323 ps Status=8745 ps
+#    Time: 45926410 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 349 PASS | A=CA8C3BE46B236CB0 B=0CD5660E35106859 Cin=1 | expected S=D761A1F2A033D50A Cout=0 Ovfl=0 | actual S=D761A1F2A033D50A Cout=0 Ovfl=0 | delay S=11316 ps Status=9416 ps
+#    Time: 46057726 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 350 PASS | A=5A8C2CEA9A3F42B2 B=A573D31565C0BF7E Cin=1 | expected S=0000000000000231 Cout=1 Ovfl=0 | actual S=0000000000000231 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 46190809 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 351 PASS | A=834978046D0C33E4 B=2F2853CBA00F7927 Cin=1 | expected S=B271CBD00D1BAD0C Cout=0 Ovfl=0 | actual S=B271CBD00D1BAD0C Cout=0 Ovfl=0 | delay S=11382 ps Status=8630 ps
+#    Time: 46322191 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 352 PASS | A=8000000000000010 B=FFFFFFFFFFFFFFF4 Cin=0 | expected S=8000000000000004 Cout=1 Ovfl=0 | actual S=8000000000000004 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 46455355 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 353 PASS | A=5458D9D7FD2A3269 B=CEE4BFCCFAA91F67 Cin=0 | expected S=233D99A4F7D351D0 Cout=1 Ovfl=0 | actual S=233D99A4F7D351D0 Cout=1 Ovfl=0 | delay S=11439 ps Status=8674 ps
+#    Time: 46586794 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 354 PASS | A=8000000000000006 B=7FFFFFFFFFFFFFFB Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 46719958 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 355 PASS | A=9708CF15CBF13770 B=92E44A6F1FCD9D83 Cin=1 | expected S=29ED1984EBBED4F4 Cout=1 Ovfl=1 | actual S=29ED1984EBBED4F4 Cout=1 Ovfl=1 | delay S=11066 ps Status=8689 ps
+#    Time: 46851024 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 356 PASS | A=8000000000000000 B=800000000000000B Cin=1 | expected S=000000000000000C Cout=1 Ovfl=1 | actual S=000000000000000C Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 46982078 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 357 PASS | A=77DF2FE66A1B47A0 B=C94EFB7016D772F9 Cin=0 | expected S=412E2B5680F2BA99 Cout=1 Ovfl=0 | actual S=412E2B5680F2BA99 Cout=1 Ovfl=0 | delay S=10966 ps Status=8674 ps
+#    Time: 47113044 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 358 PASS | A=4BFEB2D7F9AA7F3C B=B4014D280655E765 Cin=0 | expected S=00000000000066A1 Cout=1 Ovfl=0 | actual S=00000000000066A1 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 47246368 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 359 PASS | A=51F35E632582CD33 B=1ADE16579E266F64 Cin=1 | expected S=6CD174BAC3A93C98 Cout=0 Ovfl=0 | actual S=6CD174BAC3A93C98 Cout=0 Ovfl=0 | delay S=10979 ps Status=9416 ps
+#    Time: 47377347 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 360 PASS | A=800000000000000B B=8000000000000006 Cin=0 | expected S=0000000000000011 Cout=1 Ovfl=1 | actual S=0000000000000011 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 47508401 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 361 PASS | A=ABFD4EA68768AD1B B=5402B159789752E7 Cin=0 | expected S=0000000000000002 Cout=1 Ovfl=0 | actual S=0000000000000002 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 47641484 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 362 PASS | A=5FA0C210F162B539 B=A05F3DEF0E9D4ACB Cin=1 | expected S=0000000000000005 Cout=1 Ovfl=0 | actual S=0000000000000005 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 47774808 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 363 PASS | A=7286CF57368BE2AB B=8D7930A8C974A1F7 Cin=1 | expected S=00000000000084A3 Cout=1 Ovfl=0 | actual S=00000000000084A3 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 47908132 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 364 PASS | A=D826874B416AD7E0 B=C99D583E41BCFC33 Cin=0 | expected S=A1C3DF898327D413 Cout=1 Ovfl=0 | actual S=A1C3DF898327D413 Cout=1 Ovfl=0 | delay S=11599 ps Status=8330 ps
+#    Time: 48039731 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 365 PASS | A=7E062E85AE59BC60 B=D08E7E2BED348035 Cin=0 | expected S=4E94ACB19B8E3C95 Cout=1 Ovfl=0 | actual S=4E94ACB19B8E3C95 Cout=1 Ovfl=0 | delay S=11085 ps Status=8674 ps
+#    Time: 48170816 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 366 PASS | A=7FFFFFFFFFFFFFFD B=000000000000000F Cin=1 | expected S=800000000000000D Cout=0 Ovfl=1 | actual S=800000000000000D Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 48304140 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 367 PASS | A=7E63AF90088A3081 B=819C506FF775CFFF Cin=1 | expected S=0000000000000081 Cout=1 Ovfl=0 | actual S=0000000000000081 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 48437464 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 368 PASS | A=376C8F47C7F35F04 B=5B038F9999F96C56 Cin=0 | expected S=92701EE161ECCB5A Cout=0 Ovfl=1 | actual S=92701EE161ECCB5A Cout=0 Ovfl=1 | delay S=10906 ps Status=8745 ps
+#    Time: 48568370 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 369 PASS | A=281113FE837E0D26 B=7236E764C4CC8A3B Cin=0 | expected S=9A47FB63484A9761 Cout=0 Ovfl=1 | actual S=9A47FB63484A9761 Cout=0 Ovfl=1 | delay S=11404 ps Status=8745 ps
+#    Time: 48699774 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 370 PASS | A=63B1887FF3DFBC37 B=9C4E77800C205126 Cin=0 | expected S=0000000000000D5D Cout=1 Ovfl=0 | actual S=0000000000000D5D Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 48833098 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 371 PASS | A=FE954F8CA37C362A B=DC77FCE582C969E3 Cin=0 | expected S=DB0D4C722645A00D Cout=1 Ovfl=0 | actual S=DB0D4C722645A00D Cout=1 Ovfl=0 | delay S=11230 ps Status=8267 ps
+#    Time: 48964328 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 372 PASS | A=5FB512B42D0559B2 B=FB05159792B3ABAA Cin=0 | expected S=5ABA284BBFB9055C Cout=1 Ovfl=0 | actual S=5ABA284BBFB9055C Cout=1 Ovfl=0 | delay S=11101 ps Status=8674 ps
+#    Time: 49095429 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 373 PASS | A=D50F0740C529FB5E B=2AF0F8BF3AD60999 Cin=1 | expected S=00000000000004F8 Cout=1 Ovfl=0 | actual S=00000000000004F8 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 49228512 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 374 PASS | A=4B7CAF6CB27803E7 B=E39E80934D87FCE4 Cin=0 | expected S=2F1B3000000000CB Cout=1 Ovfl=0 | actual S=2F1B3000000000CB Cout=1 Ovfl=0 | delay S=12813 ps Status=8674 ps
+#    Time: 49361325 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 375 PASS | A=FFFFFFFFFFFFFFFD B=0000000000000020 Cin=0 | expected S=000000000000001D Cout=1 Ovfl=0 | actual S=000000000000001D Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 49494649 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 376 PASS | A=5BD5083CAC2F3274 B=29BB98861C6947B8 Cin=1 | expected S=8590A0C2C8987A2D Cout=0 Ovfl=1 | actual S=8590A0C2C8987A2D Cout=0 Ovfl=1 | delay S=11066 ps Status=9909 ps
+#    Time: 49625715 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 377 PASS | A=20F0366A1688C18D B=58C2548649083F75 Cin=1 | expected S=79B28AF05F910103 Cout=0 Ovfl=0 | actual S=79B28AF05F910103 Cout=0 Ovfl=0 | delay S=11085 ps Status=9706 ps
+#    Time: 49756800 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 378 PASS | A=7852BC5C5E26C7F5 B=87AD43A3A1D939C1 Cin=1 | expected S=00000000000001B7 Cout=1 Ovfl=0 | actual S=00000000000001B7 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 49890124 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 379 PASS | A=3526068D97F86699 B=AA06A75F5C0110D8 Cin=1 | expected S=DF2CADECF3F97772 Cout=0 Ovfl=0 | actual S=DF2CADECF3F97772 Cout=0 Ovfl=0 | delay S=11016 ps Status=8647 ps
+#    Time: 50021140 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 380 PASS | A=EEE168D9E6C3762F B=7282A48EA237EBE7 Cin=1 | expected S=61640D6888FB6217 Cout=1 Ovfl=0 | actual S=61640D6888FB6217 Cout=1 Ovfl=0 | delay S=11066 ps Status=8267 ps
+#    Time: 50152206 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 381 PASS | A=BCC13DAA77431972 B=433EC25588BCE68F Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 50285370 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 382 PASS | A=3402BE931404DF47 B=0EC60098094B20BE Cin=0 | expected S=42C8BF2B1D500005 Cout=0 Ovfl=0 | actual S=42C8BF2B1D500005 Cout=0 Ovfl=0 | delay S=12161 ps Status=8630 ps
+#    Time: 50417531 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 383 PASS | A=0000000000000007 B=FFFFFFFFFFFFFFE1 Cin=0 | expected S=FFFFFFFFFFFFFFE8 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFE8 Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 50550712 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 384 PASS | A=CEDF649BB6C6642F B=88316418CB49A924 Cin=0 | expected S=5710C8B482100D53 Cout=1 Ovfl=1 | actual S=5710C8B482100D53 Cout=1 Ovfl=1 | delay S=11132 ps Status=9594 ps
+#    Time: 50681844 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 385 PASS | A=000000000000000E B=FFFFFFFFFFFFFFEA Cin=0 | expected S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFF8 Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 50815025 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 386 PASS | A=0877BC42625B0721 B=B302D788E33109D1 Cin=1 | expected S=BB7A93CB458C10F3 Cout=0 Ovfl=0 | actual S=BB7A93CB458C10F3 Cout=0 Ovfl=0 | delay S=11382 ps Status=8647 ps
+#    Time: 50946407 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 387 PASS | A=D0A3F223032CE494 B=E25A2F816FB01BA9 Cin=0 | expected S=B2FE21A472DD003D Cout=1 Ovfl=0 | actual S=B2FE21A472DD003D Cout=1 Ovfl=0 | delay S=11818 ps Status=8330 ps
+#    Time: 51078225 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 388 PASS | A=6A7C8C059CB4DCF7 B=958373FA634B231A Cin=0 | expected S=0000000000000011 Cout=1 Ovfl=0 | actual S=0000000000000011 Cout=1 Ovfl=0 | delay S=13086 ps Status=12426 ps
+#    Time: 51211311 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 389 PASS | A=0A486A6321EFFF7E B=4CA828FA26D8A9C8 Cin=1 | expected S=56F0935D48C8A947 Cout=0 Ovfl=0 | actual S=56F0935D48C8A947 Cout=0 Ovfl=0 | delay S=10937 ps Status=9438 ps
+#    Time: 51342248 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 390 PASS | A=85894E96573DF0DF B=3D56178AAD5328F6 Cin=1 | expected S=C2DF6621049119D6 Cout=0 Ovfl=0 | actual S=C2DF6621049119D6 Cout=0 Ovfl=0 | delay S=11214 ps Status=8630 ps
+#    Time: 51473462 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 391 PASS | A=253130FBAB1B1A39 B=DACECF0454E4E5DF Cin=0 | expected S=0000000000000018 Cout=1 Ovfl=0 | actual S=0000000000000018 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 51606786 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 392 PASS | A=8F54DCD1FA4B2FB2 B=70AB232E05B4DB24 Cin=0 | expected S=0000000000000AD6 Cout=1 Ovfl=0 | actual S=0000000000000AD6 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 51740110 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 393 PASS | A=36490B01AA340F6B B=3451AFFA8BB9E01B Cin=1 | expected S=6A9ABAFC35EDEF87 Cout=0 Ovfl=0 | actual S=6A9ABAFC35EDEF87 Cout=0 Ovfl=0 | delay S=11501 ps Status=8630 ps
+#    Time: 51871611 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 394 PASS | A=5A31B6DADCAFC6DC B=A6517EA8B977811F Cin=1 | expected S=00833583962747FC Cout=1 Ovfl=0 | actual S=00833583962747FC Cout=1 Ovfl=0 | delay S=11305 ps Status=9828 ps
+#    Time: 52002916 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 395 PASS | A=36663A7D7A818D3A B=C999C582857E7D6E Cin=1 | expected S=0000000000000AA9 Cout=1 Ovfl=0 | actual S=0000000000000AA9 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 52136240 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 396 PASS | A=7B54CA4CCDA03BF1 B=868E77C09DEEA09C Cin=0 | expected S=01E3420D6B8EDC8D Cout=1 Ovfl=0 | actual S=01E3420D6B8EDC8D Cout=1 Ovfl=0 | delay S=11054 ps Status=9665 ps
+#    Time: 52267294 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 397 PASS | A=FFFFFFFFFFFFFFF1 B=000000000000000F Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 52400618 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 398 PASS | A=B8545F610BF14ADC B=83DEBEB94BD50274 Cin=1 | expected S=3C331E1A57C64D51 Cout=1 Ovfl=1 | actual S=3C331E1A57C64D51 Cout=1 Ovfl=1 | delay S=10937 ps Status=8689 ps
+#    Time: 52531555 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 399 PASS | A=B1627BECEECA313B B=811AA51EC02B691A Cin=0 | expected S=327D210BAEF59A55 Cout=1 Ovfl=1 | actual S=327D210BAEF59A55 Cout=1 Ovfl=1 | delay S=10943 ps Status=8689 ps
+#    Time: 52662498 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 400 PASS | A=C6C7D438BCBDA147 B=D13F342350044F7B Cin=1 | expected S=9807085C0CC1F0C3 Cout=1 Ovfl=0 | actual S=9807085C0CC1F0C3 Cout=1 Ovfl=0 | delay S=11124 ps Status=8385 ps
+#    Time: 52793622 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 401 PASS | A=B5D3661FDD57A447 B=4A2C99E022A85FBC Cin=0 | expected S=0000000000000403 Cout=1 Ovfl=0 | actual S=0000000000000403 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 52926946 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 402 PASS | A=9F29ECF21AB9A519 B=1EBAC376768FA789 Cin=1 | expected S=BDE4B06891494CA3 Cout=0 Ovfl=0 | actual S=BDE4B06891494CA3 Cout=0 Ovfl=0 | delay S=11101 ps Status=8630 ps
+#    Time: 53058047 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 403 PASS | A=653BA6094AA12BFB B=E8A7331D5EFD2312 Cin=1 | expected S=4DE2D926A99E4F0E Cout=1 Ovfl=0 | actual S=4DE2D926A99E4F0E Cout=1 Ovfl=0 | delay S=10997 ps Status=8674 ps
+#    Time: 53189044 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 404 PASS | A=8A95626AB3EC1C05 B=F102FE141B9EB23D Cin=1 | expected S=7B98607ECF8ACE43 Cout=1 Ovfl=1 | actual S=7B98607ECF8ACE43 Cout=1 Ovfl=1 | delay S=11053 ps Status=9547 ps
+#    Time: 53320097 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 405 PASS | A=906705B1DECD61F4 B=6A98FA4E21329E19 Cin=0 | expected S=FB0000000000000D Cout=0 Ovfl=0 | actual S=FB0000000000000D Cout=0 Ovfl=0 | delay S=13324 ps Status=9722 ps
+#    Time: 53453421 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 406 PASS | A=64AFE5B8A6D9BC29 B=9B501A47592677C8 Cin=0 | expected S=00000000000033F1 Cout=1 Ovfl=0 | actual S=00000000000033F1 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 53586745 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 407 PASS | A=B87FD38024BF6315 B=47802C7FDB409CEB Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 53719828 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 408 PASS | A=94FE01CEEA467361 B=E451BE2FA5B98EE1 Cin=0 | expected S=794FBFFE90000242 Cout=1 Ovfl=1 | actual S=794FBFFE90000242 Cout=1 Ovfl=1 | delay S=11719 ps Status=9781 ps
+#    Time: 53851547 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 409 PASS | A=B36DC7D316511AE2 B=4C92382CE9AEE5A1 Cin=1 | expected S=0000000000000084 Cout=1 Ovfl=0 | actual S=0000000000000084 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 53984871 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 410 PASS | A=FFFFFFFFFFFFFFFF B=800000000000000C Cin=1 | expected S=800000000000000C Cout=1 Ovfl=0 | actual S=800000000000000C Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 54118195 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 411 PASS | A=56163D54B6CC7358 B=10C5A729CAFB4783 Cin=1 | expected S=66DBE47E81C7BADC Cout=0 Ovfl=0 | actual S=66DBE47E81C7BADC Cout=0 Ovfl=0 | delay S=11345 ps Status=9536 ps
+#    Time: 54249540 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 412 PASS | A=FCDA8AC77A84542D B=3F3B5EF983D6EA25 Cin=0 | expected S=3C15E9C0FE5B3E52 Cout=1 Ovfl=0 | actual S=3C15E9C0FE5B3E52 Cout=1 Ovfl=0 | delay S=10979 ps Status=8402 ps
+#    Time: 54380519 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 413 PASS | A=57D768260D82431C B=8AB6F9242F2C0E20 Cin=1 | expected S=E28E614A3CAE513D Cout=0 Ovfl=0 | actual S=E28E614A3CAE513D Cout=0 Ovfl=0 | delay S=11133 ps Status=9416 ps
+#    Time: 54511652 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 414 PASS | A=0EE0157091D24324 B=6D65098974AF5BC1 Cin=1 | expected S=7C451EFA06819EE6 Cout=0 Ovfl=0 | actual S=7C451EFA06819EE6 Cout=0 Ovfl=0 | delay S=11098 ps Status=9887 ps
+#    Time: 54642750 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 415 PASS | A=21FEE9BA9A107379 B=C7D67BAAD1E466AC Cin=1 | expected S=E9D565656BF4DA26 Cout=0 Ovfl=0 | actual S=E9D565656BF4DA26 Cout=0 Ovfl=0 | delay S=11066 ps Status=9416 ps
+#    Time: 54773816 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 416 PASS | A=EE26411F58AE67D4 B=8E28B1A677B8D008 Cin=0 | expected S=7C4EF2C5D06737DC Cout=1 Ovfl=1 | actual S=7C4EF2C5D06737DC Cout=1 Ovfl=1 | delay S=11066 ps Status=9946 ps
+#    Time: 54904882 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 417 PASS | A=8000000000000006 B=000000000000000B Cin=0 | expected S=8000000000000011 Cout=0 Ovfl=0 | actual S=8000000000000011 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 55035936 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 418 PASS | A=7FFFFFFFFFFFFFF4 B=7FFFFFFFFFFFFFFD Cin=0 | expected S=FFFFFFFFFFFFFFF1 Cout=0 Ovfl=1 | actual S=FFFFFFFFFFFFFFF1 Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 55167068 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 419 PASS | A=7FFFFFFFFFFFFFF3 B=FFFFFFFFFFFFFFEB Cin=1 | expected S=7FFFFFFFFFFFFFDF Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFDF Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 55298200 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 420 PASS | A=A74EAACAF3A0E1F4 B=58B155350C5F246A Cin=1 | expected S=000000000000065F Cout=1 Ovfl=0 | actual S=000000000000065F Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 55431364 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 421 PASS | A=7AC719E133133C75 B=8538E61ECCECC39D Cin=1 | expected S=0000000000000013 Cout=1 Ovfl=0 | actual S=0000000000000013 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 55564528 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 422 PASS | A=0D0A54774BD4BFF7 B=0D85AB88B42B46B9 Cin=0 | expected S=1A900000000006B0 Cout=0 Ovfl=0 | actual S=1A900000000006B0 Cout=0 Ovfl=0 | delay S=13324 ps Status=8630 ps
+#    Time: 55697852 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 423 PASS | A=112D9F59AEFB3D56 B=EED260A65104C2C2 Cin=1 | expected S=0000000000000019 Cout=1 Ovfl=0 | actual S=0000000000000019 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 55831176 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 424 PASS | A=E8A2070095B52112 B=3667F5C55D43492D Cin=0 | expected S=1F09FCC5F2F86A3F Cout=1 Ovfl=0 | actual S=1F09FCC5F2F86A3F Cout=1 Ovfl=0 | delay S=11054 ps Status=8402 ps
+#    Time: 55962230 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 425 PASS | A=800000000000000E B=FFFFFFFFFFFFFFEB Cin=1 | expected S=7FFFFFFFFFFFFFFA Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFFA Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 56095411 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 426 PASS | A=36221A748E4C0F3B B=566DE58CDAA5E03E Cin=1 | expected S=8C90000168F1EF7A Cout=0 Ovfl=1 | actual S=8C90000168F1EF7A Cout=0 Ovfl=1 | delay S=11329 ps Status=8745 ps
+#    Time: 56226740 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 427 PASS | A=7FFFFFFFFFFFFFF7 B=000000000000001E Cin=0 | expected S=8000000000000015 Cout=0 Ovfl=1 | actual S=8000000000000015 Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 56360064 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 428 PASS | A=9C86A478A20C39CA B=63795B875DF3C7A4 Cin=1 | expected S=000000000000016F Cout=1 Ovfl=0 | actual S=000000000000016F Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 56493388 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 429 PASS | A=ED4283F209048239 B=B2B8B13FF7BA3311 Cin=0 | expected S=9FFB353200BEB54A Cout=1 Ovfl=0 | actual S=9FFB353200BEB54A Cout=1 Ovfl=0 | delay S=11388 ps Status=8267 ps
+#    Time: 56624776 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 430 PASS | A=213EC3C4477CD820 B=FE570609B4BA6E5C Cin=0 | expected S=1F95C9CDFC37467C Cout=1 Ovfl=0 | actual S=1F95C9CDFC37467C Cout=1 Ovfl=0 | delay S=11323 ps Status=8696 ps
+#    Time: 56756099 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 431 PASS | A=3D35A90368160FFA B=76991A6BC82711EB Cin=0 | expected S=B3CEC36F303D21E5 Cout=0 Ovfl=1 | actual S=B3CEC36F303D21E5 Cout=0 Ovfl=1 | delay S=11091 ps Status=8745 ps
+#    Time: 56887190 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 432 PASS | A=000000000000000A B=000000000000000E Cin=1 | expected S=0000000000000019 Cout=0 Ovfl=0 | actual S=0000000000000019 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 57018244 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 433 PASS | A=A69C788A611E6AFB B=BE866AF77604075D Cin=0 | expected S=6522E381D7227258 Cout=1 Ovfl=1 | actual S=6522E381D7227258 Cout=1 Ovfl=1 | delay S=11071 ps Status=8689 ps
+#    Time: 57149315 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 434 PASS | A=62177CC16A80FE3C B=9DE8833E957F2E16 Cin=1 | expected S=0000000000002C53 Cout=1 Ovfl=0 | actual S=0000000000002C53 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 57282479 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 435 PASS | A=4FD00D694ED0ED00 B=9BD5D35A110F789F Cin=1 | expected S=EBA5E0C35FE065A0 Cout=0 Ovfl=0 | actual S=EBA5E0C35FE065A0 Cout=0 Ovfl=0 | delay S=11456 ps Status=9416 ps
+#    Time: 57413935 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 436 PASS | A=DCADA88E399A7EA3 B=F823DA8F96CDD949 Cin=0 | expected S=D4D1831DD06857EC Cout=1 Ovfl=0 | actual S=D4D1831DD06857EC Cout=1 Ovfl=0 | delay S=11085 ps Status=8267 ps
+#    Time: 57545020 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 437 PASS | A=C1845229B55D83F4 B=FC42E0A55CD92728 Cin=1 | expected S=BDC732CF1236AB1D Cout=1 Ovfl=0 | actual S=BDC732CF1236AB1D Cout=1 Ovfl=0 | delay S=11054 ps Status=8385 ps
+#    Time: 57676074 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 438 PASS | A=D652C45BC2B2D924 B=7C7A1389D8238AA1 Cin=0 | expected S=52CCD7E59AD663C5 Cout=1 Ovfl=0 | actual S=52CCD7E59AD663C5 Cout=1 Ovfl=0 | delay S=11066 ps Status=8267 ps
+#    Time: 57807140 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 439 PASS | A=6A5A4C6C75C697D5 B=8FD21E21A941551A Cin=0 | expected S=FA2C6A8E1F07ECEF Cout=0 Ovfl=0 | actual S=FA2C6A8E1F07ECEF Cout=0 Ovfl=0 | delay S=11345 ps Status=9654 ps
+#    Time: 57938485 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 440 PASS | A=533FCB0C8DF22BEC B=3C57A1B8B43D9527 Cin=1 | expected S=8F976CC5422FC114 Cout=0 Ovfl=1 | actual S=8F976CC5422FC114 Cout=0 Ovfl=1 | delay S=11841 ps Status=8745 ps
+#    Time: 58070326 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 441 PASS | A=CDDAED0966380141 B=671FD4F4609028FC Cin=1 | expected S=34FAC1FDC6C82A3E Cout=1 Ovfl=0 | actual S=34FAC1FDC6C82A3E Cout=1 Ovfl=0 | delay S=11384 ps Status=8330 ps
+#    Time: 58201710 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 442 PASS | A=E092BAF4CAE84FEF B=5DE76D4267BBE9B3 Cin=0 | expected S=3E7A283732A439A2 Cout=1 Ovfl=0 | actual S=3E7A283732A439A2 Cout=1 Ovfl=0 | delay S=11097 ps Status=8385 ps
+#    Time: 58332807 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 443 PASS | A=B88EE01693DE1C2D B=81502AB22A567661 Cin=0 | expected S=39DF0AC8BE34928E Cout=1 Ovfl=1 | actual S=39DF0AC8BE34928E Cout=1 Ovfl=1 | delay S=11101 ps Status=8689 ps
+#    Time: 58463908 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 444 PASS | A=C80F8C1A20B12B3E B=27A037C79FEE51DF Cin=1 | expected S=EFAFC3E1C09F7D1E Cout=0 Ovfl=0 | actual S=EFAFC3E1C09F7D1E Cout=0 Ovfl=0 | delay S=11684 ps Status=9856 ps
+#    Time: 58595592 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 445 PASS | A=8000000000000002 B=7FFFFFFFFFFFFFFA Cin=0 | expected S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | actual S=FFFFFFFFFFFFFFFC Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 58728773 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 446 PASS | A=8000000000000005 B=FFFFFFFFFFFFFFF5 Cin=0 | expected S=7FFFFFFFFFFFFFFA Cout=1 Ovfl=1 | actual S=7FFFFFFFFFFFFFFA Cout=1 Ovfl=1 | delay S=13181 ps Status=12956 ps
+#    Time: 58861954 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 447 PASS | A=8000000000000004 B=800000000000000F Cin=1 | expected S=0000000000000014 Cout=1 Ovfl=1 | actual S=0000000000000014 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 58993008 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 448 PASS | A=0000000000000003 B=0000000000000001 Cin=1 | expected S=0000000000000005 Cout=0 Ovfl=0 | actual S=0000000000000005 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 59124062 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 449 PASS | A=E0AED546F2DE235A B=583F2FB00D2A49E5 Cin=0 | expected S=38EE04F700086D3F Cout=1 Ovfl=0 | actual S=38EE04F700086D3F Cout=1 Ovfl=0 | delay S=11418 ps Status=8385 ps
+#    Time: 59255480 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 450 PASS | A=BE4A53C2696C2EA9 B=824A7A516044D7E1 Cin=1 | expected S=4094CE13C9B1068B Cout=1 Ovfl=1 | actual S=4094CE13C9B1068B Cout=1 Ovfl=1 | delay S=10937 ps Status=8689 ps
+#    Time: 59386417 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 451 PASS | A=718AF4AFF4EB069B B=D0C153330F7D76F3 Cin=0 | expected S=424C47E304687D8E Cout=1 Ovfl=0 | actual S=424C47E304687D8E Cout=1 Ovfl=0 | delay S=11123 ps Status=8674 ps
+#    Time: 59517540 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 452 PASS | A=D5286FD45C11A701 B=2AD7902BA3EE58FF Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 59650864 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 453 PASS | A=07815F1220FE9A2F B=D1EAC134E5C61714 Cin=0 | expected S=D96C204706C4B143 Cout=0 Ovfl=0 | actual S=D96C204706C4B143 Cout=0 Ovfl=0 | delay S=11101 ps Status=9416 ps
+#    Time: 59781965 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 454 PASS | A=FE9E76903B8CDF26 B=0161896FC47320DC Cin=1 | expected S=0000000000000003 Cout=1 Ovfl=0 | actual S=0000000000000003 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 59915289 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 455 PASS | A=0000000000000003 B=7FFFFFFFFFFFFFF9 Cin=0 | expected S=7FFFFFFFFFFFFFFC Cout=0 Ovfl=0 | actual S=7FFFFFFFFFFFFFFC Cout=0 Ovfl=0 | delay S=13181 ps Status=12897 ps
+#    Time: 60048470 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 456 PASS | A=7FFFFFFFFFFFFFF5 B=FFFFFFFFFFFFFFFD Cin=1 | expected S=7FFFFFFFFFFFFFF3 Cout=1 Ovfl=0 | actual S=7FFFFFFFFFFFFFF3 Cout=1 Ovfl=0 | delay S=11132 ps Status=8674 ps
+#    Time: 60179602 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 457 PASS | A=7F5323B534A52DDC B=F1F3B4C9F20CF9E5 Cin=1 | expected S=7146D87F26B227C2 Cout=1 Ovfl=0 | actual S=7146D87F26B227C2 Cout=1 Ovfl=0 | delay S=11097 ps Status=8674 ps
+#    Time: 60310699 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 458 PASS | A=158130A0CB2DF091 B=48E76019D4742AF1 Cin=1 | expected S=5E6890BA9FA21B83 Cout=0 Ovfl=0 | actual S=5E6890BA9FA21B83 Cout=0 Ovfl=0 | delay S=11098 ps Status=9416 ps
+#    Time: 60441797 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 459 PASS | A=8000000000000010 B=8000000000000004 Cin=1 | expected S=0000000000000015 Cout=1 Ovfl=1 | actual S=0000000000000015 Cout=1 Ovfl=1 | delay S=11054 ps Status=8689 ps
+#    Time: 60572851 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 460 PASS | A=84CFA3F2E62D1A46 B=14C7D6EEF620388C Cin=0 | expected S=99977AE1DC4D52D2 Cout=0 Ovfl=0 | actual S=99977AE1DC4D52D2 Cout=0 Ovfl=0 | delay S=11066 ps Status=8630 ps
+#    Time: 60703917 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 461 PASS | A=E30EF56197AC053F B=D308529DB9CDD785 Cin=0 | expected S=B61747FF5179DCC4 Cout=1 Ovfl=0 | actual S=B61747FF5179DCC4 Cout=1 Ovfl=0 | delay S=11118 ps Status=8385 ps
+#    Time: 60835035 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 462 PASS | A=7FFFFFFFFFFFFFFD B=0000000000000014 Cin=0 | expected S=8000000000000011 Cout=0 Ovfl=1 | actual S=8000000000000011 Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 60968359 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 463 PASS | A=C4653FC461B86C41 B=3B9AC03B9E479C35 Cin=1 | expected S=0000000000000877 Cout=1 Ovfl=0 | actual S=0000000000000877 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 61101442 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 464 PASS | A=12C3153B7062B9ED B=D32C5E64CC0BDBE6 Cin=0 | expected S=E5EF73A03C6E95D3 Cout=0 Ovfl=0 | actual S=E5EF73A03C6E95D3 Cout=0 Ovfl=0 | delay S=11284 ps Status=9488 ps
+#    Time: 61232726 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 465 PASS | A=A2AA2F1BE3C9A535 B=AD55DD065E591CC0 Cin=0 | expected S=50000C224222C1F5 Cout=1 Ovfl=1 | actual S=50000C224222C1F5 Cout=1 Ovfl=1 | delay S=11630 ps Status=8689 ps
+#    Time: 61364356 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 466 PASS | A=7FFFFFFFFFFFFFFF B=0000000000000009 Cin=0 | expected S=8000000000000008 Cout=0 Ovfl=1 | actual S=8000000000000008 Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 61497680 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 467 PASS | A=A26D9290786B2FCF B=5D926D6F8794DAAE Cin=0 | expected S=0000000000000A7D Cout=1 Ovfl=0 | actual S=0000000000000A7D Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 61631004 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 468 PASS | A=7FFFFFFFFFFFFFF9 B=8000000000000007 Cin=0 | expected S=0000000000000000 Cout=1 Ovfl=0 | actual S=0000000000000000 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 61764328 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 469 PASS | A=456E38D2D065830F B=BA91C72D2F9A7CF1 Cin=1 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 61897652 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 470 PASS | A=1C90D6E3FD889CE3 B=7560FB7556CF323A Cin=1 | expected S=91F1D2595457CF1E Cout=0 Ovfl=1 | actual S=91F1D2595457CF1E Cout=0 Ovfl=1 | delay S=11801 ps Status=8745 ps
+#    Time: 62029453 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 471 PASS | A=3C35C9D36F8C9F9C B=C3CA362C9073637F Cin=1 | expected S=000000000000031C Cout=1 Ovfl=0 | actual S=000000000000031C Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 62162777 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 472 PASS | A=4C484BF1FCF3802C B=A0AD1D268A05E474 Cin=0 | expected S=ECF5691886F964A0 Cout=0 Ovfl=0 | actual S=ECF5691886F964A0 Cout=0 Ovfl=0 | delay S=11097 ps Status=9722 ps
+#    Time: 62293874 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 473 PASS | A=D01F10AEA405A0B8 B=2FE0EF515BFA5F7B Cin=1 | expected S=0000000000000034 Cout=1 Ovfl=0 | actual S=0000000000000034 Cout=1 Ovfl=0 | delay S=13164 ps Status=12426 ps
+#    Time: 62427038 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 474 PASS | A=5FB01F295B377076 B=9715CDA8DF772EBA Cin=0 | expected S=F6C5ECD23AAE9F30 Cout=0 Ovfl=0 | actual S=F6C5ECD23AAE9F30 Cout=0 Ovfl=0 | delay S=11085 ps Status=9536 ps
+#    Time: 62558123 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 475 PASS | A=318810648D048823 B=1C80CE44FA081452 Cin=1 | expected S=4E08DEA9870C9C76 Cout=0 Ovfl=0 | actual S=4E08DEA9870C9C76 Cout=0 Ovfl=0 | delay S=11054 ps Status=8630 ps
+#    Time: 62689177 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 476 PASS | A=E2A34AC80DDC2496 B=2D5CB537F223E4B7 Cin=0 | expected S=100000000000094D Cout=1 Ovfl=0 | actual S=100000000000094D Cout=1 Ovfl=0 | delay S=13083 ps Status=8402 ps
+#    Time: 62822260 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 477 PASS | A=710502D4E525F10D B=E43D7E520628578B Cin=0 | expected S=55428126EB4E4898 Cout=1 Ovfl=0 | actual S=55428126EB4E4898 Cout=1 Ovfl=0 | delay S=11101 ps Status=8674 ps
+#    Time: 62953361 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 478 PASS | A=05B8290536D7EBB2 B=36A37D0B65E4BFDD Cin=1 | expected S=3C5BA6109CBCAB90 Cout=0 Ovfl=0 | actual S=3C5BA6109CBCAB90 Cout=0 Ovfl=0 | delay S=11085 ps Status=8630 ps
+#    Time: 63084446 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 479 PASS | A=DB3EF0E9D314016D B=F1F2F1BD9FF9F6A1 Cin=1 | expected S=CD31E2A7730DF80F Cout=1 Ovfl=0 | actual S=CD31E2A7730DF80F Cout=1 Ovfl=0 | delay S=11016 ps Status=8267 ps
+#    Time: 63215462 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 480 PASS | A=285C81704BA823A1 B=5DB47E8FB457DCD3 Cin=0 | expected S=8611000000000074 Cout=0 Ovfl=1 | actual S=8611000000000074 Cout=0 Ovfl=1 | delay S=13324 ps Status=9833 ps
+#    Time: 63348786 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 481 PASS | A=034CA9873D5A1957 B=6C4D1983E0328C33 Cin=0 | expected S=6F99C30B1D8CA58A Cout=0 Ovfl=0 | actual S=6F99C30B1D8CA58A Cout=0 Ovfl=0 | delay S=11236 ps Status=9887 ps
+#    Time: 63480022 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 482 PASS | A=FFFFFFFFFFFFFFFD B=000000000000000F Cin=0 | expected S=000000000000000C Cout=1 Ovfl=0 | actual S=000000000000000C Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 63613346 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 483 PASS | A=957330D8FC0E82B9 B=6A8CCF2703F17E36 Cin=1 | expected S=00000000000000F0 Cout=1 Ovfl=0 | actual S=00000000000000F0 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 63746670 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 484 PASS | A=9B7DBA6C76D087EB B=5D21304EE0891527 Cin=1 | expected S=F89EEABB57599D13 Cout=0 Ovfl=0 | actual S=F89EEABB57599D13 Cout=0 Ovfl=0 | delay S=11085 ps Status=9438 ps
+#    Time: 63877755 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 485 PASS | A=000000000000000D B=7FFFFFFFFFFFFFF3 Cin=1 | expected S=8000000000000001 Cout=0 Ovfl=1 | actual S=8000000000000001 Cout=0 Ovfl=1 | delay S=13164 ps Status=12485 ps
+#    Time: 64010919 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 486 PASS | A=D17D91ED829E035B B=2E826E127D61FCAA Cin=0 | expected S=0000000000000005 Cout=1 Ovfl=0 | actual S=0000000000000005 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 64144002 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 487 PASS | A=94CA1464BBA9A12F B=7BEDE86466A6EED9 Cin=0 | expected S=10B7FCC922509008 Cout=1 Ovfl=0 | actual S=10B7FCC922509008 Cout=1 Ovfl=0 | delay S=11686 ps Status=8385 ps
+#    Time: 64275688 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 488 PASS | A=7BD389EDF8E54FED B=64E1AB0D3AA89E68 Cin=0 | expected S=E0B534FB338DEE55 Cout=0 Ovfl=1 | actual S=E0B534FB338DEE55 Cout=0 Ovfl=1 | delay S=11085 ps Status=8745 ps
+#    Time: 64406773 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 489 PASS | A=52C4A2B76054E052 B=7CBABE2367502041 Cin=1 | expected S=CF7F60DAC7A50094 Cout=0 Ovfl=1 | actual S=CF7F60DAC7A50094 Cout=0 Ovfl=1 | delay S=11097 ps Status=8745 ps
+#    Time: 64537870 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 490 PASS | A=80FCE86167FDF945 B=7F03179E98021196 Cin=1 | expected S=0000000000000ADC Cout=1 Ovfl=0 | actual S=0000000000000ADC Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 64670953 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 491 PASS | A=7FFFFFFFFFFFFFFF B=000000000000000F Cin=0 | expected S=800000000000000E Cout=0 Ovfl=1 | actual S=800000000000000E Cout=0 Ovfl=1 | delay S=13324 ps Status=12645 ps
+#    Time: 64804277 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 492 PASS | A=5EEFA76E8E09BB61 B=A110589171F644A0 Cin=0 | expected S=0000000000000001 Cout=1 Ovfl=0 | actual S=0000000000000001 Cout=1 Ovfl=0 | delay S=13083 ps Status=12426 ps
+#    Time: 64937360 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 493 PASS | A=382B50E1BFD49F88 B=C7D4AF1E402B6183 Cin=1 | expected S=000000000000010C Cout=1 Ovfl=0 | actual S=000000000000010C Cout=1 Ovfl=0 | delay S=13086 ps Status=12426 ps
+#    Time: 65070446 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 494 PASS | A=4B59FABE0DDC0A34 B=50ECD99A0DCD7DC1 Cin=1 | expected S=9C46D4581BA987F6 Cout=0 Ovfl=1 | actual S=9C46D4581BA987F6 Cout=0 Ovfl=1 | delay S=11132 ps Status=8745 ps
+#    Time: 65201578 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 495 PASS | A=FFFFFFFFFFFFFFF8 B=FFFFFFFFFFFFFFF3 Cin=0 | expected S=FFFFFFFFFFFFFFEB Cout=1 Ovfl=0 | actual S=FFFFFFFFFFFFFFEB Cout=1 Ovfl=0 | delay S=11132 ps Status=8267 ps
+#    Time: 65332710 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 496 PASS | A=53D36D3BCED97961 B=7D4AEAACB948B55E Cin=1 | expected S=D11E57E888222EC0 Cout=0 Ovfl=1 | actual S=D11E57E888222EC0 Cout=0 Ovfl=1 | delay S=11066 ps Status=8745 ps
+#    Time: 65463776 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 497 PASS | A=104CEBFDC9E95DA7 B=EFB314023616A297 Cin=0 | expected S=000000000000003E Cout=1 Ovfl=0 | actual S=000000000000003E Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 65597100 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 498 PASS | A=FEA16BC9D97950CD B=0F2B9776366419D2 Cin=0 | expected S=0DCD03400FDD6A9F Cout=1 Ovfl=0 | actual S=0DCD03400FDD6A9F Cout=1 Ovfl=0 | delay S=10943 ps Status=9850 ps
+#    Time: 65728043 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 499 PASS | A=538660DE9933DCD0 B=AC799F2166CC2337 Cin=0 | expected S=0000000000000007 Cout=1 Ovfl=0 | actual S=0000000000000007 Cout=1 Ovfl=0 | delay S=13324 ps Status=12586 ps
+#    Time: 65861367 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 500 PASS | A=2DD03AE2E1FBFDF5 B=AF888061794AFFC7 Cin=0 | expected S=DD58BB445B46FDBC Cout=0 Ovfl=0 | actual S=DD58BB445B46FDBC Cout=0 Ovfl=0 | delay S=11054 ps Status=8647 ps
+#    Time: 65992421 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Simulation Completed: 500 measurements, 0 failures | worst S delay=13324 ps (meas 9) | worst Status delay=12960 ps (meas 133)
+#    Time: 65992421 ps  Iteration: 0  Instance: /tbadder
