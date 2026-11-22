@@ -1,0 +1,703 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+
+// 
+// Device: Altera EP2AGX45DF29C6 Package FBGA780
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP2AGX45DF29C6,
+// with speed grade 6, core voltage 0.9VmV, and temperature 0 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "Adder")
+  (DATE "11/21/2026 11:35:40")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[0\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (255:255:255) (265:265:265))
+        (IOPATH i o (2584:2584:2584) (2593:2593:2593))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[1\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (255:255:255) (264:264:264))
+        (IOPATH i o (2663:2663:2663) (2670:2670:2670))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[2\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (255:255:255) (265:265:265))
+        (IOPATH i o (2559:2559:2559) (2566:2566:2566))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[3\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (221:221:221) (244:244:244))
+        (IOPATH i o (2544:2544:2544) (2553:2553:2553))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[4\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (255:255:255) (263:263:263))
+        (IOPATH i o (2529:2529:2529) (2536:2536:2536))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[5\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (682:682:682) (619:619:619))
+        (IOPATH i o (2653:2653:2653) (2660:2660:2660))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[6\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (255:255:255) (263:263:263))
+        (IOPATH i o (2529:2529:2529) (2536:2536:2536))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\S\[7\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (256:256:256) (266:266:266))
+        (IOPATH i o (2663:2663:2663) (2670:2670:2670))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Cout\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (268:268:268) (272:272:272))
+        (IOPATH i o (2662:2662:2662) (2667:2667:2667))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Ovfl\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (256:256:256) (266:266:266))
+        (IOPATH i o (2534:2534:2534) (2543:2543:2543))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Cin\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (599:599:599) (622:622:622))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (671:671:671) (683:683:683))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (646:646:646) (664:664:664))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1785:1785:1785) (1738:1738:1738))
+        (PORT datae (1844:1844:1844) (1770:1770:1770))
+        (PORT dataf (1790:1790:1790) (1746:1746:1746))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (681:681:681) (693:693:693))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (619:619:619) (642:642:642))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~1\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1752:1752:1752) (1699:1699:1699))
+        (PORT datac (1782:1782:1782) (1736:1736:1736))
+        (PORT datad (1799:1799:1799) (1767:1767:1767))
+        (PORT datae (1842:1842:1842) (1770:1770:1770))
+        (PORT dataf (1849:1849:1849) (1777:1777:1777))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datad combout (374:374:374) (341:341:341))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1358:1358:1358) (1270:1270:1270))
+        (PORT datac (1342:1342:1342) (1265:1265:1265))
+        (PORT datad (1349:1349:1349) (1275:1275:1275))
+        (PORT datae (1665:1665:1665) (1627:1627:1627))
+        (PORT dataf (1660:1660:1660) (1621:1621:1621))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datad combout (374:374:374) (341:341:341))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[2\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (671:671:671) (683:683:683))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[2\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (567:567:567) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:gPair\[0\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1729:1729:1729) (1688:1688:1688))
+        (PORT datac (1741:1741:1741) (1740:1740:1740))
+        (PORT datad (1731:1731:1731) (1688:1688:1688))
+        (PORT dataf (1826:1826:1826) (1780:1780:1780))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~2\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (189:189:189) (196:196:196))
+        (PORT datad (1859:1859:1859) (1901:1901:1901))
+        (PORT datae (1750:1750:1750) (1702:1702:1702))
+        (PORT dataf (742:742:742) (854:854:854))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datad combout (374:374:374) (341:341:341))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[3\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (646:646:646) (664:664:664))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[3\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (567:567:567) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~3\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1344:1344:1344) (1257:1257:1257))
+        (PORT datab (1842:1842:1842) (1910:1910:1910))
+        (PORT datac (1360:1360:1360) (1285:1285:1285))
+        (PORT datad (1898:1898:1898) (1900:1900:1900))
+        (PORT datae (510:510:510) (593:593:593))
+        (PORT dataf (639:639:639) (760:760:760))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (374:374:374) (341:341:341))
+        (IOPATH datad combout (411:411:411) (354:354:354))
+        (IOPATH datae combout (279:279:279) (251:251:251))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[4\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (646:646:646) (664:664:664))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[4\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (589:589:589) (612:612:612))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:gPair\[1\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1677:1677:1677) (1639:1639:1639))
+        (PORT datac (1728:1728:1728) (1680:1680:1680))
+        (PORT datad (1741:1741:1741) (1679:1679:1679))
+        (PORT dataf (1754:1754:1754) (1713:1713:1713))
+        (IOPATH dataa combout (554:554:554) (558:558:558))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:Inner\|gPair\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1682:1682:1682) (1644:1644:1644))
+        (PORT datac (1755:1755:1755) (1710:1710:1710))
+        (PORT datad (1745:1745:1745) (1685:1685:1685))
+        (PORT dataf (1750:1750:1750) (1709:1709:1709))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~4\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1352:1352:1352) (1262:1262:1262))
+        (PORT datab (1357:1357:1357) (1268:1268:1268))
+        (PORT datac (541:541:541) (636:636:636))
+        (PORT datad (564:564:564) (663:663:663))
+        (PORT datae (552:552:552) (632:632:632))
+        (PORT dataf (647:647:647) (731:731:731))
+        (IOPATH dataa combout (554:554:554) (558:558:558))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datad combout (374:374:374) (341:341:341))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[5\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (597:597:597) (625:625:625))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[5\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (656:656:656) (674:674:674))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~1\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1722:1722:1722) (1700:1700:1700))
+        (PORT datac (1870:1870:1870) (1865:1865:1865))
+        (PORT datad (274:274:274) (324:324:324))
+        (PORT dataf (597:597:597) (671:671:671))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Gpre\[4\]\~1\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1735:1735:1735) (1679:1679:1679))
+        (PORT datab (1763:1763:1763) (1745:1745:1745))
+        (PORT datac (189:189:189) (187:187:187))
+        (PORT datad (192:192:192) (175:175:175))
+        (PORT dataf (203:203:203) (193:193:193))
+        (IOPATH dataa combout (554:554:554) (558:558:558))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~5\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1965:1965:1965) (2037:2037:2037))
+        (PORT datac (1792:1792:1792) (1763:1763:1763))
+        (PORT datad (204:204:204) (188:188:188))
+        (PORT dataf (167:167:167) (155:155:155))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[6\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (676:676:676) (694:694:694))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[6\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (597:597:597) (625:625:625))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~3\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1738:1738:1738) (1682:1682:1682))
+        (PORT datab (1848:1848:1848) (1887:1887:1887))
+        (PORT datac (1789:1789:1789) (1761:1761:1761))
+        (PORT datad (1862:1862:1862) (1857:1857:1857))
+        (PORT datae (296:296:296) (347:347:347))
+        (PORT dataf (585:585:585) (663:663:663))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (374:374:374) (341:341:341))
+        (IOPATH datad combout (411:411:411) (354:354:354))
+        (IOPATH datae combout (279:279:279) (251:251:251))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:gPair\[2\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1763:1763:1763) (1745:1745:1745))
+        (PORT datac (1790:1790:1790) (1761:1761:1761))
+        (PORT datad (1731:1731:1731) (1676:1676:1676))
+        (PORT dataf (1816:1816:1816) (1856:1856:1856))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~2\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1758:1758:1758) (1741:1741:1741))
+        (PORT datac (1754:1754:1754) (1704:1704:1704))
+        (PORT datad (1783:1783:1783) (1737:1737:1737))
+        (PORT dataf (1823:1823:1823) (1862:1862:1862))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:Inner\|Gpre\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (193:193:193) (186:186:186))
+        (PORT datac (198:198:198) (195:195:195))
+        (PORT datad (197:197:197) (179:179:179))
+        (PORT dataf (200:200:200) (190:190:190))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~6\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1789:1789:1789) (1730:1730:1730))
+        (PORT datab (1822:1822:1822) (1779:1779:1779))
+        (PORT datac (196:196:196) (189:189:189))
+        (PORT datad (176:176:176) (161:161:161))
+        (PORT dataf (179:179:179) (160:160:160))
+        (IOPATH dataa combout (554:554:554) (558:558:558))
+        (IOPATH datab combout (551:551:551) (557:557:557))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[7\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (701:701:701) (713:713:713))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\B\[7\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (629:629:629) (652:652:652))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Gpre\[6\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1787:1787:1787) (1729:1729:1729))
+        (PORT datac (1831:1831:1831) (1793:1793:1793))
+        (PORT datad (181:181:181) (166:166:166))
+        (PORT dataf (177:177:177) (159:159:159))
+        (IOPATH dataa combout (554:554:554) (558:558:558))
+        (IOPATH datac combout (338:338:338) (322:322:322))
+        (IOPATH datad combout (331:331:331) (305:305:305))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\S\~7\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1788:1788:1788) (1729:1729:1729))
+        (PORT datab (1778:1778:1778) (1718:1718:1718))
+        (PORT datac (1846:1846:1846) (1878:1878:1878))
+        (PORT datad (1815:1815:1815) (1778:1778:1778))
+        (PORT datae (176:176:176) (160:160:160))
+        (PORT dataf (186:186:186) (168:168:168))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (374:374:374) (341:341:341))
+        (IOPATH datad combout (411:411:411) (354:354:354))
+        (IOPATH datae combout (279:279:279) (251:251:251))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\PrefixNetwork\|Recur\:gPair\[3\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1787:1787:1787) (1729:1729:1729))
+        (PORT datac (1836:1836:1836) (1869:1869:1869))
+        (PORT datad (1816:1816:1816) (1772:1772:1772))
+        (PORT dataf (1761:1761:1761) (1703:1703:1703))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~4\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1354:1354:1354) (1276:1276:1276))
+        (PORT datad (1363:1363:1363) (1312:1312:1312))
+        (PORT datae (1344:1344:1344) (1254:1254:1254))
+        (PORT dataf (1337:1337:1337) (1248:1248:1248))
+        (IOPATH datac combout (411:411:411) (354:354:354))
+        (IOPATH datad combout (374:374:374) (341:341:341))
+        (IOPATH datae combout (298:298:298) (258:258:258))
+        (IOPATH dataf combout (126:126:126) (110:110:110))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\[4\]\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (200:200:200) (185:185:185))
+        (PORT datac (253:253:253) (301:301:301))
+        (PORT datad (280:280:280) (332:332:332))
+        (PORT dataf (594:594:594) (670:670:670))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\c\~5\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (183:183:183) (166:166:166))
+        (PORT datac (196:196:196) (196:196:196))
+        (PORT datad (579:579:579) (668:668:668))
+        (PORT datae (195:195:195) (180:180:180))
+        (PORT dataf (166:166:166) (155:155:155))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (374:374:374) (341:341:341))
+        (IOPATH datad combout (411:411:411) (354:354:354))
+        (IOPATH datae combout (279:279:279) (251:251:251))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE \\Ovfl\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1789:1789:1789) (1730:1730:1730))
+        (PORT datab (1822:1822:1822) (1779:1779:1779))
+        (PORT datac (188:188:188) (198:198:198))
+        (PORT datad (188:188:188) (172:172:172))
+        (PORT dataf (178:178:178) (160:160:160))
+        (IOPATH dataa combout (545:545:545) (536:536:536))
+        (IOPATH datab combout (544:544:544) (537:537:537))
+        (IOPATH datac combout (340:340:340) (310:310:310))
+        (IOPATH datad combout (373:373:373) (312:312:312))
+        (IOPATH dataf combout (125:125:125) (116:116:116))
+      )
+    )
+  )
+)

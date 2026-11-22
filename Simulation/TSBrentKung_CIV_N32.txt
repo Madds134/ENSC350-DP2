@@ -1,0 +1,67 @@
+# === TSBrentKung_CIV_N32: BrentKung_CIV_N32.vho + BrentKung_CIV_N32_vhd.sdo, timing ===
+# vsim -t 1ps -voptargs="+acc" -sdfmax "/TBAdder/DUT=ModelSim/BrentKung_CIV_N32_vhd.sdo" work.TSBrentKung_CIV_N32 -gN=32 -gTestVectorFile=Adder00_N32.tvs 
+# Start time: 12:08:52 on Nov 21,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.tsbrentkung_civ_n32
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading work.tbadder(test)
+# Loading brentkung_civ_n32.adder(structure)
+# ** Warning: (vsim-8713) Suspect default binding for component instance 'DUT'.
+# Entity has no generics at all; the component has generic:
+#           N
+#    Time: 0 ps  Iteration: 0  Instance: /TBAdder/DUT File: TBAdder.vhd Line: 49
+# Loading brentkung_civ_n32.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from ModelSim/BrentKung_CIV_N32_vhd.sdo
+# Loading timing data from ModelSim/BrentKung_CIV_N32_vhd.sdo
+# ** Warning: Design size of 21670 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder File: TBAdder.vhd
+# ** Note: TBAdder: N=32, vectors from Adder00_N32.tvs, PreStimTime=100000 ps, StableTime=20000 ps, Timeout=500000 ps
+#    Time: 0 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 1 PASS | A=00000000 B=00000000 Cin=0 | expected S=00000000 Cout=0 Ovfl=0 | actual S=00000000 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 129198 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 2 PASS | A=FFFFFFFF B=00000000 Cin=0 | expected S=FFFFFFFF Cout=0 Ovfl=0 | actual S=FFFFFFFF Cout=0 Ovfl=0 | delay S=10484 ps Status=10231 ps
+#    Time: 259682 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 3 PASS | A=FFFFFFFF B=00000000 Cin=1 | expected S=00000000 Cout=1 Ovfl=0 | actual S=00000000 Cout=1 Ovfl=0 | delay S=10291 ps Status=10051 ps
+#    Time: 389973 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 4 PASS | A=7FFFFFFF B=00000000 Cin=1 | expected S=80000000 Cout=0 Ovfl=1 | actual S=80000000 Cout=0 Ovfl=1 | delay S=10291 ps Status=10321 ps
+#    Time: 520294 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 5 PASS | A=80000000 B=80000000 Cin=0 | expected S=00000000 Cout=1 Ovfl=1 | actual S=00000000 Cout=1 Ovfl=1 | delay S=9198 ps Status=7723 ps
+#    Time: 649492 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 6 PASS | A=00000001 B=FFFFFFFF Cin=0 | expected S=00000000 Cout=1 Ovfl=0 | actual S=00000000 Cout=1 Ovfl=0 | delay S=10503 ps Status=10297 ps
+#    Time: 779995 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 7 PASS | A=FFFFFFFF B=FFFFFFFF Cin=0 | expected S=FFFFFFFE Cout=1 Ovfl=0 | actual S=FFFFFFFE Cout=1 Ovfl=0 | delay S=9189 ps Status=7613 ps
+#    Time: 909184 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 8 PASS | A=00000001 B=00000003 Cin=0 | expected S=00000004 Cout=0 Ovfl=0 | actual S=00000004 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 1038382 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 9 PASS | A=00000002 B=0000000E Cin=0 | expected S=00000010 Cout=0 Ovfl=0 | actual S=00000010 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 1167580 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 10 PASS | A=00000008 B=000000F8 Cin=0 | expected S=00000100 Cout=0 Ovfl=0 | actual S=00000100 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 1296778 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 11 PASS | A=00000080 B=0000FF80 Cin=0 | expected S=00010000 Cout=0 Ovfl=0 | actual S=00010000 Cout=0 Ovfl=0 | delay S=9744 ps Status=7749 ps
+#    Time: 1426522 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 12 PASS | A=00008000 B=FFFF8000 Cin=0 | expected S=00000000 Cout=1 Ovfl=0 | actual S=00000000 Cout=1 Ovfl=0 | delay S=10089 ps Status=9883 ps
+#    Time: 1556611 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 13 PASS | A=00000001 B=00000000 Cin=1 | expected S=00000002 Cout=0 Ovfl=0 | actual S=00000002 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 1685809 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 14 PASS | A=000000FF B=00000000 Cin=1 | expected S=00000100 Cout=0 Ovfl=0 | actual S=00000100 Cout=0 Ovfl=0 | delay S=9188 ps Status=7749 ps
+#    Time: 1814997 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Meas 15 PASS | A=0000FFFF B=00000000 Cin=1 | expected S=00010000 Cout=0 Ovfl=0 | actual S=00010000 Cout=0 Ovfl=0 | delay S=9473 ps Status=7749 ps
+#    Time: 1944470 ps  Iteration: 0  Instance: /tbadder
+# ** Error: Meas 16 FAIL | A=00000001 B=00000001 Cin=0 | expected S=00000003 Cout=0 Ovfl=0 | actual S=00000002 Cout=0 Ovfl=0 | delay S=9198 ps Status=7749 ps
+#    Time: 2073668 ps  Iteration: 0  Instance: /tbadder
+# ** Note: Simulation Completed: 16 measurements, 1 failures | worst S delay=10503 ps (meas 6) | worst Status delay=10321 ps (meas 4)
+#    Time: 2073668 ps  Iteration: 0  Instance: /tbadder

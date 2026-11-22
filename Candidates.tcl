@@ -2,8 +2,9 @@
 # The design candidates, shared by SynthAll.tcl (compiles them) and CollectResults.tcl (reads their reports)
 # A candidate is a {topology, FPGA} pair, named <Topology>_<FPGA> (plus _N<width> when N is not 64)
 
-# Adder width: the generic N of entity Adder (64 for DP2; other powers of 2 for the bonus sweep)
-set N 64
+# Adder width: the generic N of entity Adder. 64 for DP2; the bonus sweep (RunSweep.sh) sets the
+# environment variable ADDER_N to another power of 2, and every revision name then gets _N<width>
+if {[info exists ::env(ADDER_N)]} { set N $::env(ADDER_N) } else { set N 64 }
 
 # Target FPGAs: revision suffix, family, device, core supply voltage
 set FPGAs {
