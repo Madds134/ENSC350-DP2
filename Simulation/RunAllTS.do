@@ -1,5 +1,5 @@
 # RunAllTS.do
-# Runs the timing simulation of every design candidate, then collects the worst-case delays
+# Runs the timing simulation of every design candidate (N = 64), then collects the worst-case delays
 
 do TSRipple_CIV.do
 do TSRipple_CIVE30.do

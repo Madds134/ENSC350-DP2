@@ -33,11 +33,15 @@ proc CornerSlack {Text Corner} {
 }
 
 file mkdir Documentation/OutputFiles
+# One cost table / summary per width: the N = 64 files keep their names, the sweep adds _N<width>
+set Suffix [expr {$N == 64 ? "" : "_N$N"}]
+set CsvFile     Documentation/OutputFiles/CostResults$Suffix.csv
+set SummaryFile Documentation/OutputFiles/QuartusSummary$Suffix.txt
 
 # Cost table: totals, then the LUT-input breakdown that explains any gap from the prediction
 #   Cyclone IV: LE, split into 4 / 3 / <=2 input functions
 #   Arria II:   ALUT and ALM, ALUTs split into 7 / 6 / 5 / 4 / <=3 input functions
-set Csv [open Documentation/OutputFiles/CostResults.csv w]
+set Csv [open $CsvFile w]
 set Header "Candidate,Device,N,LE,ALUT,ALM,In7,In6,In5,In4,In3,In2orLess,In3orLess"
 if {$WithSTA} {
     # Path delay = constraint (1 ns) - slack, at each corner
@@ -72,12 +76,12 @@ foreach C $Candidates {
     puts $Csv [join $Row ,]
 }
 close $Csv
-puts "Wrote Documentation/OutputFiles/CostResults.csv"
+puts "Wrote $CsvFile"
 
 # Merged Quartus summary (a deliverable): map + fit summaries, plus STA once it is allowed
 set Stages {map fit}
 if {$WithSTA} { lappend Stages sta }
-set Out [open Documentation/OutputFiles/QuartusSummary.txt w]
+set Out [open $SummaryFile w]
 foreach C $Candidates {
     set Rev [lindex $C 0]
     foreach Stage $Stages {
@@ -88,4 +92,4 @@ foreach C $Candidates {
     }
 }
 close $Out
-puts "Wrote Documentation/OutputFiles/QuartusSummary.txt"
+puts "Wrote $SummaryFile"

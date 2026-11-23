@@ -8,8 +8,11 @@ output_files/
 Simulation/work/
 # Compiled netlist libraries, one per candidate (made by the TS scripts)
 Simulation/*_CIV/
+Simulation/*_CIV_N*/
 Simulation/*_CIVE30/
+Simulation/*_CIVE30_N*/
 Simulation/*_AII/
+Simulation/*_AII_N*/
 Simulation/transcript
 *.wlf
 *.cr.mti
@@ -23,3 +26,13 @@ Simulation/transcript
 # Editor and tool backups
 *.bak
 *.bkp
+
+# Per-corner netlist copies and helper files written by Quartus next to each default netlist.
+# The TS scripts only use <candidate>.vho + <candidate>_vhd.sdo (the default corner), so the
+# copies stay local. (Copies committed before this rule are still tracked.)
+Simulation/ModelSim/*_slow.vho
+Simulation/ModelSim/*_fast.vho
+Simulation/ModelSim/*_slow.sdo
+Simulation/ModelSim/*_fast.sdo
+Simulation/ModelSim/*.sft
+Simulation/ModelSim/*.xrf

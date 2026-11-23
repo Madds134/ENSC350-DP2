@@ -1,0 +1,1368 @@
+==================== Ripple_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:39:17 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 42
+    Total combinational functions : 42
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== Ripple_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:39:33 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 42 / 114,480 ( < 1 % )
+    Total combinational functions : 42 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== Ripple_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -13.132
+TNS   : -175.093
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -11.728
+TNS   : -156.477
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.551
+TNS   : -86.912
+
+------------------------------------------------------------
+
+==================== Ripple_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:39:52 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 42
+    Total combinational functions : 42
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== Ripple_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:40:01 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 42 / 28,848 ( < 1 % )
+    Total combinational functions : 42 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== Ripple_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -10.821
+TNS   : -145.757
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -9.590
+TNS   : -128.881
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.002
+TNS   : -81.638
+
+------------------------------------------------------------
+
+==================== Ripple_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:40:17 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 37
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== Ripple_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:40:28 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Ripple_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 37 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== Ripple_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -9.920
+TNS   : -147.731
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -9.766
+TNS   : -144.539
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.286
+TNS   : -65.419
+
+------------------------------------------------------------
+
+==================== FastRipple_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:40:47 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 19
+    Total combinational functions : 19
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== FastRipple_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:40:57 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 19 / 114,480 ( < 1 % )
+    Total combinational functions : 19 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== FastRipple_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -6.743
+TNS   : -111.817
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -5.975
+TNS   : -99.868
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -3.425
+TNS   : -56.869
+
+------------------------------------------------------------
+
+==================== FastRipple_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:41:16 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 19
+    Total combinational functions : 19
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== FastRipple_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:41:25 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 19 / 28,848 ( < 1 % )
+    Total combinational functions : 19 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== FastRipple_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -6.146
+TNS   : -101.745
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -5.385
+TNS   : -89.205
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -3.533
+TNS   : -58.973
+
+------------------------------------------------------------
+
+==================== FastRipple_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:41:42 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 18
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== FastRipple_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:41:54 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FastRipple_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 18 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== FastRipple_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -7.060
+TNS   : -118.645
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -6.933
+TNS   : -115.086
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.191
+TNS   : -54.462
+
+------------------------------------------------------------
+
+==================== ConditionalSum_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:42:13 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 49
+    Total combinational functions : 49
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSum_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:42:29 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 49 / 114,480 ( < 1 % )
+    Total combinational functions : 49 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSum_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -8.823
+TNS   : -134.454
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -7.924
+TNS   : -120.543
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.474
+TNS   : -68.404
+
+------------------------------------------------------------
+
+==================== ConditionalSum_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:42:48 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 49
+    Total combinational functions : 49
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSum_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:42:57 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 49 / 28,848 ( < 1 % )
+    Total combinational functions : 49 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSum_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -7.628
+TNS   : -116.971
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -6.731
+TNS   : -103.116
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.336
+TNS   : -66.682
+
+------------------------------------------------------------
+
+==================== ConditionalSum_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:43:13 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 41
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== ConditionalSum_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:43:24 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSum_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 47 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== ConditionalSum_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -7.395
+TNS   : -121.672
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -7.181
+TNS   : -117.529
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.316
+TNS   : -55.327
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:43:44 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 97
+    Total combinational functions : 97
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSumKeep_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:43:58 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 97 / 114,480 ( < 1 % )
+    Total combinational functions : 97 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSumKeep_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -8.424
+TNS   : -137.681
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -7.527
+TNS   : -123.021
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.300
+TNS   : -68.840
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:44:17 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 97
+    Total combinational functions : 97
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== ConditionalSumKeep_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:44:26 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 97 / 28,848 ( < 1 % )
+    Total combinational functions : 97 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== ConditionalSumKeep_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -7.260
+TNS   : -117.292
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -6.422
+TNS   : -103.463
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.130
+TNS   : -67.091
+
+------------------------------------------------------------
+
+==================== ConditionalSumKeep_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:44:44 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 82
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== ConditionalSumKeep_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:44:54 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ConditionalSumKeep_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 82 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== ConditionalSumKeep_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -7.601
+TNS   : -122.601
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -7.482
+TNS   : -119.496
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.404
+TNS   : -55.237
+
+------------------------------------------------------------
+
+==================== BlockLookahead_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:45:13 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 50
+    Total combinational functions : 50
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== BlockLookahead_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:45:29 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 50 / 114,480 ( < 1 % )
+    Total combinational functions : 50 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== BlockLookahead_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -8.024
+TNS   : -129.912
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -7.292
+TNS   : -117.015
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.059
+TNS   : -65.349
+
+------------------------------------------------------------
+
+==================== BlockLookahead_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:45:48 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 50
+    Total combinational functions : 50
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== BlockLookahead_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:45:57 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 50 / 28,848 ( < 1 % )
+    Total combinational functions : 50 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== BlockLookahead_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -6.848
+TNS   : -111.596
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -6.040
+TNS   : -98.395
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -3.864
+TNS   : -63.430
+
+------------------------------------------------------------
+
+==================== BlockLookahead_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:46:15 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 41
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== BlockLookahead_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:46:27 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BlockLookahead_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 42 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== BlockLookahead_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -7.050
+TNS   : -112.539
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -6.801
+TNS   : -108.945
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.150
+TNS   : -50.594
+
+------------------------------------------------------------
+
+==================== BrentKung_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:46:47 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 71
+    Total combinational functions : 71
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== BrentKung_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:47:02 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 71 / 114,480 ( < 1 % )
+    Total combinational functions : 71 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== BrentKung_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -8.029
+TNS   : -131.563
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -7.208
+TNS   : -117.882
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.046
+TNS   : -66.431
+
+------------------------------------------------------------
+
+==================== BrentKung_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:47:21 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 71
+    Total combinational functions : 71
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== BrentKung_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:47:30 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 71 / 28,848 ( < 1 % )
+    Total combinational functions : 71 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== BrentKung_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -7.380
+TNS   : -121.750
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -6.502
+TNS   : -107.463
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -4.180
+TNS   : -69.707
+
+------------------------------------------------------------
+
+==================== BrentKung_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:47:49 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 56
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== BrentKung_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:48:00 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : BrentKung_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 61 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== BrentKung_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -7.284
+TNS   : -120.572
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -7.059
+TNS   : -117.124
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.331
+TNS   : -55.159
+
+------------------------------------------------------------
+
+==================== KoggeStone_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:48:19 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 104
+    Total combinational functions : 104
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== KoggeStone_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:48:35 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 104 / 114,480 ( < 1 % )
+    Total combinational functions : 104 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== KoggeStone_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -7.849
+TNS   : -129.985
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -7.034
+TNS   : -116.244
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -3.989
+TNS   : -65.829
+
+------------------------------------------------------------
+
+==================== KoggeStone_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:48:56 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 104
+    Total combinational functions : 104
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== KoggeStone_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:49:11 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 104 / 28,848 ( < 1 % )
+    Total combinational functions : 104 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== KoggeStone_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -6.827
+TNS   : -112.096
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -6.020
+TNS   : -98.897
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -3.875
+TNS   : -64.258
+
+------------------------------------------------------------
+
+==================== KoggeStone_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:49:31 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 92
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== KoggeStone_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:49:50 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KoggeStone_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 100 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== KoggeStone_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -6.926
+TNS   : -111.165
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -6.708
+TNS   : -107.770
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -3.107
+TNS   : -50.715
+
+------------------------------------------------------------
+
+==================== CarrySkip_CIV_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:50:12 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 57
+    Total combinational functions : 57
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== CarrySkip_CIV_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:50:39 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_CIV_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 57 / 114,480 ( < 1 % )
+    Total combinational functions : 57 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 51 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== CarrySkip_CIV_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -15.574
+TNS   : -191.260
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -14.102
+TNS   : -173.262
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -7.828
+TNS   : -95.983
+
+------------------------------------------------------------
+
+==================== CarrySkip_CIVE30_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:51:00 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Total logic elements : 57
+    Total combinational functions : 57
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+==================== CarrySkip_CIVE30_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:51:15 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_CIVE30_N16
+Top-level Entity Name : Adder
+Family : Cyclone IV E
+Device : EP4CE30F23C6
+Timing Models : Final
+Total logic elements : 57 / 28,848 ( < 1 % )
+    Total combinational functions : 57 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 51 / 329 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+
+==================== CarrySkip_CIVE30_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : -11.647
+TNS   : -151.134
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : -10.334
+TNS   : -133.368
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : -6.529
+TNS   : -85.295
+
+------------------------------------------------------------
+
+==================== CarrySkip_AII_N16 : map summary ====================
+Analysis & Synthesis Status : Successful - Sat Nov 21 11:51:36 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 48
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+==================== CarrySkip_AII_N16 : fit summary ====================
+Fitter Status : Successful - Sat Nov 21 11:51:52 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CarrySkip_AII_N16
+Top-level Entity Name : Adder
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 48 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 51 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+
+==================== CarrySkip_AII_N16 : sta summary ====================
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Setup 'n/a'
+Slack : -11.208
+TNS   : -159.699
+
+Type  : Slow 900mV 0C Model Setup 'n/a'
+Slack : -11.195
+TNS   : -157.402
+
+Type  : Fast 900mV 0C Model Setup 'n/a'
+Slack : -4.720
+TNS   : -70.845
+
+------------------------------------------------------------
+

@@ -20,10 +20,24 @@ proc ToNs {Value Unit} {
 }
 
 set Csv [open [file join $OutDir TimingResults.csv] w]
-puts $Csv "Candidate,Measurements,Failures,WorstS_ns,WorstSMeas,WorstStatus_ns,WorstStatusMeas"
+puts $Csv "Candidate,Topology,FPGA,N,VectorSet,Measurements,Failures,WorstS_ns,WorstSMeas,WorstStatus_ns,WorstStatusMeas"
 
 foreach Transcript [lsort [glob -nocomplain -directory $Here TS*.txt]] {
-    set Rev [string range [file rootname [file tail $Transcript]] 2 end]
+    # TS<Candidate>.txt = directed vectors (Adder00*.tvs); TSRandom_<Candidate>.txt = the random set
+    set Name [file rootname [file tail $Transcript]]
+    if {[string match TSRandom_* $Name]} {
+        set VectorSet Random
+        set Rev [string range $Name 9 end]
+    } else {
+        set VectorSet Directed
+        set Rev [string range $Name 2 end]
+    }
+    # Revision name = <Topology>_<FPGA>[_N<width>]; no width suffix means N = 64
+    set Parts [split $Rev _]
+    set Topo  [lindex $Parts 0]
+    set Fpga  [lindex $Parts 1]
+    set Width 64
+    regexp {_N(\d+)$} $Rev -> Width
     set In [open $Transcript r]
     set Text [read $In]
     close $In
@@ -32,10 +46,10 @@ foreach Transcript [lsort [glob -nocomplain -directory $Here TS*.txt]] {
     # "Simulation Completed: K measurements, F failures | worst S delay=T (meas i) | worst Status delay=T (meas j)"
     set Pattern {Simulation Completed: (\d+) measurements, (\d+) failures \| worst S delay=([\d.]+) (\w+) \(meas (\d+)\) \| worst Status delay=([\d.]+) (\w+) \(meas (\d+)\)}
     if {[regexp $Pattern $Text -> Count Fails SVal SUnit SMeas StVal StUnit StMeas]} {
-        puts $Csv [join [list $Rev $Count $Fails [ToNs $SVal $SUnit] $SMeas [ToNs $StVal $StUnit] $StMeas] ,]
+        puts $Csv [join [list $Rev $Topo $Fpga $Width $VectorSet $Count $Fails [ToNs $SVal $SUnit] $SMeas [ToNs $StVal $StUnit] $StMeas] ,]
     } else {
         puts "CollectTiming: no completed run found in [file tail $Transcript]"
-        puts $Csv "$Rev,,,,,,"
+        puts $Csv "$Rev,$Topo,$Fpga,$Width,$VectorSet,,,,,,"
     }
 }
 close $Csv

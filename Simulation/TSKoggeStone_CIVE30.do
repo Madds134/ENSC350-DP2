@@ -18,13 +18,13 @@ vcom -2008 -quiet TBAdder.vhd
 vcom -2008 -quiet ../SourceCode/TimingConfigurations/TSKoggeStone_CIVE30.vhd
 
 # Load the configuration with the SDF delays on the DUT
-# (-t 1ps matches the SDF time scale; -sdfmax takes the maximum delays from that slowest-corner file)
+# (-t 1ps matches the SDF time scale; -sdfmax takes the maximum delays from that corner's file)
 vsim -t 1ps -voptargs=+acc -sdfmax /TBAdder/DUT=ModelSim/KoggeStone_CIVE30_vhd.sdo work.TSKoggeStone_CIVE30
 
-# Wave window layout, run every vector, then fit the whole run on screen
-do wave.do
+# Wave window layout (GUI only; skipped in batch runs), run every vector, then fit the whole run on screen
+if {![batch_mode]} { do wave.do }
 run -all
-wave zoom full
+if {![batch_mode]} { wave zoom full }
 
 # Stop capturing: later output goes back to the default transcript
 transcript file transcript
